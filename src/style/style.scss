@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+    --theme-bg: #0c1119;
+    --theme-bg-soft: #101826;
+    --theme-surface-1: rgba(21, 31, 47, 0.86);
+    --theme-surface-2: rgba(15, 24, 38, 0.92);
+    --theme-border: rgba(107, 144, 198, 0.24);
+    --theme-border-strong: rgba(135, 171, 223, 0.5);
+    --theme-text: rgba(233, 240, 251, 0.96);
+    --theme-text-dim: rgba(182, 198, 223, 0.74);
+    --theme-accent: #7cb6ff;
+    --theme-accent-strong: #9bc9ff;
+    --theme-accent-soft: rgba(124, 182, 255, 0.2);
+    --theme-success: #74d19a;
+    --theme-panel-gradient: linear-gradient(145deg, rgba(23, 34, 52, 0.8) 0%, rgba(13, 21, 35, 0.94) 100%);
+    --font-body: 'Space Grotesk', 'Trebuchet MS', 'Segoe UI', sans-serif;
+    --font-display: 'Chakra Petch', 'Space Grotesk', 'Trebuchet MS', sans-serif;
+
+    --navbar-bg-color: rgba(12, 17, 25, 0.76);
+    --navbar-border-color: var(--theme-border);
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+    color: var(--theme-text);
+    background:
+        radial-gradient(90rem 40rem at 10% -20%, rgba(124, 182, 255, 0.12) 0%, transparent 70%),
+        radial-gradient(80rem 35rem at 110% 0%, rgba(82, 129, 190, 0.14) 0%, transparent 72%),
+        linear-gradient(135deg, #0f1622 0%, #0a111a 100%);
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    letter-spacing: 0.03em;
+    color: var(--theme-text);
+}
+
+.n-tabs .n-tabs-tab__label {
+    font-family: var(--font-display);
+    font-size: 0.98rem;
+    letter-spacing: 0.02em;
+}
+
+.n-input,
+.n-button,
+.n-checkbox,
+.n-input-number,
+.n-card,
+.n-tooltip,
+.n-tag,
+.n-base-selection {
+    font-family: var(--font-body);
+}
+
+a {
+    color: var(--theme-accent);
+}
+
+.text-overflow-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+}
+
+// button focus removal
+.n-button:not(.n-button--disabled):focus {
+    background-color: var(--n-color);
+    color: var(--n-text-color);
+}
+.n-button:not(.n-button--disabled):hover {
+    background-color: var(--n-color-hover);
+    color: var(--n-text-color-hover);
+}
+
+// tab scroll shadow (improved for dark theme)
+.n-tabs .n-tabs-nav-scroll-wrapper.n-tabs-nav-scroll-wrapper--shadow-before::before {
+    box-shadow: inset 10px 0 8px -8px rgba(200, 200, 200, 0.12);
+}
+.n-tabs .n-tabs-nav-scroll-wrapper.n-tabs-nav-scroll-wrapper--shadow-after::after {
+    box-shadow: inset -10px 0 8px -8px rgba(200, 200, 200, 0.12);
+}
+
+.item-counter {
+    position: absolute;
+    line-height: 1;
+    bottom: -3px;
+    right: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-shadow: 0 1px 3px #000000;
+    background: linear-gradient(135deg, rgba(124, 182, 255, 0.34) 0%, rgba(76, 131, 204, 0.34) 100%);
+    border: 1px solid rgba(124, 182, 255, 0.45);
+    border-radius: 3px;
+    padding: 0.1rem 0.3rem;
+    color: rgba(222, 234, 252, 0.95);
+}
+
+.highlight-result {
+    color: var(--theme-accent-strong);
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(155, 201, 255, 0.35);
+}
+
+// * Multiselect
+.multiselect-dropdown {
+    max-height: var(--ms-max-height) !important;
+}
+input.multiselect-search {
+    color: var(--pane-text-color);
+    background-color: transparent;
+    height: 100%;
+}
+.multiselect-no-results {
+    color: #aaaaaa !important;
+}
+.multiselect-dark {
+    --n-option-text-color: #ffffff;
+    --ms-font-size: 1rem;
+    --ms-line-height: 1.375;
+    --ms-bg: rgba(255, 255, 255, 0.1);
+    --ms-bg-disabled: #f3f4f6;
+    --ms-border-color: var(--n-border-color);
+    --ms-border-width: 1px;
+    --ms-radius: 4px;
+    --ms-py: 0.5rem;
+    --ms-px: 0.875rem;
+    --ms-ring-width: 3px;
+    --ms-ring-color: rgba(124, 182, 255, 0.25);
+    --ms-placeholder-color: #9ca3af;
+    --ms-max-height: 20rem;
+
+    --ms-spinner-color: var(--theme-accent);
+    --ms-caret-color: #888888;
+    --ms-clear-color: #888888;
+    --ms-clear-color-hover: #cccccc;
+
+    --ms-tag-font-size: 0.875rem;
+    --ms-tag-line-height: 1.25rem;
+    --ms-tag-font-weight: 600;
+    --ms-tag-bg: var(--theme-accent);
+    --ms-tag-bg-disabled: #9ca3af;
+    --ms-tag-color: #ffffff;
+    --ms-tag-color-disabled: #ffffff;
+    --ms-tag-radius: 4px;
+    --ms-tag-py: 0.125rem;
+    --ms-tag-px: 0.5rem;
+    --ms-tag-my: 0.25rem;
+    --ms-tag-mx: 0.25rem;
+
+    --ms-tag-remove-radius: 4px;
+    --ms-tag-remove-py: 0.25rem;
+    --ms-tag-remove-px: 0.25rem;
+    --ms-tag-remove-my: 0rem;
+    --ms-tag-remove-mx: 0.125rem;
+
+    --ms-dropdown-bg: #1a2434;
+    --ms-dropdown-border-color: #2b3e5a;
+    --ms-dropdown-border-width: 1px;
+    --ms-dropdown-radius: 4px;
+
+    --ms-group-label-py: 0.3rem;
+    --ms-group-label-px: 0.75rem;
+    --ms-group-label-line-height: 1.375;
+    --ms-group-label-bg: #e5e7eb;
+    --ms-group-label-color: #374151;
+    --ms-group-label-bg-pointed: #d1d5db;
+    --ms-group-label-color-pointed: #374151;
+    --ms-group-label-bg-disabled: #f3f4f6;
+    --ms-group-label-color-disabled: #d1d5db;
+    --ms-group-label-bg-selected: #059669;
+    --ms-group-label-color-selected: #ffffff;
+    --ms-group-label-bg-selected-pointed: #0c9e70;
+    --ms-group-label-color-selected-pointed: #ffffff;
+    --ms-group-label-bg-selected-disabled: #75cfb1;
+    --ms-group-label-color-selected-disabled: #d1fae5;
+
+    --ms-option-font-size: 1rem;
+    --ms-option-line-height: 1.375;
+    --ms-option-bg-pointed: rgba(255, 255, 255, 0.09);
+    --ms-option-color-pointed: #ffffff;
+    --ms-option-bg-selected: rgba(255, 255, 255, 0.2);
+    --ms-option-color-selected: #ffffff;
+    --ms-option-bg-disabled: rgba(255, 255, 255, 0.09);
+    --ms-option-color-disabled: #d1d5db;
+    --ms-option-bg-selected-pointed: rgba(255, 255, 255, 0.25);
+    --ms-option-color-selected-pointed: #ffffff;
+    --ms-option-bg-selected-disabled: rgba(255, 255, 255, 0.09);
+    --ms-option-color-selected-disabled: #d1fae5;
+    --ms-option-py: 0.5rem;
+    --ms-option-px: 0.75rem;
+
+    --ms-empty-color: #4b5563;
+}

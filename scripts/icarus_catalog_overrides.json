@@ -1,0 +1,40 @@
+{
+  "canonicalAliases": {},
+  "defaultRecipes": {},
+  "itemLabels": {
+    "Bauxite": "Aluminium Ore"
+  },
+  "resourceTypes": {
+    "Biofuel": {
+      "imagePath": "/icarus-game/ItemIcons/UseableItems/T_ITEM_Workshop_Biofuel_Can.png",
+      "label": "Biofuel",
+      "quantityUnit": "L",
+      "unitsPerQuantity": 1000
+    },
+    "Milk": {
+      "imagePath": "/icarus-game/ItemIcons/UseableItems/T_ITEM_Milk_Bottle_Glass.png",
+      "isFood": true,
+      "label": "Milk",
+      "quantityUnit": "L",
+      "unitsPerQuantity": 1000
+    },
+    "Oxygen": {
+      "imagePath": "/icarus-game/ItemIcons/UseableItems/ITEM_Oxygen_Bladder.png",
+      "label": "Oxygen",
+      "quantityUnit": "L",
+      "unitsPerQuantity": 1000
+    },
+    "Refined_Oil": {
+      "imagePath": "/icarus-game/ItemIcons/UseableItems/T_ITEM_Oil_Can.png",
+      "label": "Refined Oil",
+      "quantityUnit": "L",
+      "unitsPerQuantity": 1000
+    },
+    "Water": {
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_DRINK_Water.png",
+      "label": "Water",
+      "quantityUnit": "L",
+      "unitsPerQuantity": 1000
+    }
+  }
+}

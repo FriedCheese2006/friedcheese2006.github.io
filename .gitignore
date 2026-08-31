@@ -1,0 +1,41 @@
+# Raw export files
+export/
+
+# Dependencies
+node_modules/
+
+# Package Managers
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Secrets
+.env
+backend/.env
+
+# Log files
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Cache/temp files
+eslint-report.json
+.dccache
+.DS_Store
+.eslintcache
+.tmp/
+graphify-out/
+output.txt
+prompt.md
+
+# Output
+dist
+dist-ssr
+*.local
+
+# these file names are too long, and broke things, so they were renamed to shorter, de-duplicated names, that still work with the code
+# explore `git config --system core.longpaths true` as needed
