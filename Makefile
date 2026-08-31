@@ -21,8 +21,8 @@ build:
 test:
 	npm test
 	npm run test:data
-	npm run test:backend
 	npm run build
+	npm run test:backend
 	npm run test:pwa
 	npm run prepare:pages
 

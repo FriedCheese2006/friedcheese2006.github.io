@@ -145,4 +145,4 @@ npm run test:data
 
 ## Deployment Automation
 
-A push to `main` runs tests and deploys the static app to GitHub Pages. It also publishes `latest` and commit-tagged container images. Tags matching `v*` additionally publish semantic-version image tags.
+A push to `main` runs tests and deploys the compiled static artifact. Configure the repository's Pages source as **GitHub Actions** before the first deployment. The container workflow publishes `latest` and commit-tagged images; tags matching `v*` additionally publish semantic-version image tags.
