@@ -1,0 +1,11 @@
+.git
+.github
+data
+dist
+export
+graphify-out
+node_modules
+*.db
+*.log
+.env
+backend/.env

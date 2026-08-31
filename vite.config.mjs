@@ -1,0 +1,80 @@
+import vue from '@vitejs/plugin-vue';
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import { VitePWA } from 'vite-plugin-pwa';
+
+const outDir = resolve(import.meta.dirname, 'dist');
+const projectRootDir = import.meta.dirname;
+
+export default defineConfig({
+    plugins: [
+        vue(),
+        VitePWA({
+            registerType: 'autoUpdate',
+            injectRegister: 'auto',
+            includeAssets: [
+                'favicon.ico',
+                'pwa-192.png',
+                'pwa-512.png',
+                'icarus-game/Images/question-mark.png',
+            ],
+            manifest: {
+                name: 'Icarus Crafting Calculator',
+                short_name: 'Icarus Calc',
+                description: 'Crafting recipe calculator for the Icarus survival game',
+                theme_color: '#0a0f18',
+                background_color: '#0a0f18',
+                display: 'standalone',
+                scope: '/',
+                start_url: '/',
+                icons: [
+                    { src: '/favicon.ico', sizes: '16x16 32x32 48x48 64x64', type: 'image/x-icon', purpose: 'any' },
+                    { src: '/pwa-192.png', sizes: '192x192', type: 'image/png' },
+                    { src: '/pwa-512.png', sizes: '512x512', type: 'image/png' },
+                    { src: '/pwa-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+                ],
+            },
+            workbox: {
+                navigateFallback: '/index.html',
+                navigateFallbackAllowlist: [/^(?!\/(api|auth)\/).*/],
+                cleanupOutdatedCaches: true,
+                globPatterns: ['**/*.{js,css,html,ico,svg,woff,woff2}'],
+                runtimeCaching: [
+                    {
+                        urlPattern: /\/icarus-game\/Data\//,
+                        handler: 'NetworkFirst',
+                        options: {
+                            cacheName: 'game-data',
+                            networkTimeoutSeconds: 5,
+                            cacheableResponse: { statuses: [0, 200] },
+                            expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 7 },
+                        },
+                    },
+                    {
+                        urlPattern: /\/icarus-game\/ItemIcons\//,
+                        handler: 'StaleWhileRevalidate',
+                        options: {
+                            cacheName: 'game-icons',
+                            cacheableResponse: { statuses: [0, 200] },
+                            expiration: { maxEntries: 2000, maxAgeSeconds: 60 * 60 * 24 * 30 },
+                        },
+                    },
+                ],
+            },
+        }),
+    ],
+    resolve: {
+        alias: {
+            '@': resolve(projectRootDir, 'src'),
+        },
+    },
+    build: {
+        outDir,
+        emptyOutDir: true,
+        rollupOptions: {
+            input: {
+                main: resolve(projectRootDir, 'index.html'),
+            },
+        },
+    },
+});
