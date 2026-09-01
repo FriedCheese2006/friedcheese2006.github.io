@@ -8,7 +8,8 @@
                 </div>
                 <n-tabs v-else ref="tabsInstRef" v-model:value="activeTabId" type="bar" :closable="closable" tab-style="">
                     <!-- `name` acts as ID here -->
-                    <n-tab-pane v-for="tab in tabs" :tab="tab.title" :name="tab.id" :key="tab.id">
+                    <n-tab-pane v-for="tab in tabs" :name="tab.id" :key="tab.id">
+                        <template #tab>{{ tab.title }}</template>
                         <crafting-calculator :tab="tab" @close-tab="removeTab({ tabId: $event })"></crafting-calculator>
                     </n-tab-pane>
                     <!-- <template #prefix>Prefix</template>

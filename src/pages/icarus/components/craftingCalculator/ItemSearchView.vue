@@ -1,8 +1,12 @@
 <template>
     <div>
         <n-tabs class="workspace-tabs" :value="workspaceMode" type="segment" @update:value="onWorkspaceChange">
-            <n-tab-pane name="items" tab="Items"></n-tab-pane>
-            <n-tab-pane name="food" tab="Food"></n-tab-pane>
+            <n-tab-pane name="items">
+                <template #tab>Items</template>
+            </n-tab-pane>
+            <n-tab-pane name="food">
+                <template #tab>Food</template>
+            </n-tab-pane>
         </n-tabs>
         <div class="mb-3 flex align-items-center">
             <n-input type="text" v-model:value="searchValue" placeholder="Search..." clearable @input="onSearch" />
