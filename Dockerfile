@@ -14,7 +14,7 @@ ARG VITE_BACKEND_ENABLED=true
 RUN npm run build
 
 # ── Stage 2: Python backend serving the built frontend ────────────────────────
-FROM python:3.13.15-slim AS app
+FROM python:3.14.7-slim AS app
 
 WORKDIR /app
 
