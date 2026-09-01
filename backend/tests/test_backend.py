@@ -6,8 +6,8 @@ import tempfile
 import unittest
 from unittest.mock import AsyncMock, Mock, patch
 
-TEST_DATA_DIR = tempfile.mkdtemp(prefix="icarus-calc-tests-")
-os.environ["DATABASE_PATH"] = os.path.join(TEST_DATA_DIR, "icarus.db")
+TEST_DATA_DIR = tempfile.mkdtemp(prefix="prospector-tests-")
+os.environ["DATABASE_PATH"] = os.path.join(TEST_DATA_DIR, "prospector.db")
 os.environ.pop("OIDC_ISSUER", None)
 os.environ.pop("OIDC_CLIENT_ID", None)
 os.environ.pop("OIDC_CLIENT_SECRET", None)

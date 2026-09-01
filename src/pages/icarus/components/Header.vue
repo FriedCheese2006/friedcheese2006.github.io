@@ -9,29 +9,58 @@
                         :src="`${gameAssetsUrl}/ItemIcons/Tools/ITEM_Building_RepairTool.png`"
                         :preview-disabled="true"
                     />
-                    <span class="px-2">Icarus Crafting Calculator</span>
+                    <div class="brand-copy px-2">
+                        <span class="brand-name">PROSPECTOR</span>
+                        <span class="brand-expansion">Planetary Resource Order &amp; Surface Prep Engine for Crafting, Tallying, Output &amp; Requisitions</span>
+                    </div>
                 </div>
-                <div v-if="ssoEnabled" class="auth-section flex align-items-center ml-auto px-2">
-                    <template v-if="isLoggedIn">
-                        <span class="user-name mr-2">{{ user.name || user.email }}</span>
-                        <n-button size="small" @click="logout">Sign out</n-button>
-                    </template>
-                    <template v-else>
-                        <n-button size="small" type="primary" @click="login">Sign in</n-button>
-                    </template>
+                <div class="header-actions flex align-items-center ml-auto px-2">
+                    <n-tooltip>
+                        <template #trigger>
+                            <n-button quaternary circle aria-label="About PROSPECTOR" @click="showAbout = true">
+                                <template #icon>
+                                    <n-icon><InfoCircle /></n-icon>
+                                </template>
+                            </n-button>
+                        </template>
+                        About PROSPECTOR
+                    </n-tooltip>
+                    <div v-if="ssoEnabled" class="auth-section flex align-items-center ml-2">
+                        <template v-if="isLoggedIn">
+                            <span class="user-name mr-2">{{ user.name || user.email }}</span>
+                            <n-button size="small" @click="logout">Sign out</n-button>
+                        </template>
+                        <template v-else>
+                            <n-button size="small" type="primary" @click="login">Sign in</n-button>
+                        </template>
+                    </div>
                 </div>
             </div>
         </div>
+        <n-modal v-model:show="showAbout" preset="card" title="About PROSPECTOR" class="about-modal">
+            <p class="about-expansion">Planetary Resource Order &amp; Surface Prep Engine for Crafting, Tallying, Output &amp; Requisitions</p>
+            <p>An ICARUS crafting planner for building item and food plans, comparing recipes, and tracking requirements.</p>
+            <p>
+                Based on
+                <a href="https://github.com/Drumstix42/drumstix42.github.io" target="_blank" rel="noopener noreferrer">Drumstix42's Icarus Calculator</a>,
+                including its game-file export workflow. Licensed under Apache 2.0.
+            </p>
+            <p class="about-disclaimer">
+                This unofficial fan project is not affiliated with, endorsed by, or sponsored by ICARUS, RocketWerkz, or any of their subsidiaries.
+                Game names, data, imagery, and related marks remain the property of their respective owners.
+            </p>
+        </n-modal>
     </header>
 </template>
 
 <script>
+import { InfoCircle } from '@vicons/fa';
 import { GAME_ASSETS_URL } from '@/constants/common';
 import { useAuth } from '@/composables/useAuth';
 
 export default {
     name: 'Header',
-    components: {},
+    components: { InfoCircle },
     props: [],
     setup() {
         const { user, isLoggedIn, ssoEnabled, login, logout } = useAuth();
@@ -41,6 +70,7 @@ export default {
         return {
             gameAssetsUrl: GAME_ASSETS_URL,
             resizeObserver: null,
+            showAbout: false,
         };
     },
     mounted() {
@@ -83,12 +113,32 @@ export default {
 
         .title {
             min-height: 2rem;
+            min-width: 0;
             font-family: var(--font-display);
             font-weight: 700;
-            font-size: 1.08rem;
-            letter-spacing: 0.035em;
             text-transform: uppercase;
             color: var(--theme-text);
+        }
+
+        .brand-copy {
+            display: flex;
+            min-width: 0;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-size: 1.08rem;
+            letter-spacing: 0.035em;
+        }
+
+        .brand-expansion {
+            max-width: 44rem;
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            font-weight: 500;
+            line-height: 1.2;
+            text-transform: none;
+            color: var(--theme-text-dim);
         }
 
         .user-name {
@@ -96,6 +146,30 @@ export default {
             font-size: 0.86rem;
             color: var(--theme-text-dim);
         }
+    }
+}
+
+.about-modal {
+    width: min(36rem, calc(100vw - 2rem));
+
+    .about-expansion {
+        font-family: var(--font-display);
+        font-weight: 700;
+    }
+
+    a {
+        color: var(--primary-color);
+    }
+
+    .about-disclaimer {
+        color: var(--theme-text-dim);
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 42rem) {
+    .navbar .inner .brand-expansion {
+        font-size: 0.58rem;
     }
 }
 </style>

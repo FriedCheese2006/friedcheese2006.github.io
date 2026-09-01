@@ -1,18 +1,18 @@
 services:
   app:
-    image: ${ICARUS_CALC_IMAGE:-ghcr.io/friedcheese2006/icarus-calc:latest}
+    image: ${PROSPECTOR_IMAGE:-ghcr.io/friedcheese2006/prospector:latest}
     restart: unless-stopped
     ports:
       - "8000:8000"
     environment:
-      DATABASE_PATH: /app/data/icarus.db
+      DATABASE_PATH: /app/data/prospector.db
       OIDC_ISSUER: ${OIDC_ISSUER:-}
       OIDC_CLIENT_ID: ${OIDC_CLIENT_ID:-}
       OIDC_CLIENT_SECRET: ${OIDC_CLIENT_SECRET:-}
       JWT_SECRET_KEY: ${JWT_SECRET_KEY:-}
       APP_BASE_URL: ${APP_BASE_URL:-http://localhost:8000}
     volumes:
-      - icarus_data:/app/data
+      - prospector_data:/app/data
 
 volumes:
-  icarus_data:
+  prospector_data:

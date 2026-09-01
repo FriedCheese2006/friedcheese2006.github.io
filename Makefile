@@ -41,11 +41,11 @@ update-game-assets:
 
 ## docker-build — build the application container locally
 docker-build:
-	docker build -t icarus-calc:local .
+	docker build -t prospector:local .
 
 ## security-scan — build and scan for vulnerabilities with available fixes
 security-scan: docker-build
 	docker run --rm \
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		-v "$(CURDIR):/work:ro" \
-		anchore/grype:latest docker:icarus-calc:local --only-fixed --vex /work/security/openvex.json
+		anchore/grype:latest docker:prospector:local --only-fixed --vex /work/security/openvex.json

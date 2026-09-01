@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  IMAGE_NAME: ghcr.io/friedcheese2006/icarus-calc
+  IMAGE_NAME: ghcr.io/friedcheese2006/prospector
 
 jobs:
   test:

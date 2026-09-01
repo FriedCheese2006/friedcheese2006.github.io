@@ -1,5 +1,5 @@
 {
-    "name": "icarus-crafting-calculator",
+    "name": "prospector",
     "version": "1.0.0",
     "engines": {
         "node": ">=22.12"

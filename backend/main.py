@@ -2,7 +2,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
 from backend.db import engine
@@ -41,15 +41,6 @@ if DIST_PATH.exists():
             StaticFiles(directory=DIST_PATH / "assets"),
             name="vite-assets",
         )
-
-
-@app.get("/icarus")
-@app.get("/icarus/{full_path:path}")
-async def redirect_legacy_icarus_path(full_path: str = ""):
-    """Redirect legacy /icarus URLs to root-based SPA paths."""
-    target = f"/{full_path}" if full_path else "/"
-    return RedirectResponse(url=target, status_code=308)
-
 
 @app.get("/{full_path:path}")
 async def serve_root(full_path: str):
