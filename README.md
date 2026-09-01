@@ -94,7 +94,7 @@ docker compose up -d --build
 ### Prerequisites
 
 - Node.js 22
-- Python 3.12
+- Python 3.13
 - Docker, when testing the container
 
 Install dependencies and start both development servers:
@@ -121,6 +121,12 @@ Build a local container image:
 
 ```bash
 make docker-build
+```
+
+Build and scan it with Grype, including the VEX record for the backported CPython security fix:
+
+```bash
+make security-scan
 ```
 
 ### Updating Game Data and Icons

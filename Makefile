@@ -1,4 +1,4 @@
-.PHONY: install dev build test catalog update-game-assets docker-build
+.PHONY: install dev build test catalog update-game-assets docker-build security-scan
 
 ## install — install all frontend and backend dependencies
 install:
@@ -42,3 +42,10 @@ update-game-assets:
 ## docker-build — build the application container locally
 docker-build:
 	docker build -t icarus-calc:local .
+
+## security-scan — build and scan for vulnerabilities with available fixes
+security-scan: docker-build
+	docker run --rm \
+		-v /var/run/docker.sock:/var/run/docker.sock \
+		-v "$(CURDIR):/work:ro" \
+		anchore/grype:latest docker:icarus-calc:local --only-fixed --vex /work/security/openvex.json

@@ -13,9 +13,9 @@ os.environ.pop("OIDC_CLIENT_ID", None)
 os.environ.pop("OIDC_CLIENT_SECRET", None)
 
 import itsdangerous
+import jwt
 from fastapi import HTTPException
 from fastapi.testclient import TestClient
-from jose import jwt
 from pydantic import ValidationError
 
 from backend.auth import ALGORITHM, create_access_token, require_user
