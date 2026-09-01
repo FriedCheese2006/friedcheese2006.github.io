@@ -129,7 +129,7 @@ Build a local container image:
 make docker-build
 ```
 
-Build and scan it with Grype, including the VEX record for the backported CPython security fix:
+Build and scan it with Grype and Trivy, including the VEX record for the backported CPython security fix:
 
 ```bash
 make security-scan

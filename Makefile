@@ -49,3 +49,7 @@ security-scan: docker-build
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		-v "$(CURDIR):/work:ro" \
 		anchore/grype:latest docker:prospector:local --only-fixed --vex /work/security/openvex.json
+	docker run --rm \
+		-v /var/run/docker.sock:/var/run/docker.sock \
+		aquasec/trivy:latest image --scanners vuln --ignore-unfixed \
+		--severity MEDIUM,HIGH,CRITICAL --exit-code 1 prospector:local
