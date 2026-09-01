@@ -34,7 +34,7 @@
         "@vicons/utils": "^0.1.4",
         "@vitejs/plugin-vue": "^6.0.8",
         "eslint": "^9.21.0",
-        "eslint-plugin-vue": "^9.32.0",
+        "eslint-plugin-vue": "^10.10.0",
         "naive-ui": "^2.44.1",
         "sass": "^1.98.0",
         "vfonts": "^0.0.3",
