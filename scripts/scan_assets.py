@@ -33,6 +33,7 @@ except ModuleNotFoundError:
 # ---------------------------------------------------------------------------
 
 ITEM_ICONS_UE4_SUBPATH = Path("Icarus", "Content", "Assets", "2DArt", "UI", "Items", "Item_Icons")
+PUBLIC_FILE_MODE = 0o600
 
 SOURCE_DATA_FILES: dict[str, str] = {
     "D_Itemable.json": "Traits/D_Itemable.json",
@@ -201,10 +202,14 @@ def find_orphaned_assets(
 
 def copy_file(src: Path, dst: Path, existed: bool) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(src, dst)
-    os.chmod(dst, 0o644)
+    copy_public_file(src, dst)
     verb = "replaced" if existed else "created"
     print(f"{src} => {dst} {verb} successfully.")
+
+
+def copy_public_file(src: Path, dst: Path) -> None:
+    shutil.copy2(src, dst)
+    os.chmod(dst, PUBLIC_FILE_MODE)
 
 
 def update_source_data_files(web_public_data: Path, ue4_export_dir: Path) -> None:
@@ -213,8 +218,7 @@ def update_source_data_files(web_public_data: Path, ue4_export_dir: Path) -> Non
         src = ue4_export_dir / src_rel
         dst = web_public_data / dest_name
         try:
-            shutil.copy2(src, dst)
-            os.chmod(dst, 0o644)
+            copy_public_file(src, dst)
             print(f"{src} => {dst} copied successfully.")
         except OSError as exc:
             failures.append(f"{src}: {exc}")

@@ -1,9 +1,27 @@
-.PHONY: install dev build test catalog update-game-assets docker-build security-scan
+.PHONY: install requirements-tools requirements-lock requirements-check dev build test catalog update-game-assets docker-build security-scan
+
+PYTHON ?= python3
+PIP_VERSION := 25.3
+PIP_TOOLS_VERSION := 7.5.3
 
 ## install — install all frontend and backend dependencies
 install:
 	npm install
-	pip install -r backend/requirements.txt
+	$(PYTHON) -m pip install --require-hashes -r backend/requirements.txt
+
+## requirements-tools — install the pinned Python lockfile toolchain
+requirements-tools:
+	$(PYTHON) -m pip install "pip==$(PIP_VERSION)" "pip-tools==$(PIP_TOOLS_VERSION)"
+
+## requirements-lock — update the Python lockfile from direct dependencies
+requirements-lock: requirements-tools
+	CUSTOM_COMPILE_COMMAND='make requirements-lock' $(PYTHON) -m piptools compile --upgrade --generate-hashes --strip-extras --output-file=backend/requirements.txt backend/requirements.in
+
+## requirements-check — verify direct dependencies and the lockfile agree
+requirements-check: requirements-tools
+	@lock_check="$$(mktemp)"; trap 'rm -f "$$lock_check"' EXIT; \
+		CUSTOM_COMPILE_COMMAND='make requirements-lock' $(PYTHON) -m piptools compile --quiet --generate-hashes --strip-extras --output-file="$$lock_check" backend/requirements.in; \
+		diff --unified backend/requirements.txt "$$lock_check"
 
 ## dev — start Vite dev server and FastAPI backend concurrently
 ##        Copy .env.example to .env to configure optional SSO

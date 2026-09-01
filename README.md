@@ -112,11 +112,18 @@ cp .env.example .env
 npm install
 python3 -m venv .venv
 . .venv/bin/activate
-pip install -r backend/requirements.txt
+python -m pip install --require-hashes -r backend/requirements.txt
 make dev
 ```
 
 Vite runs at `http://localhost:5173` and FastAPI runs at `http://localhost:8001`. The standalone Vite app uses browser storage. To exercise SSO and server synchronization locally, build and run the container so the frontend and API share one origin.
+
+Direct Python dependencies are declared in [backend/requirements.in](backend/requirements.in), while [backend/requirements.txt](backend/requirements.txt) is the generated, hash-verified lockfile. After changing direct dependencies, regenerate and verify the lockfile:
+
+```bash
+make requirements-lock
+make requirements-check
+```
 
 Run all automated checks:
 
