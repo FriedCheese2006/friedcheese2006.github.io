@@ -1,6 +1,8 @@
-# Icarus Crafting Calculator
+# PROSPECTOR
 
-A browser-based crafting planner for [ICARUS](https://store.steampowered.com/app/1149460/ICARUS/). Build item and food plans, compare recipe alternatives, expand ingredient trees, and track completed requirements.
+**Planetary Resource Order & Surface Prep Engine for Crafting, Tallying, Output & Requisitions**
+
+PROSPECTOR is a browser-based crafting planner for [ICARUS](https://store.steampowered.com/app/1149460/ICARUS/). Build item and food plans, compare recipe alternatives, expand ingredient trees, and track completed requirements.
 
 ## Usage
 
@@ -21,7 +23,7 @@ Clearing site data removes locally stored plans. Export or preserve browser data
 A multi-architecture image is published to GitHub Container Registry:
 
 ```text
-ghcr.io/friedcheese2006/icarus-calc:latest
+ghcr.io/friedcheese2006/prospector:latest
 ```
 
 After the first successful publish, the repository owner must set the package visibility to **Public** in the package settings. This one-time GitHub setting allows unauthenticated pulls.
@@ -32,7 +34,7 @@ Download [docker-compose.image.yml](docker-compose.image.yml), then start the ap
 docker compose -f docker-compose.image.yml up -d
 ```
 
-Open `http://localhost:8000`. The `icarus_data` volume preserves account and synchronized workspace data across container replacements. Anonymous plans continue to use browser storage.
+Open `http://localhost:8000`. The `prospector_data` volume preserves account and synchronized workspace data across container replacements. Anonymous plans continue to use browser storage.
 
 ### Optional OpenID Connect SSO
 
@@ -41,7 +43,7 @@ Copy [.env.example](.env.example) to `.env` and configure an OpenID Connect conf
 Generate the signing key with `openssl rand -base64 48`, then place its output in `JWT_SECRET_KEY`:
 
 ```dotenv
-APP_BASE_URL=https://icarus.example.com
+APP_BASE_URL=https://prospector.example.com
 JWT_SECRET_KEY=
 OIDC_ISSUER=https://identity.example.com/tenant
 OIDC_CLIENT_ID=your-client-id
@@ -51,7 +53,7 @@ OIDC_CLIENT_SECRET=your-client-secret
 Set the provider's redirect URI to:
 
 ```text
-https://icarus.example.com/auth/callback
+https://prospector.example.com/auth/callback
 ```
 
 The issuer is used to load `/.well-known/openid-configuration`; authorization, token, and user-info endpoints are read from that document.
@@ -66,11 +68,11 @@ Signed-in users synchronize plans and settings through the container's SQLite da
 
 ### Backup and Restore
 
-Stop the application before copying its database. Find the volume name with `docker volume ls`; Compose normally names it `<project>_icarus_data`.
+Stop the application before copying its database. Find the volume name with `docker volume ls`; Compose normally names it `<project>_prospector_data`.
 
 ```bash
 docker compose -f docker-compose.image.yml stop app
-docker run --rm -v <volume-name>:/data:ro -v "$PWD:/backup" alpine cp /data/icarus.db /backup/icarus.db
+docker run --rm -v <volume-name>:/data:ro -v "$PWD:/backup" alpine cp /data/prospector.db /backup/prospector.db
 docker compose -f docker-compose.image.yml start app
 ```
 
@@ -78,7 +80,7 @@ To restore a backup, stop the application and copy the file in the other directi
 
 ```bash
 docker compose -f docker-compose.image.yml stop app
-docker run --rm -v <volume-name>:/data -v "$PWD:/backup:ro" alpine sh -c 'cp /backup/icarus.db /data/icarus.db && chown 10001:10001 /data/icarus.db'
+docker run --rm -v <volume-name>:/data -v "$PWD:/backup:ro" alpine sh -c 'cp /backup/prospector.db /data/prospector.db && chown 10001:10001 /data/prospector.db'
 docker compose -f docker-compose.image.yml start app
 ```
 

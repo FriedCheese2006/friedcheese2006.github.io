@@ -74,7 +74,7 @@ describe('Icarus workspace actions', () => {
         expect(store.activeTab.id).toBe(itemTab.id);
 
         await nextTick();
-        const persisted = JSON.parse(localStorageStub.getItem('icarusCalculator/workspace-state'));
+        const persisted = JSON.parse(localStorageStub.getItem('prospector/workspace-state'));
         expect(persisted.workspaces.items.activeTabId).toBe(itemTab.id);
         expect(persisted.workspaces.food.activeTabId).toBe(foodTab.id);
     });

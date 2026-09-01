@@ -41,7 +41,7 @@ RUN groupadd --gid 10001 app \
 	&& useradd --uid 10001 --gid app --no-create-home app \
 	&& mkdir -p /app/data \
 	&& chown app:app /app/data
-ENV DATABASE_PATH=/app/data/icarus.db
+ENV DATABASE_PATH=/app/data/prospector.db
 VOLUME ["/app/data"]
 
 USER app

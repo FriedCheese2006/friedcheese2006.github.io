@@ -8,7 +8,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    database_path: Path = Path("data/icarus.db")
+    database_path: Path = Path("data/prospector.db")
 
     # SSO is enabled when the complete OIDC client configuration is present.
     oidc_issuer: Optional[str] = None

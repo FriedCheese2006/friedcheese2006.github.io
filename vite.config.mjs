@@ -19,9 +19,9 @@ export default defineConfig({
                 'icarus-game/Images/question-mark.png',
             ],
             manifest: {
-                name: 'Icarus Crafting Calculator',
-                short_name: 'Icarus Calc',
-                description: 'Crafting recipe calculator for the Icarus survival game',
+                name: 'PROSPECTOR',
+                short_name: 'PROSPECTOR',
+                description: 'Planetary Resource Order & Surface Prep Engine for Crafting, Tallying, Output & Requisitions: an ICARUS crafting planner.',
                 theme_color: '#0a0f18',
                 background_color: '#0a0f18',
                 display: 'standalone',
