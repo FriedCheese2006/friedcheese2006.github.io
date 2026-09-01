@@ -32,8 +32,6 @@ A multi-architecture image is published to GitHub Container Registry:
 ghcr.io/friedcheese2006/prospector:latest
 ```
 
-After the first successful publish, the repository owner must set the package visibility to **Public** in the package settings. This one-time GitHub setting allows unauthenticated pulls.
-
 Download [docker-compose.image.yml](docker-compose.image.yml), then start the app:
 
 ```bash
