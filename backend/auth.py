@@ -1,8 +1,9 @@
 from datetime import datetime, timedelta, timezone
 from typing import Optional
 
+import jwt
 from fastapi import Cookie, Depends
-from jose import JWTError, jwt
+from jwt import InvalidTokenError
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -36,7 +37,7 @@ async def get_current_user(
             return None
         result = await db.execute(select(User).where(User.id == sub))
         return result.scalar_one_or_none()
-    except JWTError:
+    except InvalidTokenError:
         return None
 
 
