@@ -7,4 +7,4 @@ aiosqlite>=0.20.0
 PyJWT[crypto]>=2.10.1
 pydantic-settings>=2.0.0
 itsdangerous>=2.1.0
-aiofiles>=23.2.0
+aiofiles>=25.1.0
