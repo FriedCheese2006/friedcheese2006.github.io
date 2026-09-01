@@ -4,6 +4,12 @@
 
 PROSPECTOR is a browser-based crafting planner for [ICARUS](https://store.steampowered.com/app/1149460/ICARUS/). Build item and food plans, compare recipe alternatives, expand ingredient trees, and track completed requirements.
 
+## Attribution and Disclaimer
+
+PROSPECTOR is based on [Drumstix42's Icarus Calculator](https://github.com/Drumstix42/drumstix42.github.io). Its game-file extraction and import workflow, including the Ue4Export setup, data-table mapping, and item-icon flow, was derived from that project and subsequently modified. The upstream project and this derivative are distributed under the [Apache License 2.0](LICENSE).
+
+PROSPECTOR is an unofficial fan project. It is not affiliated with, endorsed by, or sponsored by ICARUS, RocketWerkz, or any of their subsidiaries. Game names, data, imagery, and related marks remain the property of their respective owners.
+
 ## Usage
 
 Open the hosted app at [friedcheese2006.github.io](https://friedcheese2006.github.io/).

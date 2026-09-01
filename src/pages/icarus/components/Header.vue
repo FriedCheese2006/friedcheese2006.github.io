@@ -26,13 +26,13 @@
                         About PROSPECTOR
                     </n-tooltip>
                     <div v-if="ssoEnabled" class="auth-section flex align-items-center ml-2">
-                    <template v-if="isLoggedIn">
-                        <span class="user-name mr-2">{{ user.name || user.email }}</span>
-                        <n-button size="small" @click="logout">Sign out</n-button>
-                    </template>
-                    <template v-else>
-                        <n-button size="small" type="primary" @click="login">Sign in</n-button>
-                    </template>
+                        <template v-if="isLoggedIn">
+                            <span class="user-name mr-2">{{ user.name || user.email }}</span>
+                            <n-button size="small" @click="logout">Sign out</n-button>
+                        </template>
+                        <template v-else>
+                            <n-button size="small" type="primary" @click="login">Sign in</n-button>
+                        </template>
                     </div>
                 </div>
             </div>
@@ -40,6 +40,15 @@
         <n-modal v-model:show="showAbout" preset="card" title="About PROSPECTOR" class="about-modal">
             <p class="about-expansion">Planetary Resource Order &amp; Surface Prep Engine for Crafting, Tallying, Output &amp; Requisitions</p>
             <p>An ICARUS crafting planner for building item and food plans, comparing recipes, and tracking requirements.</p>
+            <p>
+                Based on
+                <a href="https://github.com/Drumstix42/drumstix42.github.io" target="_blank" rel="noopener noreferrer">Drumstix42's Icarus Calculator</a>,
+                including its game-file export workflow. Licensed under Apache 2.0.
+            </p>
+            <p class="about-disclaimer">
+                This unofficial fan project is not affiliated with, endorsed by, or sponsored by ICARUS, RocketWerkz, or any of their subsidiaries.
+                Game names, data, imagery, and related marks remain the property of their respective owners.
+            </p>
         </n-modal>
     </header>
 </template>
@@ -146,6 +155,15 @@ export default {
     .about-expansion {
         font-family: var(--font-display);
         font-weight: 700;
+    }
+
+    a {
+        color: var(--primary-color);
+    }
+
+    .about-disclaimer {
+        color: var(--theme-text-dim);
+        font-size: 0.85rem;
     }
 }
 
