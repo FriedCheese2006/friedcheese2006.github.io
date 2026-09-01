@@ -19,7 +19,7 @@
     "dependencies": {
         "@vueform/multiselect": "^2.6.11",
         "@vueuse/core": "^12.7.0",
-        "@vueuse/integrations": "^12.7.0",
+        "@vueuse/integrations": "^14.4.0",
         "debounce": "^2.2.0",
         "fuse.js": "^7.1.0",
         "pinia": "^3.0.4",
