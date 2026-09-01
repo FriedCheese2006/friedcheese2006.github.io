@@ -45,7 +45,7 @@ RUN groupadd --gid 10001 app \
 ENV DATABASE_PATH=/app/data/prospector.db
 VOLUME ["/app/data"]
 
-USER app
+USER 10001:10001
 
 EXPOSE 8000
 

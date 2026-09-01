@@ -40,6 +40,8 @@ docker compose -f docker-compose.image.yml up -d
 
 Open `http://localhost:8000`. The `prospector_data` volume preserves account and synchronized workspace data across container replacements. Anonymous plans continue to use browser storage.
 
+The image and Compose definitions run as UID/GID `10001`, use a read-only root filesystem, drop all Linux capabilities, and prevent privilege escalation. Only `/app/data` and the bounded `/tmp` filesystem are writable. If you replace the named volume with a bind mount, its directory must be writable by UID/GID `10001`.
+
 ### Optional OpenID Connect SSO
 
 Copy [.env.example](.env.example) to `.env` and configure an OpenID Connect confidential client. The provider must publish standard discovery metadata and support the authorization code flow with PKCE.
