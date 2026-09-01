@@ -17,6 +17,24 @@
                 <div class="header-actions flex align-items-center ml-auto px-2">
                     <n-tooltip>
                         <template #trigger>
+                            <n-button
+                                tag="a"
+                                quaternary
+                                circle
+                                href="https://github.com/FriedCheese2006/friedcheese2006.github.io"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="View PROSPECTOR on GitHub"
+                            >
+                                <template #icon>
+                                    <n-icon><Github /></n-icon>
+                                </template>
+                            </n-button>
+                        </template>
+                        View source on GitHub
+                    </n-tooltip>
+                    <n-tooltip>
+                        <template #trigger>
                             <n-button quaternary circle aria-label="About PROSPECTOR" @click="showAbout = true">
                                 <template #icon>
                                     <n-icon><InfoCircle /></n-icon>
@@ -54,13 +72,13 @@
 </template>
 
 <script>
-import { InfoCircle } from '@vicons/fa';
+import { Github, InfoCircle } from '@vicons/fa';
 import { GAME_ASSETS_URL } from '@/constants/common';
 import { useAuth } from '@/composables/useAuth';
 
 export default {
     name: 'Header',
-    components: { InfoCircle },
+    components: { Github, InfoCircle },
     props: [],
     setup() {
         const { user, isLoggedIn, ssoEnabled, login, logout } = useAuth();
