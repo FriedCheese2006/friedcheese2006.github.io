@@ -39,7 +39,7 @@ jobs:
         run: npm ci
 
       - name: Install backend dependencies
-        run: pip install -r backend/requirements.txt
+        run: python -m pip install --require-hashes -r backend/requirements.txt
 
       - name: Run frontend tests
         run: npm test
