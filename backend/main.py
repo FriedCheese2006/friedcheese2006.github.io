@@ -1,9 +1,10 @@
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from backend.db import engine
 from backend.models import Base
@@ -11,6 +12,7 @@ from backend.routers import auth as auth_router
 from backend.routers import state as state_router
 
 DIST_PATH = Path(__file__).parent.parent / "dist"
+DIST_FILES = StaticFiles(directory=DIST_PATH, check_dir=False)
 
 
 @asynccontextmanager
@@ -43,15 +45,19 @@ if DIST_PATH.exists():
         )
 
 @app.get("/{full_path:path}")
-async def serve_root(full_path: str):
+async def serve_root(full_path: str, request: Request):
     """Serve a static file if it exists, otherwise fall back to root index.html."""
     if full_path:
-        dist_path = DIST_PATH.resolve()
-        candidate = (dist_path / full_path).resolve()
-        if not candidate.is_relative_to(dist_path):
+        if ".." in full_path.replace("\\", "/").split("/"):
             raise HTTPException(status_code=404)
-        if candidate.is_file():
-            return FileResponse(candidate)
+        try:
+            response = await DIST_FILES.get_response(full_path, request.scope)
+        except StarletteHTTPException as exc:
+            if exc.status_code != 404:
+                raise
+        else:
+            if response.status_code != 404:
+                return response
     index = DIST_PATH / "index.html"
     if index.exists():
         return FileResponse(index)

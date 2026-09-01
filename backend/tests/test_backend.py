@@ -67,6 +67,10 @@ class BackendTestCase(unittest.TestCase):
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.headers["content-type"], "text/html; charset=utf-8")
 
+            response = client.get("/workspace/deep-link")
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.headers["content-type"], "text/html; charset=utf-8")
+
     def test_sso_configuration_requires_complete_provider_and_strong_key(self) -> None:
         with self.assertRaises(ValidationError):
             Settings(oidc_issuer=OIDC_ISSUER)
