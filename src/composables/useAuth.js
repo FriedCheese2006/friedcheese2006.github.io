@@ -1,5 +1,7 @@
 import { ref, readonly, computed } from 'vue';
 
+const backendEnabled = import.meta.env.VITE_BACKEND_ENABLED === 'true';
+
 // Module-level singleton so all components share the same auth state
 const _user = ref(null);
 const _ssoEnabled = ref(false);
@@ -37,7 +39,10 @@ export function useAuth() {
     async function init() {
         if (_initialized) return;
         _initialized = true;
-        await Promise.all([fetchConfig(), fetchUser()]);
+        if (!backendEnabled) return;
+
+        await fetchConfig();
+        if (_ssoEnabled.value) await fetchUser();
     }
 
     function login() {
