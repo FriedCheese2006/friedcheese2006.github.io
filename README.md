@@ -34,25 +34,27 @@ docker compose -f docker-compose.image.yml up -d
 
 Open `http://localhost:8000`. The `icarus_data` volume preserves account and synchronized workspace data across container replacements. Anonymous plans continue to use browser storage.
 
-### Optional Authentik SSO
+### Optional OpenID Connect SSO
 
-Copy [.env.example](.env.example) to `.env` and configure an Authentik OpenID Connect application:
+Copy [.env.example](.env.example) to `.env` and configure an OpenID Connect confidential client. The provider must publish standard discovery metadata and support the authorization code flow with PKCE.
 
 Generate the signing key with `openssl rand -base64 48`, then place its output in `JWT_SECRET_KEY`:
 
 ```dotenv
 APP_BASE_URL=https://icarus.example.com
 JWT_SECRET_KEY=
-AUTHENTIK_ISSUER=https://auth.example.com/application/o/icarus-calculator/
-AUTHENTIK_CLIENT_ID=your-client-id
-AUTHENTIK_CLIENT_SECRET=your-client-secret
+OIDC_ISSUER=https://identity.example.com/tenant
+OIDC_CLIENT_ID=your-client-id
+OIDC_CLIENT_SECRET=your-client-secret
 ```
 
-Set the Authentik redirect URI to:
+Set the provider's redirect URI to:
 
 ```text
 https://icarus.example.com/auth/callback
 ```
+
+The issuer is used to load `/.well-known/openid-configuration`; authorization, token, and user-info endpoints are read from that document.
 
 Restart the stack after changing the environment:
 

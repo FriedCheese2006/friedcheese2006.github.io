@@ -2,7 +2,7 @@ import base64
 import datetime
 import hashlib
 import secrets
-from urllib.parse import urlencode
+from urllib.parse import urlparse
 
 import httpx
 import itsdangerous
@@ -19,18 +19,36 @@ from backend.models import User
 router = APIRouter(prefix="/auth", tags=["auth"])
 
 
-def _get_oauth_base_url(issuer: str) -> str:
-    """Extract OAuth2 endpoint base URL from Authentik issuer.
-    
-    Authentik's issuer includes the app slug:
-      https://auth.example.com/application/o/my-app/
-    
-    But OAuth2 endpoints are shared (no app slug):
-      https://auth.example.com/application/o/
-    
-    This removes the last path segment to get the base URL.
-    """
-    return issuer.rstrip("/").rsplit("/", 1)[0] + "/"
+async def _get_oidc_metadata(client: httpx.AsyncClient, issuer: str) -> dict:
+    response = await client.get(f"{issuer.rstrip('/')}/.well-known/openid-configuration")
+    if response.status_code != 200:
+        raise HTTPException(status_code=502, detail="OIDC discovery failed")
+    try:
+        metadata = response.json()
+    except ValueError as error:
+        raise HTTPException(status_code=502, detail="OIDC discovery returned invalid JSON") from error
+
+    if metadata.get("issuer", "").rstrip("/") != issuer.rstrip("/"):
+        raise HTTPException(status_code=502, detail="OIDC discovery issuer mismatch")
+    issuer_scheme = urlparse(issuer).scheme
+    for field in ("authorization_endpoint", "token_endpoint", "userinfo_endpoint"):
+        endpoint = urlparse(metadata.get(field, ""))
+        if (
+            endpoint.scheme not in {"http", "https"}
+            or not endpoint.netloc
+            or (issuer_scheme == "https" and endpoint.scheme != "https")
+        ):
+            raise HTTPException(status_code=502, detail=f"OIDC discovery is missing a valid {field}")
+    return metadata
+
+
+def _get_token_auth(metadata: dict, client_id: str, client_secret: str) -> tuple[tuple[str, str] | None, dict]:
+    methods = metadata.get("token_endpoint_auth_methods_supported", ["client_secret_basic"])
+    if "client_secret_basic" in methods:
+        return (client_id, client_secret), {}
+    if "client_secret_post" in methods:
+        return None, {"client_id": client_id, "client_secret": client_secret}
+    raise HTTPException(status_code=502, detail="OIDC provider does not support a compatible client authentication method")
 
 
 def _require_sso() -> None:
@@ -38,7 +56,7 @@ def _require_sso() -> None:
     if not get_settings().sso_enabled:
         raise HTTPException(
             status_code=503,
-            detail="SSO is not configured on this server. Set AUTHENTIK_ISSUER, AUTHENTIK_CLIENT_ID, and AUTHENTIK_CLIENT_SECRET env vars to enable it.",
+            detail="SSO is not configured on this server. Set OIDC_ISSUER, OIDC_CLIENT_ID, and OIDC_CLIENT_SECRET to enable it.",
         )
 
 
@@ -60,6 +78,9 @@ async def login():
     _require_sso()
     settings = get_settings()
 
+    async with httpx.AsyncClient() as client:
+        metadata = await _get_oidc_metadata(client, settings.oidc_issuer)
+
     # Generate PKCE challenge
     verifier = secrets.token_urlsafe(64)
     code_challenge = (
@@ -73,21 +94,18 @@ async def login():
     signer = _get_signer()
     cookie_val = signer.dumps({"state": state, "verifier": verifier})
 
-    params = urlencode(
-        {
-            "response_type": "code",
-            "client_id": settings.authentik_client_id,
-            "redirect_uri": f"{settings.app_base_url}/auth/callback",
-            "scope": "openid email profile",
-            "state": state,
-            "code_challenge": code_challenge,
-            "code_challenge_method": "S256",
-        }
-    )
+    params = {
+        "response_type": "code",
+        "client_id": settings.oidc_client_id,
+        "redirect_uri": f"{settings.app_base_url}/auth/callback",
+        "scope": "openid email profile",
+        "state": state,
+        "code_challenge": code_challenge,
+        "code_challenge_method": "S256",
+    }
 
-    oauth_base = _get_oauth_base_url(settings.authentik_issuer)
     redirect = RedirectResponse(
-        url=f"{oauth_base}authorize/?{params}",
+        url=str(httpx.URL(metadata["authorization_endpoint"]).copy_merge_params(params)),
         status_code=302,
     )
     redirect.set_cookie(
@@ -129,27 +147,29 @@ async def callback(
 
     verifier = state_data["verifier"]
 
-    oauth_base = _get_oauth_base_url(settings.authentik_issuer)
-
     # Exchange authorization code for tokens
     async with httpx.AsyncClient() as client:
-        token_resp = await client.post(
-            f"{oauth_base}token/",
-            data={
-                "grant_type": "authorization_code",
-                "code": code,
-                "redirect_uri": f"{settings.app_base_url}/auth/callback",
-                "client_id": settings.authentik_client_id,
-                "client_secret": settings.authentik_client_secret,
-                "code_verifier": verifier,
-            },
+        metadata = await _get_oidc_metadata(client, settings.oidc_issuer)
+        token_data = {
+            "grant_type": "authorization_code",
+            "code": code,
+            "redirect_uri": f"{settings.app_base_url}/auth/callback",
+            "code_verifier": verifier,
+        }
+        token_auth, token_credentials = _get_token_auth(
+            metadata,
+            settings.oidc_client_id,
+            settings.oidc_client_secret,
         )
+        token_data.update(token_credentials)
+
+        token_resp = await client.post(metadata["token_endpoint"], data=token_data, auth=token_auth)
         if token_resp.status_code != 200:
             raise HTTPException(status_code=502, detail="Token exchange failed")
         tokens = token_resp.json()
 
         userinfo_resp = await client.get(
-            f"{oauth_base}userinfo/",
+            metadata["userinfo_endpoint"],
             headers={"Authorization": f"Bearer {tokens['access_token']}"},
         )
         if userinfo_resp.status_code != 200:

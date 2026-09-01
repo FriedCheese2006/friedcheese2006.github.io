@@ -10,13 +10,10 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     database_path: Path = Path("data/icarus.db")
 
-    # SSO — all optional.  When any of these are unset, SSO is disabled and
-    # the app runs in anonymous-only mode (localStorage persistence only).
-    # authentik_issuer should be the OpenID issuer URL, e.g.:
-    # https://auth.example.com/application/o/my-app/
-    authentik_issuer: Optional[str] = None
-    authentik_client_id: Optional[str] = None
-    authentik_client_secret: Optional[str] = None
+    # SSO is enabled when the complete OIDC client configuration is present.
+    oidc_issuer: Optional[str] = None
+    oidc_client_id: Optional[str] = None
+    oidc_client_secret: Optional[str] = None
     jwt_secret_key: Optional[str] = None
     app_base_url: str = "http://localhost:8000"
 
@@ -25,16 +22,16 @@ class Settings(BaseSettings):
     @model_validator(mode="after")
     def validate_sso_configuration(self):
         provider_values = (
-            self.authentik_issuer,
-            self.authentik_client_id,
-            self.authentik_client_secret,
+            self.oidc_issuer,
+            self.oidc_client_id,
+            self.oidc_client_secret,
         )
         if any(provider_values) and not all(provider_values):
-            raise ValueError("Authentik configuration must include issuer, client ID, and client secret")
+            raise ValueError("OIDC configuration must include issuer, client ID, and client secret")
         if all(provider_values):
-            issuer = urlparse(self.authentik_issuer)
-            if issuer.scheme not in {"http", "https"} or not issuer.netloc:
-                raise ValueError("AUTHENTIK_ISSUER must be an absolute HTTP(S) URL")
+            issuer = urlparse(self.oidc_issuer)
+            if issuer.scheme not in {"http", "https"} or not issuer.netloc or issuer.query or issuer.fragment:
+                raise ValueError("OIDC_ISSUER must be an absolute HTTP(S) URL without a query or fragment")
             if (
                 not self.jwt_secret_key
                 or len(self.jwt_secret_key) < 32
@@ -45,11 +42,11 @@ class Settings(BaseSettings):
 
     @property
     def sso_enabled(self) -> bool:
-        """True only when every required Authentik setting is present."""
+        """True only when every required OIDC setting is present."""
         return bool(
-            self.authentik_issuer
-            and self.authentik_client_id
-            and self.authentik_client_secret
+            self.oidc_issuer
+            and self.oidc_client_id
+            and self.oidc_client_secret
             and self.jwt_secret_key
         )
 

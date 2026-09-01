@@ -10,6 +10,7 @@ COPY index.html jsconfig.json vite.config.mjs ./
 COPY public/ public/
 COPY src/ src/
 
+ARG VITE_BACKEND_ENABLED=true
 RUN npm run build
 
 # ── Stage 2: Python backend serving the built frontend ────────────────────────
