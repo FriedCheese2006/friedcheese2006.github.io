@@ -114,6 +114,35 @@ class CatalogTestCase(unittest.TestCase):
         self.assertFalse(catalog["itemsById"]["Metal_Ore"]["isFood"])
         self.assertEqual(catalog["recipesById"]["processor:Iron_Ingot"]["outputs"][0]["itemId"], "Refined_Metal")
 
+    def test_blacklisted_items_are_marked_and_output_only_recipes_are_excluded(self):
+        self.write_base_tables()
+        static_rows = json.loads((self.data_dir / "D_ItemsStatic.json").read_text(encoding="utf-8"))["Rows"]
+        static_rows[0]["Manual_Tags"] = {"GameplayTags": [{"TagName": "FieldGuide.BlackList"}]}
+        static_rows[1]["Manual_Tags"] = {"GameplayTags": [{"TagName": "FieldGuide.BlackList"}]}
+        self.write_table("D_ItemsStatic.json", static_rows)
+        self.write_table(
+            "D_ProcessorRecipes.json",
+            [
+                {
+                    "Name": "Legacy_Iron",
+                    "Inputs": [],
+                    "Outputs": [{"Element": {"RowName": "Iron_Ingot"}, "Count": 1}],
+                },
+                {
+                    "Name": "Visible_Output",
+                    "Inputs": [{"Element": {"RowName": "Metal_Ore"}, "Count": 2}],
+                    "ResourceOutputs": [{"Type": {"Value": "Water"}, "RequiredUnits": 1000}],
+                },
+            ],
+        )
+
+        catalog = build_catalog(self.data_dir, self.icons_dir)
+
+        self.assertTrue(catalog["itemsById"]["Refined_Metal"]["isBlacklisted"])
+        self.assertTrue(catalog["itemsById"]["Metal_Ore"]["isBlacklisted"])
+        self.assertNotIn("processor:Legacy_Iron", catalog["recipesById"])
+        self.assertEqual(catalog["recipeIdsByInputItemId"]["Metal_Ore"], ["processor:Visible_Output"])
+
     def test_extractor_recipe_and_placeholder_are_retained(self):
         self.write_base_tables()
         self.write_table("D_ProcessorRecipes.json", [])
@@ -166,6 +195,52 @@ class CatalogTestCase(unittest.TestCase):
         self.assertEqual(catalog["recipeSetsById"]["Character"]["itemId"], None)
         self.assertNotIn("Character", catalog["itemsById"])
         self.assertEqual(catalog["diagnostics"]["placeholderItems"], [])
+
+    def test_recipe_set_includes_stations_that_share_its_processing_config(self):
+        self.write_base_tables()
+        static_rows = json.loads((self.data_dir / "D_ItemsStatic.json").read_text(encoding="utf-8"))["Rows"]
+        static_rows.extend(
+            [
+                {
+                    "Name": "Mortar_And_Pestle",
+                    "Itemable": {"RowName": "Item_Mortar"},
+                    "Processing": {"RowName": "Mortar_And_Pestle"},
+                },
+                {
+                    "Name": "Windmill",
+                    "Itemable": {"RowName": "Item_Windmill"},
+                    "Processing": {"RowName": "Windmill"},
+                },
+            ]
+        )
+        self.write_table("D_ItemsStatic.json", static_rows)
+        itemable_rows = json.loads((self.data_dir / "D_Itemable.json").read_text(encoding="utf-8"))["Rows"]
+        itemable_rows.extend(
+            [
+                {"Name": "Item_Mortar", "DisplayName": 'NSLOCTEXT("Items", "Mortar", "Mortar and Pestle")'},
+                {"Name": "Item_Windmill", "DisplayName": 'NSLOCTEXT("Items", "Windmill", "Windmill")'},
+            ]
+        )
+        self.write_table("D_Itemable.json", itemable_rows)
+        self.write_table(
+            "D_RecipeSets.json",
+            [{"Name": "Mortar_And_Pestle", "RecipeSetName": 'NSLOCTEXT("Sets", "Mortar", "Mortar and Pestle")'}],
+        )
+        self.write_table(
+            "D_Processing.json",
+            [
+                {"Name": "Mortar_And_Pestle", "DefaultRecipeSet": {"RowName": "Mortar_And_Pestle"}},
+                {"Name": "Windmill", "DefaultRecipeSet": {"RowName": "Mortar_And_Pestle"}},
+            ],
+        )
+        self.write_table("D_ProcessorRecipes.json", [])
+
+        catalog = build_catalog(self.data_dir, self.icons_dir)
+
+        self.assertEqual(
+            [station["label"] for station in catalog["recipeSetsById"]["Mortar_And_Pestle"]["stations"]],
+            ["Mortar and Pestle", "Windmill"],
+        )
 
     def test_placeholder_uses_matching_itemable_metadata(self):
         self.write_base_tables()

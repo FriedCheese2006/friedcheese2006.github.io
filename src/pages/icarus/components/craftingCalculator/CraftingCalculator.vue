@@ -132,7 +132,7 @@ import RequirementTreeNode from './RequirementTreeNode.vue';
 import RecipeSelector from './RecipeSelector.vue';
 import { useIcarusStore } from '@/store/icarus';
 import { isRawItem } from '@/utility/icarusUi';
-import { getItemLabel, getRecipeIdsForItem, getRecipeOutputQuantity, resolveRecipeForItem } from '@/utility/recipeCatalog';
+import { getCraftingStations, getItemLabel, getRecipeIdsForItem, getRecipeOutputQuantity, resolveRecipeForItem } from '@/utility/recipeCatalog';
 import { calculateRequirements, calculateReverseLookup } from '@/utility/requirementTree';
 import { GAME_ASSETS_URL } from '@/constants/common';
 
@@ -218,7 +218,7 @@ export default {
             return getItemLabel(this.catalog, componentId);
         },
         getRecipeSets(node) {
-            return (node.recipeSetIds ?? []).map((recipeSetId) => this.catalog.recipeSetsById[recipeSetId]).filter(Boolean);
+            return getCraftingStations(this.catalog, node.recipeSetIds);
         },
         resolveRecipeForItemId(itemId) {
             return resolveRecipeForItem(this.catalog, itemId, this.tab.recipeOverrides ?? {});

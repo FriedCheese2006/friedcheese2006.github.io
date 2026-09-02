@@ -156,6 +156,7 @@ class ItemResolver:
                 "itemableId": itemable_id if itemable_id and itemable_id != "None" else None,
                 "templateIds": sorted(templates_by_static.get(item_id, [])),
                 "isPlaceholder": False,
+                "isBlacklisted": has_gameplay_tag(static_row, "FieldGuide.BlackList"),
                 "isFood": is_food_item(static_row),
             }
             self._register_alias(item_id, item_id)
@@ -294,6 +295,7 @@ def build_catalog(
         "itemsStatic": load_table(data_dir / "D_ItemsStatic.json"),
         "itemable": load_table(data_dir / "D_Itemable.json"),
         "recipeSets": load_table(data_dir / "D_RecipeSets.json", required=False),
+        "processing": load_table(data_dir / "D_Processing.json", required=False),
     }
     recipe_tables = {
         source: load_table(data_dir / filename, required=source == "processor")
@@ -325,6 +327,9 @@ def build_catalog(
             resource_outputs = normalize_resources(row.get("ResourceOutputs", []), resolver)
             inputs = normalize_elements(row.get("Inputs", []), resolver, recipe_id, output=False) + resource_inputs
             outputs = normalize_elements(row.get("Outputs", []), resolver, recipe_id, output=True) + resource_outputs
+            outputs = [value for value in outputs if not resolver.items[value["itemId"]].get("isBlacklisted", False)]
+            if not outputs:
+                continue
             recipe = {
                 "id": recipe_id,
                 "name": local_id,
@@ -361,6 +366,14 @@ def build_catalog(
         ]
         defaults[item_id] = sorted(matching_ids or candidates, key=lambda value: (value.split(":", 1)[0] != "processor", value))[0]
 
+    processing_rows = row_map(source_tables["processing"].get("Rows", []))
+    station_ids_by_recipe_set: dict[str, list[str]] = defaultdict(list)
+    for station_id, static_row in resolver.statics.items():
+        processing_id = static_row.get("Processing", {}).get("RowName")
+        recipe_set_id = processing_rows.get(processing_id, {}).get("DefaultRecipeSet", {}).get("RowName")
+        if recipe_set_id not in (None, "None"):
+            station_ids_by_recipe_set[recipe_set_id].append(station_id)
+
     recipe_sets = {}
     for row in source_tables["recipeSets"].get("Rows", []):
         recipe_set_id = row.get("Name")
@@ -368,11 +381,23 @@ def build_catalog(
             continue
         item_id = resolver.find_existing(recipe_set_id)
         icon_path = normalize_item_icon_path(row.get("RecipeSetIcon"))
+        station_item_ids = sorted(set(station_ids_by_recipe_set.get(recipe_set_id, [])))
+        if item_id and item_id not in station_item_ids:
+            station_item_ids.append(item_id)
         recipe_sets[recipe_set_id] = {
             "id": recipe_set_id,
             "label": clean_display_text(row.get("RecipeSetName")) or recipe_set_id.replace("_", " "),
             "imagePath": resolver.items.get(item_id, {}).get("imagePath") or icon_path or FALLBACK_IMAGE_PATH,
             "itemId": item_id if item_id in resolver.statics else None,
+            "stations": [
+                {
+                    "id": station_item_id,
+                    "label": resolver.items[station_item_id]["label"],
+                    "imagePath": resolver.items[station_item_id]["imagePath"],
+                    "itemId": station_item_id,
+                }
+                for station_item_id in station_item_ids
+            ],
         }
 
     diagnostics = {
@@ -387,6 +412,7 @@ def build_catalog(
         "D_ItemsStatic.json": len(source_tables["itemsStatic"].get("Rows", [])),
         "D_Itemable.json": len(source_tables["itemable"].get("Rows", [])),
         "D_RecipeSets.json": len(source_tables["recipeSets"].get("Rows", [])),
+        "D_Processing.json": len(source_tables["processing"].get("Rows", [])),
         **{filename: len(recipe_tables[source].get("Rows", [])) for source, filename in RECIPE_TABLES},
     }
     return {

@@ -42,6 +42,17 @@ export const getRecipeLabel = (catalog, recipeId) => {
     return recipe.name.replace(/_/g, ' ');
 };
 
+export const getCraftingStations = (catalog, recipeSetIds = []) => {
+    const stationsById = new Map();
+    recipeSetIds.forEach((recipeSetId) => {
+        const recipeSet = catalog.recipeSetsById?.[recipeSetId];
+        if (!recipeSet) return;
+        const stations = recipeSet.stations?.length ? recipeSet.stations : [recipeSet];
+        stations.forEach((station) => stationsById.set(station.itemId ?? station.id, station));
+    });
+    return [...stationsById.values()];
+};
+
 export const getCatalogItemOptions = (catalog) => {
     const relevantItemIds = new Set([
         ...Object.keys(catalog.recipeIdsByOutputItemId ?? {}),
@@ -51,7 +62,7 @@ export const getCatalogItemOptions = (catalog) => {
         .map((itemId) => {
             const item = catalog.itemsById?.[itemId];
             const defaultRecipe = resolveRecipeForItem(catalog, itemId);
-            return item
+            return item && !item.isBlacklisted
                 ? {
                       ...item,
                       recipeCount: getRecipeIdsForItem(catalog, itemId).length,
