@@ -14,6 +14,8 @@ PROSPECTOR is an unofficial fan project. It is not affiliated with, endorsed by,
 
 Open the hosted app at [friedcheese2006.github.io](https://friedcheese2006.github.io/).
 
+![PROSPECTOR showing a Concrete Beam crafting plan with alternate recipes and raw resources](docs/screenshots/prospector-crafting-plan.png)
+
 Plans and settings are stored in your browser. The app can be installed from a supported browser and remains available offline after its core files and required game assets have been cached.
 
 To install it:

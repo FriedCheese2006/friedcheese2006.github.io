@@ -47,25 +47,6 @@ export default {
     flex: 0 0 auto;
     max-height: calc(100vh - var(--app-header-height, 0px) - 1rem);
     overflow-y: auto;
-    
-    /* Custom scrollbar */
-    &::-webkit-scrollbar {
-        width: 8px;
-    }
-    
-    &::-webkit-scrollbar-track {
-        background: rgba(139, 168, 208, 0.08);
-        border-radius: 4px;
-    }
-    
-    &::-webkit-scrollbar-thumb {
-        background: var(--theme-accent-soft);
-        border-radius: 4px;
-        
-        &:hover {
-            background: rgba(124, 182, 255, 0.45);
-        }
-    }
 }
 
 .right-panel {
@@ -73,21 +54,27 @@ export default {
     min-width: 20rem;
     max-height: calc(100vh - var(--app-header-height, 0px) - 1rem);
     overflow-y: auto;
-    
-    /* Custom scrollbar */
+}
+
+.left-panel,
+.right-panel,
+.scroller {
+    scrollbar-color: var(--theme-accent-soft) rgba(139, 168, 208, 0.08);
+    scrollbar-width: thin;
+
     &::-webkit-scrollbar {
         width: 8px;
     }
-    
+
     &::-webkit-scrollbar-track {
         background: rgba(139, 168, 208, 0.08);
         border-radius: 4px;
     }
-    
+
     &::-webkit-scrollbar-thumb {
         background: var(--theme-accent-soft);
         border-radius: 4px;
-        
+
         &:hover {
             background: rgba(124, 182, 255, 0.45);
         }

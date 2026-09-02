@@ -55,6 +55,32 @@ export default {
                     textColor: '#e9f0fb',
                     placeholderColor: '#8ea4c4',
                 },
+                Select: {
+                    menuBoxShadow: '0 14px 36px rgba(2, 8, 16, 0.55)',
+                    peers: {
+                        InternalSelection: {
+                            color: '#132032',
+                            colorActive: '#18273c',
+                            border: '1px solid #2f435f',
+                            borderHover: '1px solid #48658d',
+                            borderActive: '1px solid #7cb6ff',
+                            borderFocus: '1px solid #7cb6ff',
+                            textColor: '#e9f0fb',
+                            arrowColor: '#8ea4c4',
+                        },
+                        InternalSelectMenu: {
+                            color: '#121c2c',
+                            borderRadius: '6px',
+                            optionTextColor: '#d6e6fb',
+                            optionTextColorPressed: '#e9f0fb',
+                            optionTextColorActive: '#9bc9ff',
+                            optionCheckColor: '#7cb6ff',
+                            optionColorPending: 'rgba(124, 182, 255, 0.12)',
+                            optionColorActive: 'rgba(124, 182, 255, 0.08)',
+                            optionColorActivePending: 'rgba(124, 182, 255, 0.18)',
+                        },
+                    },
+                },
                 Card: {
                     color: '#121c2c',
                     borderColor: '#2f435f',
