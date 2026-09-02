@@ -42,6 +42,7 @@ export const calculateRequirements = ({
         if (!recipe || activePath.has(itemId)) return node;
         if (node.recipeSetIds[0]) requiredRecipeSetIds.add(node.recipeSetIds[0]);
 
+        const collectNodeRawResources = collectRawResources && !node.completed;
         const nextPath = new Set(activePath);
         nextPath.add(itemId);
         const multiplier = quantity / node.outputQuantity;
@@ -71,12 +72,12 @@ export const calculateRequirements = ({
             };
             node.children.push(child);
 
-            if (collectRawResources && childIsRaw) {
+            if (collectNodeRawResources && childIsRaw && !child.completed) {
                 addToTotals(rawTotals, input.itemId, inputQuantity);
             }
 
             if (childRecipe && !nextPath.has(input.itemId)) {
-                node.children[index] = buildNode(input.itemId, inputQuantity, nextPath, childKeyPrefix, collectRawResources && !childIsRaw);
+                node.children[index] = buildNode(input.itemId, inputQuantity, nextPath, childKeyPrefix, collectNodeRawResources && !childIsRaw);
             }
         });
         return node;

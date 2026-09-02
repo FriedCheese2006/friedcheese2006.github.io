@@ -118,6 +118,34 @@ describe('requirement traversal', () => {
         expect(result.rawComponents).toEqual([expect.objectContaining({ id: 'Metal_Ore', quantity: 3 })]);
     });
 
+    it('excludes raw resources beneath a completed crafted sub-item', () => {
+        const completedWoodKey = 'primary:Plank:0:processor:Plank>Wood:0:processor:Wood';
+        const result = calculateRequirements({
+            selectedItems: [{ id: 'Plank', quantity: 1 }],
+            catalog,
+            completedNodeKeys: [completedWoodKey],
+            isRawItem: (label) => label === 'Resin',
+        });
+
+        expect(result.requirementTrees.primary[0].children[0].completed).toBe(true);
+        expect(result.requiredItemData).toEqual({ Wood: 2, Resin: 4, Refined_Oil: 1 });
+        expect(result.rawComponents).toEqual([]);
+    });
+
+    it('excludes a completed raw sub-item without removing other raw resources', () => {
+        const completedResinKey = 'primary:Plank:0:processor:Plank>Wood:0:processor:Wood>Resin:0:raw';
+        const result = calculateRequirements({
+            selectedItems: [{ id: 'Plank', quantity: 1 }],
+            catalog,
+            completedNodeKeys: [completedResinKey],
+            isRawItem: (label) => label === 'Resin',
+        });
+
+        expect(result.rawComponents).toEqual([
+            expect.objectContaining({ id: 'Refined_Oil', quantity: 1, quantityUnit: 'L' }),
+        ]);
+    });
+
     it('keeps a sub-item render key stable when its recipe changes', () => {
         const alternateCatalog = {
             ...catalog,
