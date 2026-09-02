@@ -167,6 +167,52 @@ class CatalogTestCase(unittest.TestCase):
         self.assertNotIn("Character", catalog["itemsById"])
         self.assertEqual(catalog["diagnostics"]["placeholderItems"], [])
 
+    def test_recipe_set_includes_stations_that_share_its_processing_config(self):
+        self.write_base_tables()
+        static_rows = json.loads((self.data_dir / "D_ItemsStatic.json").read_text(encoding="utf-8"))["Rows"]
+        static_rows.extend(
+            [
+                {
+                    "Name": "Mortar_And_Pestle",
+                    "Itemable": {"RowName": "Item_Mortar"},
+                    "Processing": {"RowName": "Mortar_And_Pestle"},
+                },
+                {
+                    "Name": "Windmill",
+                    "Itemable": {"RowName": "Item_Windmill"},
+                    "Processing": {"RowName": "Windmill"},
+                },
+            ]
+        )
+        self.write_table("D_ItemsStatic.json", static_rows)
+        itemable_rows = json.loads((self.data_dir / "D_Itemable.json").read_text(encoding="utf-8"))["Rows"]
+        itemable_rows.extend(
+            [
+                {"Name": "Item_Mortar", "DisplayName": 'NSLOCTEXT("Items", "Mortar", "Mortar and Pestle")'},
+                {"Name": "Item_Windmill", "DisplayName": 'NSLOCTEXT("Items", "Windmill", "Windmill")'},
+            ]
+        )
+        self.write_table("D_Itemable.json", itemable_rows)
+        self.write_table(
+            "D_RecipeSets.json",
+            [{"Name": "Mortar_And_Pestle", "RecipeSetName": 'NSLOCTEXT("Sets", "Mortar", "Mortar and Pestle")'}],
+        )
+        self.write_table(
+            "D_Processing.json",
+            [
+                {"Name": "Mortar_And_Pestle", "DefaultRecipeSet": {"RowName": "Mortar_And_Pestle"}},
+                {"Name": "Windmill", "DefaultRecipeSet": {"RowName": "Mortar_And_Pestle"}},
+            ],
+        )
+        self.write_table("D_ProcessorRecipes.json", [])
+
+        catalog = build_catalog(self.data_dir, self.icons_dir)
+
+        self.assertEqual(
+            [station["label"] for station in catalog["recipeSetsById"]["Mortar_And_Pestle"]["stations"]],
+            ["Mortar and Pestle", "Windmill"],
+        )
+
     def test_placeholder_uses_matching_itemable_metadata(self):
         self.write_base_tables()
         itemables = json.loads((self.data_dir / "D_Itemable.json").read_text(encoding="utf-8"))["Rows"]

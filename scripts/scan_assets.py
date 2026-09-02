@@ -5,7 +5,7 @@ Usage:
     python3 scripts/scan_assets.py /path/to/Ue4Export
 
 It performs these operations:
-    1. Copies the six source JSON data files from the export directory.
+    1. Copies the source JSON data files from the export directory.
   2. Walks D_Itemable.json to find every item icon that should exist.
   3. Copies new/updated icons from the UE4 export into public/icarus-game/ItemIcons/.
   4. Removes (orphaned) icons that are no longer referenced or no longer present
@@ -42,6 +42,7 @@ SOURCE_DATA_FILES: dict[str, str] = {
     "D_ProcessorRecipes.json": "Crafting/D_ProcessorRecipes.json",
     "D_ExtractorRecipes.json": "Crafting/D_ExtractorRecipes.json",
     "D_RecipeSets.json": "Crafting/D_RecipeSets.json",
+    "D_Processing.json": "Traits/D_Processing.json",
 }
 
 

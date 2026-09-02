@@ -80,7 +80,7 @@
 
 <script>
 import RecipeSelector from './RecipeSelector.vue';
-import { getRecipeIdsForItem } from '@/utility/recipeCatalog';
+import { getCraftingStations, getRecipeIdsForItem } from '@/utility/recipeCatalog';
 
 export default {
     name: 'RequirementTreeNode',
@@ -126,7 +126,7 @@ export default {
             return getRecipeIdsForItem(this.catalog, this.node.id).length > 1;
         },
         craftingStations() {
-            return (this.node.recipeSetIds ?? []).map((recipeSetId) => this.catalog.recipeSetsById[recipeSetId]).filter(Boolean);
+            return getCraftingStations(this.catalog, this.node.recipeSetIds);
         },
     },
     methods: {

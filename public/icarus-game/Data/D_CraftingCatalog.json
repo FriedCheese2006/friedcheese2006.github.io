@@ -57129,409 +57129,1066 @@
       "id": "Advanced_Alteration_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Advanced_Alteration_Bench.png",
       "itemId": "Advanced_Alteration_Bench",
-      "label": "Advanced Alteration Bench"
+      "label": "Advanced Alteration Bench",
+      "stations": [
+        {
+          "id": "Advanced_Alteration_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Advanced_Alteration_Bench.png",
+          "itemId": "Advanced_Alteration_Bench",
+          "label": "Advanced Alteration Bench"
+        }
+      ]
     },
     "Advanced_Armor_Bench": {
       "id": "Advanced_Armor_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Advanced_Armor_Bench.png",
       "itemId": "Advanced_Armor_Bench",
-      "label": "Advanced Textiles Bench"
+      "label": "Advanced Textiles Bench",
+      "stations": [
+        {
+          "id": "Advanced_Armor_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Advanced_Armor_Bench.png",
+          "itemId": "Advanced_Armor_Bench",
+          "label": "Advanced Textiles Bench"
+        },
+        {
+          "id": "Homestead_Sewing_Machine",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Homestead_Sewing_Machine.png",
+          "itemId": "Homestead_Sewing_Machine",
+          "label": "Homestead Sewing Machine"
+        }
+      ]
     },
     "Advanced_Butchery_Bench": {
       "id": "Advanced_Butchery_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Advanced_Butchery_Bench.png",
       "itemId": null,
-      "label": "Advanced Butchery Bench"
+      "label": "Advanced Butchery Bench",
+      "stations": []
     },
     "Advanced_Kitchen_Bench": {
       "id": "Advanced_Kitchen_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Advanced_Kitchen_Bench.png",
       "itemId": "Advanced_Kitchen_Bench",
-      "label": "Advanced Kitchen Bench"
+      "label": "Advanced Kitchen Bench",
+      "stations": [
+        {
+          "id": "Advanced_Kitchen_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Advanced_Kitchen_Bench.png",
+          "itemId": "Advanced_Kitchen_Bench",
+          "label": "Marble Kitchen Bench"
+        },
+        {
+          "id": "Homestead_Kitchen_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Homestead_Kitchen_Bench.png",
+          "itemId": "Homestead_Kitchen_Bench",
+          "label": "Homestead Kitchen Bench"
+        }
+      ]
     },
     "Alteration_Bench": {
       "id": "Alteration_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Alteration_Bench.png",
       "itemId": "Alteration_Bench",
-      "label": "Alteration Bench"
+      "label": "Alteration Bench",
+      "stations": [
+        {
+          "id": "Alteration_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Alteration_Bench.png",
+          "itemId": "Alteration_Bench",
+          "label": "Alteration Bench"
+        }
+      ]
     },
     "Animal_Bench": {
       "id": "Animal_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Animal_Bench.png",
       "itemId": "Animal_Bench",
-      "label": "Ranching Station"
+      "label": "Ranching Station",
+      "stations": [
+        {
+          "id": "Animal_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Animal_Bench.png",
+          "itemId": "Animal_Bench",
+          "label": "Ranching Station"
+        }
+      ]
     },
     "Anvil_Bench": {
       "id": "Anvil_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Anvil_Bench.png",
       "itemId": "Anvil_Bench",
-      "label": "Anvil Bench"
+      "label": "Anvil Bench",
+      "stations": [
+        {
+          "id": "Anvil_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Anvil_Bench.png",
+          "itemId": "Anvil_Bench",
+          "label": "Anvil Bench"
+        }
+      ]
     },
     "Anvil_Bench_T3": {
       "id": "Anvil_Bench_T3",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Anvil_Bench_T3.png",
       "itemId": "Anvil_Bench_T3",
-      "label": "Forge"
+      "label": "Forge",
+      "stations": [
+        {
+          "id": "Anvil_Bench_T3",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Anvil_Bench_T3.png",
+          "itemId": "Anvil_Bench_T3",
+          "label": "Forge"
+        }
+      ]
     },
     "Anvil_Bench_T4": {
       "id": "Anvil_Bench_T4",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Anvil_Bench_T4.png",
       "itemId": "Anvil_Bench_T4",
-      "label": "Foundry"
+      "label": "Foundry",
+      "stations": [
+        {
+          "id": "Anvil_Bench_T4",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Anvil_Bench_T4.png",
+          "itemId": "Anvil_Bench_T4",
+          "label": "Foundry"
+        },
+        {
+          "id": "Anvil_Bench_T4_v2",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Anvil_Bench_T4_v2.png",
+          "itemId": "Anvil_Bench_T4_v2",
+          "label": "Foundry"
+        }
+      ]
     },
     "Armor_Bench": {
       "id": "Armor_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Armor_Bench.png",
       "itemId": "Armor_Bench",
-      "label": "Textiles Bench"
+      "label": "Textiles Bench",
+      "stations": [
+        {
+          "id": "Armor_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Armor_Bench.png",
+          "itemId": "Armor_Bench",
+          "label": "Textiles Bench"
+        }
+      ]
     },
     "Biomass_Exchange": {
       "id": "Biomass_Exchange",
       "imagePath": "/icarus-game/Images/question-mark.png",
       "itemId": null,
-      "label": "Biomass Exchange"
+      "label": "Biomass Exchange",
+      "stations": [
+        {
+          "id": "Eden_NPC_Norex",
+          "imagePath": "/icarus-game/Images/question-mark.png",
+          "itemId": "Eden_NPC_Norex",
+          "label": "Norex Liaison 'Agent'"
+        }
+      ]
     },
     "Butchery_Bench": {
       "id": "Butchery_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Butchery_Bench.png",
       "itemId": "Butchery_Bench",
-      "label": "Butchery Bench"
+      "label": "Butchery Bench",
+      "stations": [
+        {
+          "id": "Butchery_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Butchery_Bench.png",
+          "itemId": "Butchery_Bench",
+          "label": "Butchery Bench"
+        },
+        {
+          "id": "Homestead_Kitchen_Butchery",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Homestead_Kitchen_Butchery.png",
+          "itemId": "Homestead_Kitchen_Butchery",
+          "label": "Homestead Butchery Bench"
+        }
+      ]
     },
     "Campfire": {
       "id": "Campfire",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Campfire.png",
       "itemId": "Campfire",
-      "label": "Campfire"
+      "label": "Campfire",
+      "stations": [
+        {
+          "id": "Campfire",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Campfire.png",
+          "itemId": "Campfire",
+          "label": "Campfire"
+        },
+        {
+          "id": "Electric_Fireplace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Electric_Fireplace.png",
+          "itemId": "Electric_Fireplace",
+          "label": "Electric Fireplace"
+        },
+        {
+          "id": "Fireplace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fireplace.png",
+          "itemId": "Fireplace",
+          "label": "Fireplace"
+        },
+        {
+          "id": "Gas_Fireplace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Gas_Fireplace.png",
+          "itemId": "Gas_Fireplace",
+          "label": "Biofuel Fireplace"
+        },
+        {
+          "id": "Gold_Fireplace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Gold_Fireplace.png",
+          "itemId": "Gold_Fireplace",
+          "label": "Art Deco Fireplace"
+        },
+        {
+          "id": "Homestead_Fireplace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Homestead_Fireplace.png",
+          "itemId": "Homestead_Fireplace",
+          "label": "Homestead Fireplace"
+        },
+        {
+          "id": "Meta_Campfire_Printed",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Meta_Campfire_Printed.png",
+          "itemId": "Meta_Campfire_Printed",
+          "label": "MXC Campfire"
+        },
+        {
+          "id": "Mission_Burner",
+          "imagePath": "/icarus-game/ItemIcons/Props/T_ITEM_Prop_Lab_Stand_B.png",
+          "itemId": "Mission_Burner",
+          "label": "Burner"
+        },
+        {
+          "id": "StoneBrick_Fireplace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_StoneBrick_Fireplace.png",
+          "itemId": "StoneBrick_Fireplace",
+          "label": "Stone Brick Fireplace"
+        },
+        {
+          "id": "Wood_Burner",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Wood_Burner.png",
+          "itemId": "Wood_Burner",
+          "label": "Wood Burner"
+        }
+      ]
     },
     "Carpentry_Bench": {
       "id": "Carpentry_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Carpentry_Bench.png",
       "itemId": "Carpentry_Bench",
-      "label": "Carpentry Bench"
+      "label": "Carpentry Bench",
+      "stations": [
+        {
+          "id": "Carpentry_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Carpentry_Bench.png",
+          "itemId": "Carpentry_Bench",
+          "label": "Carpentry Bench"
+        }
+      ]
     },
     "Carpentry_Bench_T4": {
       "id": "Carpentry_Bench_T4",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Carpentry_Bench_T4.png",
       "itemId": "Carpentry_Bench_T4",
-      "label": "Electric Carpentry Bench"
+      "label": "Electric Carpentry Bench",
+      "stations": [
+        {
+          "id": "Carpentry_Bench_T4",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Carpentry_Bench_T4.png",
+          "itemId": "Carpentry_Bench_T4",
+          "label": "Electric Carpentry Bench"
+        }
+      ]
     },
     "Cement_Mixer": {
       "id": "Cement_Mixer",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Cement_Mixer.png",
       "itemId": "Cement_Mixer",
-      "label": "Cement Mixer"
+      "label": "Cement Mixer",
+      "stations": [
+        {
+          "id": "Cement_Mixer",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Cement_Mixer.png",
+          "itemId": "Cement_Mixer",
+          "label": "Cement Mixer"
+        }
+      ]
     },
     "Character": {
       "id": "Character",
       "imagePath": "/icarus-game/Images/question-mark.png",
       "itemId": null,
-      "label": "Character"
+      "label": "Character",
+      "stations": [
+        {
+          "id": "FieldGuide_Character",
+          "imagePath": "/icarus-game/Images/question-mark.png",
+          "itemId": "FieldGuide_Character",
+          "label": "Character Crafting"
+        }
+      ]
     },
     "Chemistry_Bench": {
       "id": "Chemistry_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Chemistry_Bench.png",
       "itemId": "Chemistry_Bench",
-      "label": "Chemistry Bench"
+      "label": "Chemistry Bench",
+      "stations": [
+        {
+          "id": "Chemistry_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Chemistry_Bench.png",
+          "itemId": "Chemistry_Bench",
+          "label": "Chemistry Bench"
+        }
+      ]
     },
     "Cleaning_Device": {
       "id": "Cleaning_Device",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_T3_Cleaning_Device.png",
       "itemId": null,
-      "label": "Cleaning Device"
+      "label": "Cleaning Device",
+      "stations": [
+        {
+          "id": "T3_Cleaning_Device",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_T3_Cleaning_Device.png",
+          "itemId": "T3_Cleaning_Device",
+          "label": "Biofuel Bio-Cleaner"
+        }
+      ]
     },
     "Composter": {
       "id": "Composter",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Composter.png",
       "itemId": "Composter",
-      "label": "Composter"
+      "label": "Composter",
+      "stations": [
+        {
+          "id": "Composter",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Composter.png",
+          "itemId": "Composter",
+          "label": "Biofuel Composter"
+        },
+        {
+          "id": "Composter_Electric",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Composter_Electric.png",
+          "itemId": "Composter_Electric",
+          "label": "Electric Composter"
+        },
+        {
+          "id": "Faction_MIssion_Analyzer",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Composter_Electric.png",
+          "itemId": "Faction_MIssion_Analyzer",
+          "label": "Electric Composter"
+        }
+      ]
     },
     "Composter_Wood": {
       "id": "Composter_Wood",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Composter_Wood.png",
       "itemId": "Composter_Wood",
-      "label": "Wood Composter"
+      "label": "Wood Composter",
+      "stations": [
+        {
+          "id": "Composter_Wood",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Composter_Wood.png",
+          "itemId": "Composter_Wood",
+          "label": "Wood Composter"
+        }
+      ]
     },
     "Concrete_Furnace": {
       "id": "Concrete_Furnace",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Concrete_Furnace.png",
       "itemId": "Kit_Concrete_Furnace",
-      "label": "Concrete Furnace"
+      "label": "Concrete Furnace",
+      "stations": [
+        {
+          "id": "Concrete_Furnace_V2",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Concrete_Furnace_V2.png",
+          "itemId": "Concrete_Furnace_V2",
+          "label": "Concrete Furnace"
+        },
+        {
+          "id": "Kit_Concrete_Furnace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Concrete_Furnace.png",
+          "itemId": "Kit_Concrete_Furnace",
+          "label": "Concrete Furnace"
+        }
+      ]
     },
     "Cooking_Station": {
       "id": "Cooking_Station",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Cooking_Station.png",
       "itemId": "Cooking_Station",
-      "label": "Cooking Station"
+      "label": "Cooking Station",
+      "stations": [
+        {
+          "id": "Cooking_Station",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Cooking_Station.png",
+          "itemId": "Cooking_Station",
+          "label": "Cooking Station"
+        },
+        {
+          "id": "Cooking_Station_V2",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Cooking_Station_V2.png",
+          "itemId": "Cooking_Station_V2",
+          "label": "Cooking Station"
+        }
+      ]
     },
     "Crafting_Bench": {
       "id": "Crafting_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Crafting_Bench.png",
       "itemId": "Crafting_Bench",
-      "label": "Crafting Bench"
+      "label": "Crafting Bench",
+      "stations": [
+        {
+          "id": "Crafting_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Crafting_Bench.png",
+          "itemId": "Crafting_Bench",
+          "label": "Crafting Bench"
+        }
+      ]
     },
     "Crops_Exchange": {
       "id": "Crops_Exchange",
       "imagePath": "/icarus-game/Images/question-mark.png",
       "itemId": null,
-      "label": "Crops Exchange"
+      "label": "Crops Exchange",
+      "stations": [
+        {
+          "id": "Eden_NPC_Farmer",
+          "imagePath": "/icarus-game/Images/question-mark.png",
+          "itemId": "Eden_NPC_Farmer",
+          "label": "Cultivation Specialist Henrickson"
+        }
+      ]
     },
     "Drying_Rack": {
       "id": "Drying_Rack",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_DryingRack.png",
       "itemId": "Drying_Rack",
-      "label": "Drying Rack"
+      "label": "Drying Rack",
+      "stations": [
+        {
+          "id": "Drying_Rack",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_DryingRack.png",
+          "itemId": "Drying_Rack",
+          "label": "Drying Rack"
+        }
+      ]
     },
     "Electric_Armor_Bench": {
       "id": "Electric_Armor_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Electric_Armor_Bench.png",
       "itemId": "Electric_Armor_Bench",
-      "label": "Electric Textiles Bench"
+      "label": "Electric Textiles Bench",
+      "stations": [
+        {
+          "id": "Electric_Armor_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Electric_Armor_Bench.png",
+          "itemId": "Electric_Armor_Bench",
+          "label": "Electric Textiles Bench"
+        }
+      ]
     },
     "Electric_Furnace": {
       "id": "Electric_Furnace",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Electric_Furnace.png",
       "itemId": "Kit_Electric_Furnace",
-      "label": "Electric Furnace"
+      "label": "Electric Furnace",
+      "stations": [
+        {
+          "id": "Electric_Furnace_Large",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Electric_Furnace_Large.png",
+          "itemId": "Electric_Furnace_Large",
+          "label": "Electric Furnace"
+        },
+        {
+          "id": "Kit_Electric_Furnace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Electric_Furnace.png",
+          "itemId": "Kit_Electric_Furnace",
+          "label": "Electric Furnace"
+        }
+      ]
     },
     "Electric_Stove": {
       "id": "Electric_Stove",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Electric_Stove.png",
       "itemId": "Electric_Stove",
-      "label": "Electric Stove"
+      "label": "Electric Stove",
+      "stations": [
+        {
+          "id": "Electric_Stove",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Electric_Stove.png",
+          "itemId": "Electric_Stove",
+          "label": "Electric Stove"
+        }
+      ]
     },
     "Exotic_Processor": {
       "id": "Exotic_Processor",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Exotic_Processor.png",
       "itemId": "Exotic_Processor",
-      "label": "Exotic Processor"
+      "label": "Exotic Processor",
+      "stations": [
+        {
+          "id": "Exotic_Processor",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Exotic_Processor.png",
+          "itemId": "Exotic_Processor",
+          "label": "Organic Residue Cleanser"
+        }
+      ]
     },
     "Fabricator": {
       "id": "Fabricator",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fabricator.png",
       "itemId": "Fabricator",
-      "label": "Fabricator"
+      "label": "Fabricator",
+      "stations": [
+        {
+          "id": "Fabricator",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fabricator.png",
+          "itemId": "Fabricator",
+          "label": "Fabricator"
+        }
+      ]
     },
     "Firepit": {
       "id": "Firepit",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_FirePit.png",
       "itemId": "FirePit",
-      "label": "Firepit"
+      "label": "Firepit",
+      "stations": [
+        {
+          "id": "FirePit",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_FirePit.png",
+          "itemId": "FirePit",
+          "label": "Firepit"
+        }
+      ]
     },
     "Fish_Exchange": {
       "id": "Fish_Exchange",
       "imagePath": "/icarus-game/Images/question-mark.png",
       "itemId": null,
-      "label": "Fish Exchange"
+      "label": "Fish Exchange",
+      "stations": [
+        {
+          "id": "Eden_NPC_Fisher",
+          "imagePath": "/icarus-game/Images/question-mark.png",
+          "itemId": "Eden_NPC_Fisher",
+          "label": "Chief Fisheries Officer Dunski"
+        }
+      ]
     },
     "Fishing_Bench_Recipes": {
       "id": "Fishing_Bench_Recipes",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fishing_Bench.png",
       "itemId": null,
-      "label": "Fishing Bench"
+      "label": "Fishing Bench",
+      "stations": [
+        {
+          "id": "Filletting_Station",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fishing_Bench.png",
+          "itemId": "Filletting_Station",
+          "label": "Fishing Bench"
+        }
+      ]
     },
     "Fishing_Bench_Rods": {
       "id": "Fishing_Bench_Rods",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fishing_Bench.png",
       "itemId": null,
-      "label": "Fishing Bench"
+      "label": "Fishing Bench",
+      "stations": [
+        {
+          "id": "Fishing_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fishing_Bench.png",
+          "itemId": "Fishing_Bench",
+          "label": "Fishing Bench"
+        }
+      ]
     },
     "Food_Shop": {
       "id": "Food_Shop",
       "imagePath": "/icarus-game/Images/question-mark.png",
       "itemId": null,
-      "label": "Food Shop"
+      "label": "Food Shop",
+      "stations": [
+        {
+          "id": "Eden_NPC_Chef",
+          "imagePath": "/icarus-game/Images/question-mark.png",
+          "itemId": "Eden_NPC_Chef",
+          "label": "Food Shop"
+        }
+      ]
     },
     "Food_Trough_T4": {
       "id": "Food_Trough_T4",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Food_Trough_T4.png",
       "itemId": "Food_Trough_T4",
-      "label": "Electronic Food Trough"
+      "label": "Electronic Food Trough",
+      "stations": [
+        {
+          "id": "Food_Trough_T4",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Food_Trough_T4.png",
+          "itemId": "Food_Trough_T4",
+          "label": "Electronic Food Trough"
+        }
+      ]
     },
     "Generator_Fuel": {
       "id": "Generator_Fuel",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Generator.png",
       "itemId": null,
-      "label": "Generator"
+      "label": "Generator",
+      "stations": []
     },
     "Glassworking_Bench": {
       "id": "Glassworking_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Glassworking_Bench.png",
       "itemId": "Glassworking_Bench",
-      "label": "Glassworking Bench"
+      "label": "Glassworking Bench",
+      "stations": [
+        {
+          "id": "Glassworking_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Glassworking_Bench.png",
+          "itemId": "Glassworking_Bench",
+          "label": "Glassworking Bench"
+        },
+        {
+          "id": "Glassworking_Bench_V2",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Glassworking_Bench_V2.png",
+          "itemId": "Glassworking_Bench_V2",
+          "label": "Glassworking Bench"
+        }
+      ]
     },
     "Herbalism_Bench": {
       "id": "Herbalism_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Herbalism_Bench.png",
       "itemId": "Herbalism_Bench",
-      "label": "Herbalism Bench"
+      "label": "Herbalism Bench",
+      "stations": [
+        {
+          "id": "Herbalism_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Herbalism_Bench.png",
+          "itemId": "Herbalism_Bench",
+          "label": "Herbalism Bench"
+        }
+      ]
     },
     "Kitchen_Bench": {
       "id": "Kitchen_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Kitchen_Bench.png",
       "itemId": "Kitchen_Bench",
-      "label": "Kitchen Bench"
+      "label": "Kitchen Bench",
+      "stations": [
+        {
+          "id": "Kitchen_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Kitchen_Bench.png",
+          "itemId": "Kitchen_Bench",
+          "label": "Kitchen Bench"
+        }
+      ]
     },
     "Kitchen_Stove": {
       "id": "Kitchen_Stove",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Kitchen_Stove.png",
       "itemId": "Kitchen_Stove",
-      "label": "Kitchen Stove"
+      "label": "Kitchen Stove",
+      "stations": [
+        {
+          "id": "Homestead_Kitchen_Stove",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Homestead_Kitchen_Stove.png",
+          "itemId": "Homestead_Kitchen_Stove",
+          "label": "Homestead Kitchen Stove"
+        },
+        {
+          "id": "Kitchen_Stove",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Kitchen_Stove.png",
+          "itemId": "Kitchen_Stove",
+          "label": "Biofuel Stove"
+        }
+      ]
     },
     "Machining_Bench": {
       "id": "Machining_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Machining_Bench.png",
       "itemId": null,
-      "label": "Machining Bench"
+      "label": "Machining Bench",
+      "stations": [
+        {
+          "id": "Kit_Machining_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Machining_Bench.png",
+          "itemId": "Kit_Machining_Bench",
+          "label": "Machining Bench"
+        }
+      ]
     },
     "Manufacturer": {
       "id": "Manufacturer",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Manufacturer.png",
       "itemId": "Manufacturer",
-      "label": "Manufacturer"
+      "label": "Manufacturer",
+      "stations": [
+        {
+          "id": "Manufacturer",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Manufacturer.png",
+          "itemId": "Manufacturer",
+          "label": "Manufacturer"
+        }
+      ]
     },
     "Masonry_Bench": {
       "id": "Masonry_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Masonry_Bench.png",
       "itemId": "Masonry_Bench",
-      "label": "Masonry Bench"
+      "label": "Masonry Bench",
+      "stations": [
+        {
+          "id": "Masonry_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Masonry_Bench.png",
+          "itemId": "Masonry_Bench",
+          "label": "Masonry Bench"
+        }
+      ]
     },
     "Masonry_Bench_T3": {
       "id": "Masonry_Bench_T3",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Masonry_Bench_T3.png",
       "itemId": "Masonry_Bench_T3",
-      "label": "Advanced Masonry Bench"
+      "label": "Advanced Masonry Bench",
+      "stations": [
+        {
+          "id": "Masonry_Bench_T3",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Masonry_Bench_T3.png",
+          "itemId": "Masonry_Bench_T3",
+          "label": "Advanced Masonry Bench"
+        }
+      ]
     },
     "Masonry_Bench_T4": {
       "id": "Masonry_Bench_T4",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Masonry_Bench_T4.png",
       "itemId": "Masonry_Bench_T4",
-      "label": "Electric Masonry Bench"
+      "label": "Electric Masonry Bench",
+      "stations": [
+        {
+          "id": "Masonry_Bench_T4",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Masonry_Bench_T4.png",
+          "itemId": "Masonry_Bench_T4",
+          "label": "Electric Masonry Bench"
+        }
+      ]
     },
     "Material_Processor": {
       "id": "Material_Processor",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Material_Processor.png",
       "itemId": "Material_Processor",
-      "label": "Material Processor"
+      "label": "Material Processor",
+      "stations": [
+        {
+          "id": "Material_Processor",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Material_Processor.png",
+          "itemId": "Material_Processor",
+          "label": "Material Processor"
+        }
+      ]
     },
     "Medicine_Bench": {
       "id": "Medicine_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Medicine_Bench.png",
       "itemId": "Medicine_Bench",
-      "label": "Medicine Bench"
+      "label": "Medicine Bench",
+      "stations": [
+        {
+          "id": "Homestead_Kitchen_Herbalism",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Homestead_Kitchen_Herbalism.png",
+          "itemId": "Homestead_Kitchen_Herbalism",
+          "label": "Homestead Medicine Bench"
+        },
+        {
+          "id": "Medicine_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Medicine_Bench.png",
+          "itemId": "Medicine_Bench",
+          "label": "Medicine Bench"
+        }
+      ]
     },
     "Meta_Extractor": {
       "id": "Meta_Extractor",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Extractor.png",
       "itemId": null,
-      "label": "Extractor"
+      "label": "Extractor",
+      "stations": []
     },
     "Metal_Oxite_Dissolver": {
       "id": "Metal_Oxite_Dissolver",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Biofuel_Oxite_Dissolver.png",
       "itemId": "Metal_Oxite_Dissolver",
-      "label": "Metal Oxite Dissolver"
+      "label": "Metal Oxite Dissolver",
+      "stations": [
+        {
+          "id": "Meta_Oxite_Dissolver_Printed",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Electric_Oxite_Dissolver.png",
+          "itemId": "Meta_Oxite_Dissolver_Printed",
+          "label": "MXC Oxite Dissolver"
+        },
+        {
+          "id": "Metal_Oxite_Dissolver",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Biofuel_Oxite_Dissolver.png",
+          "itemId": "Metal_Oxite_Dissolver",
+          "label": "Biofuel Oxite Dissolver"
+        }
+      ]
     },
     "Mortar_And_Pestle": {
       "id": "Mortar_And_Pestle",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Mortar_And_Pestle.png",
       "itemId": null,
-      "label": "Mortar And Pestle"
+      "label": "Mortar And Pestle",
+      "stations": [
+        {
+          "id": "Kit_Mortar_And_Pestle",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Mortar_And_Pestle.png",
+          "itemId": "Kit_Mortar_And_Pestle",
+          "label": "Mortar and Pestle"
+        },
+        {
+          "id": "Prop_Mortar_And_Pestle",
+          "imagePath": "/icarus-game/ItemIcons/Props/T_ITEM_Prop_Mortar_And_Pestle.png",
+          "itemId": "Prop_Mortar_And_Pestle",
+          "label": "Sterile Mortar & Pestle"
+        },
+        {
+          "id": "Windmill",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Windmill.png",
+          "itemId": "Windmill",
+          "label": "Windmill"
+        }
+      ]
     },
     "Oxite_Dissolver": {
       "id": "Oxite_Dissolver",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Oxite_Dissolver.png",
       "itemId": null,
-      "label": "Oxite Dissolver"
+      "label": "Oxite Dissolver",
+      "stations": [
+        {
+          "id": "Kit_Oxite_Dissolver",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Oxite_Dissolver.png",
+          "itemId": "Kit_Oxite_Dissolver",
+          "label": "Oxite Dissolver"
+        }
+      ]
     },
     "Polymerizer": {
       "id": "Polymerizer",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Polymerizer.png",
       "itemId": "Polymerizer",
-      "label": "Polymerizer"
+      "label": "Polymerizer",
+      "stations": [
+        {
+          "id": "Polymerizer",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Polymerizer.png",
+          "itemId": "Polymerizer",
+          "label": "Polymerizer"
+        }
+      ]
     },
     "PotBellyStove": {
       "id": "PotBellyStove",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_PotBellyStove.png",
       "itemId": "PotBellyStove",
-      "label": "Potbelly Stove"
+      "label": "Potbelly Stove",
+      "stations": [
+        {
+          "id": "Homestead_Iron_Stove",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Homestead_Iron_Stove.png",
+          "itemId": "Homestead_Iron_Stove",
+          "label": "Homestead Iron Stove"
+        },
+        {
+          "id": "PotBellyStove",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_PotBellyStove.png",
+          "itemId": "PotBellyStove",
+          "label": "Potbelly Stove"
+        },
+        {
+          "id": "Workshop_Cooker",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Workshop_Cooker.png",
+          "itemId": "Workshop_Cooker",
+          "label": "MXC Camping Cooker"
+        }
+      ]
     },
     "Rain_Collector": {
       "id": "Rain_Collector",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Rain_Reservoir.png",
       "itemId": null,
-      "label": "Rain Collector"
+      "label": "Rain Collector",
+      "stations": []
     },
     "RefundOnly": {
       "id": "RefundOnly",
       "imagePath": "/icarus-game/Images/question-mark.png",
       "itemId": null,
-      "label": "INVTEXT(\"[DNT] Refund Only\")"
+      "label": "INVTEXT(\"[DNT] Refund Only\")",
+      "stations": []
     },
     "Repair_Bench": {
       "id": "Repair_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Repair_Bench.png",
       "itemId": "Repair_Bench",
-      "label": "Repair Bench"
+      "label": "Repair Bench",
+      "stations": [
+        {
+          "id": "Repair_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Repair_Bench.png",
+          "itemId": "Repair_Bench",
+          "label": "Repair Bench"
+        }
+      ]
     },
     "Rustic_Decorations_Bench": {
       "id": "Rustic_Decorations_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Rustic_Decoration_Bench.png",
       "itemId": null,
-      "label": "Decoration Bench"
+      "label": "Decoration Bench",
+      "stations": [
+        {
+          "id": "Rustic_Decoration_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Rustic_Decoration_Bench.png",
+          "itemId": "Rustic_Decoration_Bench",
+          "label": "Decoration Bench"
+        }
+      ]
     },
     "Seed_Extractor": {
       "id": "Seed_Extractor",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Seed_Extractor.png",
       "itemId": "Seed_Extractor",
-      "label": "Seed Extractor"
+      "label": "Seed Extractor",
+      "stations": [
+        {
+          "id": "Seed_Extractor",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Seed_Extractor.png",
+          "itemId": "Seed_Extractor",
+          "label": "Seed Extractor"
+        }
+      ]
     },
     "Skinning_Bench": {
       "id": "Skinning_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Skinning_Bench.png",
       "itemId": "Kit_Skinning_Bench",
-      "label": "Skinning Bench"
+      "label": "Skinning Bench",
+      "stations": [
+        {
+          "id": "Kit_Skinning_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Skinning_Bench.png",
+          "itemId": "Kit_Skinning_Bench",
+          "label": "Skinning Bench"
+        }
+      ]
     },
     "Stone_Furnace": {
       "id": "Stone_Furnace",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Stone_Furnace.png",
       "itemId": "Kit_Stone_Furnace",
-      "label": "Stone Furnace"
+      "label": "Stone Furnace",
+      "stations": [
+        {
+          "id": "Kit_Stone_Furnace",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Stone_Furnace.png",
+          "itemId": "Kit_Stone_Furnace",
+          "label": "Stone Furnace"
+        },
+        {
+          "id": "Meta_Furnace_Printed",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Meta_Furnace_Printed.png",
+          "itemId": "Meta_Furnace_Printed",
+          "label": "MXC Furnace"
+        }
+      ]
     },
     "T3_Smoker": {
       "id": "T3_Smoker",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Smoker_T3.png",
       "itemId": null,
-      "label": "Smoker"
+      "label": "Smoker",
+      "stations": [
+        {
+          "id": "Smoker_T3",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Smoker_T3.png",
+          "itemId": "Smoker_T3",
+          "label": "Smoker"
+        }
+      ]
     },
     "T4_Smoker": {
       "id": "T4_Smoker",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Smoker_T4.png",
       "itemId": null,
-      "label": "Roaster"
+      "label": "Roaster",
+      "stations": []
     },
     "Trophy_Bench": {
       "id": "Trophy_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Trophy_Bench.png",
       "itemId": "Trophy_Bench",
-      "label": "Trophy Bench"
+      "label": "Trophy Bench",
+      "stations": [
+        {
+          "id": "Trophy_Bench",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Trophy_Bench.png",
+          "itemId": "Trophy_Bench",
+          "label": "Trophy Bench"
+        }
+      ]
     },
     "Uranium_Coverter": {
       "id": "Uranium_Coverter",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Uranium_Converter.png",
       "itemId": null,
-      "label": "Nuclear Centrifuge"
+      "label": "Nuclear Centrifuge",
+      "stations": [
+        {
+          "id": "Uranium_Converter",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Uranium_Converter.png",
+          "itemId": "Uranium_Converter",
+          "label": "Nuclear Centrifuge"
+        }
+      ]
     },
     "Vestige_Exchange": {
       "id": "Vestige_Exchange",
       "imagePath": "/icarus-game/Images/question-mark.png",
       "itemId": null,
-      "label": "Vestige Exchange"
+      "label": "Vestige Exchange",
+      "stations": [
+        {
+          "id": "Eden_NPC_Hunter",
+          "imagePath": "/icarus-game/Images/question-mark.png",
+          "itemId": "Eden_NPC_Hunter",
+          "label": "Predator Control Specialist Liardet"
+        }
+      ]
     },
     "WaterPurifierT2": {
       "id": "WaterPurifierT2",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Water_Purifier_T2.png",
       "itemId": null,
-      "label": "Water Purifier"
+      "label": "Water Purifier",
+      "stations": []
     }
   },
   "recipesById": {
@@ -129482,6 +130139,7 @@
     "D_ItemTemplate.json": 3082,
     "D_Itemable.json": 3462,
     "D_ItemsStatic.json": 3075,
+    "D_Processing.json": 75,
     "D_ProcessorRecipes.json": 2211,
     "D_RecipeSets.json": 68
   }

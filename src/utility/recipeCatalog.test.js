@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import {
     canonicalizeItemId,
     getCatalogItemOptions,
+    getCraftingStations,
     getRecipeOutputQuantity,
     migrateTabToCatalog,
     resolveRecipeForItem,
@@ -75,6 +76,29 @@ describe('recipe catalog selectors', () => {
         expect(getCatalogItemOptions(catalog)).toEqual([
             expect.objectContaining({ id: 'Flour', recipeCount: 2, outputQuantity: 1 }),
             expect.objectContaining({ id: 'Wheat', recipeCount: 0, outputQuantity: 1 }),
+        ]);
+    });
+
+    it('returns every physical station for shared recipe sets with legacy fallback', () => {
+        const stationCatalog = {
+            recipeSetsById: {
+                Material_Processor: { id: 'Material_Processor', label: 'Material Processor', itemId: 'Material_Processor' },
+                Mortar_And_Pestle: {
+                    id: 'Mortar_And_Pestle',
+                    label: 'Mortar and Pestle',
+                    itemId: 'Mortar_And_Pestle',
+                    stations: [
+                        { id: 'Mortar_And_Pestle', label: 'Mortar and Pestle', itemId: 'Mortar_And_Pestle' },
+                        { id: 'Windmill', label: 'Windmill', itemId: 'Windmill' },
+                    ],
+                },
+            },
+        };
+
+        expect(getCraftingStations(stationCatalog, ['Material_Processor', 'Mortar_And_Pestle']).map(({ label }) => label)).toEqual([
+            'Material Processor',
+            'Mortar and Pestle',
+            'Windmill',
         ]);
     });
 });
