@@ -156,6 +156,7 @@ class ItemResolver:
                 "itemableId": itemable_id if itemable_id and itemable_id != "None" else None,
                 "templateIds": sorted(templates_by_static.get(item_id, [])),
                 "isPlaceholder": False,
+                "isBlacklisted": has_gameplay_tag(static_row, "FieldGuide.BlackList"),
                 "isFood": is_food_item(static_row),
             }
             self._register_alias(item_id, item_id)
@@ -326,6 +327,9 @@ def build_catalog(
             resource_outputs = normalize_resources(row.get("ResourceOutputs", []), resolver)
             inputs = normalize_elements(row.get("Inputs", []), resolver, recipe_id, output=False) + resource_inputs
             outputs = normalize_elements(row.get("Outputs", []), resolver, recipe_id, output=True) + resource_outputs
+            outputs = [value for value in outputs if not resolver.items[value["itemId"]].get("isBlacklisted", False)]
+            if not outputs:
+                continue
             recipe = {
                 "id": recipe_id,
                 "name": local_id,

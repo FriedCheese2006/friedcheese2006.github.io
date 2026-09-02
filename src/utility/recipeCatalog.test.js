@@ -79,6 +79,18 @@ describe('recipe catalog selectors', () => {
         ]);
     });
 
+    it('excludes blacklisted items from search options', () => {
+        const catalogWithBlacklistedInput = {
+            ...catalog,
+            itemsById: {
+                ...catalog.itemsById,
+                Wheat: { ...catalog.itemsById.Wheat, isBlacklisted: true },
+            },
+        };
+
+        expect(getCatalogItemOptions(catalogWithBlacklistedInput).map(({ id }) => id)).toEqual(['Flour']);
+    });
+
     it('returns every physical station for shared recipe sets with legacy fallback', () => {
         const stationCatalog = {
             recipeSetsById: {

@@ -62,7 +62,7 @@ export const getCatalogItemOptions = (catalog) => {
         .map((itemId) => {
             const item = catalog.itemsById?.[itemId];
             const defaultRecipe = resolveRecipeForItem(catalog, itemId);
-            return item
+            return item && !item.isBlacklisted
                 ? {
                       ...item,
                       recipeCount: getRecipeIdsForItem(catalog, itemId).length,

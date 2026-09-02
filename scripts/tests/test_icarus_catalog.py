@@ -114,6 +114,35 @@ class CatalogTestCase(unittest.TestCase):
         self.assertFalse(catalog["itemsById"]["Metal_Ore"]["isFood"])
         self.assertEqual(catalog["recipesById"]["processor:Iron_Ingot"]["outputs"][0]["itemId"], "Refined_Metal")
 
+    def test_blacklisted_items_are_marked_and_output_only_recipes_are_excluded(self):
+        self.write_base_tables()
+        static_rows = json.loads((self.data_dir / "D_ItemsStatic.json").read_text(encoding="utf-8"))["Rows"]
+        static_rows[0]["Manual_Tags"] = {"GameplayTags": [{"TagName": "FieldGuide.BlackList"}]}
+        static_rows[1]["Manual_Tags"] = {"GameplayTags": [{"TagName": "FieldGuide.BlackList"}]}
+        self.write_table("D_ItemsStatic.json", static_rows)
+        self.write_table(
+            "D_ProcessorRecipes.json",
+            [
+                {
+                    "Name": "Legacy_Iron",
+                    "Inputs": [],
+                    "Outputs": [{"Element": {"RowName": "Iron_Ingot"}, "Count": 1}],
+                },
+                {
+                    "Name": "Visible_Output",
+                    "Inputs": [{"Element": {"RowName": "Metal_Ore"}, "Count": 2}],
+                    "ResourceOutputs": [{"Type": {"Value": "Water"}, "RequiredUnits": 1000}],
+                },
+            ],
+        )
+
+        catalog = build_catalog(self.data_dir, self.icons_dir)
+
+        self.assertTrue(catalog["itemsById"]["Refined_Metal"]["isBlacklisted"])
+        self.assertTrue(catalog["itemsById"]["Metal_Ore"]["isBlacklisted"])
+        self.assertNotIn("processor:Legacy_Iron", catalog["recipesById"])
+        self.assertEqual(catalog["recipeIdsByInputItemId"]["Metal_Ore"], ["processor:Visible_Output"])
+
     def test_extractor_recipe_and_placeholder_are_retained(self):
         self.write_base_tables()
         self.write_table("D_ProcessorRecipes.json", [])
