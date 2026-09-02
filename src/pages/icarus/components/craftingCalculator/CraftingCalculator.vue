@@ -89,6 +89,27 @@
                 </div>
             </div>
 
+            <section v-if="!isReverseLookupMode && rawComponents.length > 0" class="raw-resources" aria-labelledby="raw-resources-title">
+                <div class="raw-resources__header">
+                    <h3 id="raw-resources-title" class="panel-title">Raw Resources</h3>
+                    <span class="raw-resources__count">{{ rawComponents.length }} {{ rawComponents.length === 1 ? 'resource' : 'resources' }}</span>
+                </div>
+                <div class="raw-resources__list">
+                    <div v-for="component in rawComponents" :key="component.id" class="raw-resource">
+                        <n-image
+                            class="raw-resource__icon"
+                            width="40"
+                            height="40"
+                            :src="catalog.itemsById[component.id]?.imagePath"
+                            :fallback-src="`${gameAssetsUrl}/Images/question-mark.png`"
+                            :preview-disabled="true"
+                        />
+                        <div class="raw-resource__label">{{ component.label }}</div>
+                        <div class="raw-resource__quantity">{{ formatComponentQuantity(component) }}</div>
+                    </div>
+                </div>
+            </section>
+
             <div v-if="isReverseLookupMode || directReverseLookupResults.length > 0" class="p-1 reverse-lookup">
                 <h3 v-if="!isReverseLookupMode" class="panel-title reverse-lookup__title">Used In</h3>
                 <div v-if="directReverseLookupResults.length === 0" class="empty-subcategory-label">
@@ -154,6 +175,7 @@ export default {
             requiredItemData: {},
             requiredCraftingStations: [],
             requiredComponents: [],
+            rawComponents: [],
             reverseLookupResults: [],
             requirementTrees: {
                 primary: [],
@@ -180,9 +202,6 @@ export default {
         ...mapGetters(useIcarusStore, ['includeStationComponents', 'splitRawComponents']),
         craftableComponents() {
             return this.requiredComponents.filter((item) => !item.isRaw);
-        },
-        rawComponents() {
-            return this.requiredComponents.filter((item) => item.isRaw);
         },
         isReverseLookupMode() {
             const selectedItems = this.tab.items || [];
@@ -216,6 +235,10 @@ export default {
         },
         getComponentLabel(componentId) {
             return getItemLabel(this.catalog, componentId);
+        },
+        formatComponentQuantity(component) {
+            const quantity = component.quantityUnit ? Math.round(component.quantity * 1000) / 1000 : Math.ceil(component.quantity);
+            return component.quantityUnit ? `${quantity} ${component.quantityUnit}` : quantity;
         },
         getRecipeSets(node) {
             return getCraftingStations(this.catalog, node.recipeSetIds);
@@ -344,6 +367,7 @@ export default {
                 this.requiredCraftingStations = [];
                 this.requiredItemData = {};
                 this.requiredComponents = [];
+                this.rawComponents = [];
                 this.requirementTrees = { primary: [], stations: [] };
                 return;
             }
@@ -359,6 +383,7 @@ export default {
             this.requirementTrees = result.requirementTrees;
             this.requiredItemData = result.requiredItemData;
             this.requiredComponents = result.requiredComponents;
+            this.rawComponents = result.rawComponents;
             this.requiredCraftingStations = result.requiredRecipeSetIds;
         },
     },
@@ -607,6 +632,67 @@ export default {
     letter-spacing: 0.07em;
     color: var(--theme-text-dim);
     margin-bottom: 0.75rem;
+}
+
+.raw-resources {
+    margin: 0.5rem 0 2rem;
+    padding: 1rem;
+    background: rgba(11, 18, 29, 0.55);
+    border-block: 1px solid var(--theme-border);
+}
+
+.raw-resources__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.raw-resources__count {
+    color: var(--theme-text-dim);
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.raw-resources__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+    gap: 0.5rem;
+}
+
+.raw-resource {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 0.65rem;
+    min-height: 3.5rem;
+    padding: 0.45rem 0.65rem;
+    background: var(--theme-surface-1);
+    border: 1px solid var(--theme-border);
+    border-left: 3px solid var(--theme-success);
+    border-radius: 6px;
+}
+
+.raw-resource__icon {
+    border-radius: 4px;
+}
+
+.raw-resource__label {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    color: var(--theme-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.raw-resource__quantity {
+    color: var(--theme-accent-strong);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .reverse-lookup {

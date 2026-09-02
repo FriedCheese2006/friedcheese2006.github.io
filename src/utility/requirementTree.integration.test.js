@@ -26,6 +26,24 @@ describe('generated catalog requirement regressions', () => {
         expect(bloom.children.map((child) => child.id)).toEqual(['Metal_Ore', 'Coal_Ore']);
     });
 
+    it('rolls up shared raw resources for Manufacturer', () => {
+        const result = calculateRequirements({
+            selectedItems: [{ id: 'Manufacturer', quantity: 1 }],
+            catalog,
+            isRawItem,
+        });
+        const rawComponentsById = Object.fromEntries(result.rawComponents.map((component) => [component.id, component]));
+
+        expect(rawComponentsById.Metal_Ore.quantity).toBeGreaterThan(0);
+        expect(rawComponentsById.Sulfur.quantity).toBeGreaterThan(0);
+        expect(result.rawComponents.filter((component) => component.id === 'Metal_Ore')).toHaveLength(1);
+        expect(result.rawComponents.filter((component) => component.id === 'Sulfur')).toHaveLength(1);
+        expect(result.rawComponents.some((component) => component.label.startsWith('Frozen'))).toBe(false);
+        expect(result.rawComponents.some((component) => component.label.startsWith('Noxious Crust'))).toBe(false);
+        expect(rawComponentsById.Metal_Ore.quantity).toBe(result.requiredItemData.Metal_Ore);
+        expect(rawComponentsById.Sulfur.quantity).toBe(result.requiredItemData.Sulfur);
+    });
+
     it('counts Refined Oil as a terminal raw resource in liters', () => {
         const result = calculateRequirements({
             selectedItems: [{ id: 'Plastics', quantity: 1 }],

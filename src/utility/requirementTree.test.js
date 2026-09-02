@@ -67,7 +67,55 @@ describe('requirement traversal', () => {
         expect(result.requiredComponents.find((item) => item.id === 'Refined_Oil')).toEqual(
             expect.objectContaining({ quantity: 3, quantityUnit: 'L', isRaw: true })
         );
+        expect(result.rawComponents).toEqual([
+            expect.objectContaining({ id: 'Resin', quantity: 12 }),
+            expect.objectContaining({ id: 'Refined_Oil', quantity: 3, quantityUnit: 'L' }),
+        ]);
         expect(result.requiredRecipeSetIds).toEqual(['Bench', 'Sawmill']);
+    });
+
+    it('stops raw totals before alternate processing inputs', () => {
+        const oreCatalog = {
+            ...catalog,
+            itemsById: {
+                ...catalog.itemsById,
+                Metal_Ore: { id: 'Metal_Ore', label: 'Iron Ore', imagePath: '/ore.png' },
+                Frozen_Ore: { id: 'Frozen_Ore', label: 'Frozen Ore', imagePath: '/frozen.png' },
+            },
+            recipesById: {
+                ...catalog.recipesById,
+                'processor:Metal_Ore': {
+                    id: 'processor:Metal_Ore',
+                    name: 'Metal_Ore',
+                    source: 'processor',
+                    enabled: true,
+                    inputs: [{ itemId: 'Frozen_Ore', quantity: 2 }],
+                    outputs: [{ itemId: 'Metal_Ore', quantity: 1 }],
+                    recipeSetIds: ['Cleaner'],
+                },
+                'processor:Plank': {
+                    ...catalog.recipesById['processor:Plank'],
+                    inputs: [{ itemId: 'Metal_Ore', quantity: 3 }],
+                },
+            },
+            recipeIdsByOutputItemId: {
+                ...catalog.recipeIdsByOutputItemId,
+                Metal_Ore: ['processor:Metal_Ore'],
+            },
+            defaultRecipeIdByOutputItemId: {
+                ...catalog.defaultRecipeIdByOutputItemId,
+                Metal_Ore: 'processor:Metal_Ore',
+            },
+        };
+
+        const result = calculateRequirements({
+            selectedItems: [{ id: 'Plank', quantity: 1 }],
+            catalog: oreCatalog,
+            isRawItem: (label) => label.endsWith('Ore'),
+        });
+
+        expect(result.requiredItemData).toEqual({ Metal_Ore: 3, Frozen_Ore: 6 });
+        expect(result.rawComponents).toEqual([expect.objectContaining({ id: 'Metal_Ore', quantity: 3 })]);
     });
 
     it('returns every recipe variant in reverse lookup', () => {
