@@ -12,6 +12,7 @@ node_modules/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+.python-version
 
 # Secrets
 .env
@@ -38,6 +39,4 @@ prompt.md
 dist
 dist-ssr
 *.local
-
-# these file names are too long, and broke things, so they were renamed to shorter, de-duplicated names, that still work with the code
-# explore `git config --system core.longpaths true` as needed
+*.db

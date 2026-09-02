@@ -60648,14 +60648,7 @@
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fishing_Bench.png",
       "itemId": null,
       "label": "Fishing Bench",
-      "stations": [
-        {
-          "id": "Filletting_Station",
-          "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Fishing_Bench.png",
-          "itemId": "Filletting_Station",
-          "label": "Fishing Bench"
-        }
-      ]
+      "stations": []
     },
     "Fishing_Bench_Rods": {
       "id": "Fishing_Bench_Rods",
@@ -60916,12 +60909,6 @@
           "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Mortar_And_Pestle.png",
           "itemId": "Kit_Mortar_And_Pestle",
           "label": "Mortar and Pestle"
-        },
-        {
-          "id": "Prop_Mortar_And_Pestle",
-          "imagePath": "/icarus-game/ItemIcons/Props/T_ITEM_Prop_Mortar_And_Pestle.png",
-          "itemId": "Prop_Mortar_And_Pestle",
-          "label": "Sterile Mortar & Pestle"
         },
         {
           "id": "Windmill",
