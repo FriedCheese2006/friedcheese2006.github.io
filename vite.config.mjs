@@ -1,12 +1,18 @@
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
+import { readFileSync } from 'node:fs';
 import { resolve } from 'path';
 import { VitePWA } from 'vite-plugin-pwa';
 
 const outDir = resolve(import.meta.dirname, 'dist');
 const projectRootDir = import.meta.dirname;
+const { version: appVersion } = JSON.parse(readFileSync(resolve(projectRootDir, 'package.json'), 'utf8'));
+const cacheVersion = `v${appVersion}`;
 
 export default defineConfig({
+    define: {
+        __APP_VERSION__: JSON.stringify(appVersion),
+    },
     plugins: [
         vue(),
         VitePWA({
@@ -35,16 +41,26 @@ export default defineConfig({
                 ],
             },
             workbox: {
-                navigateFallback: '/index.html',
-                navigateFallbackAllowlist: [/^(?!\/(api|auth)\/).*/],
+                navigateFallback: null,
                 cleanupOutdatedCaches: true,
-                globPatterns: ['**/*.{js,css,html,ico,svg,woff,woff2}'],
+                globPatterns: ['**/*.{js,css,ico,svg,woff,woff2}'],
                 runtimeCaching: [
+                    {
+                        urlPattern: ({ request, url }) => request.mode === 'navigate' && !/^\/(api|auth)(\/|$)/.test(url.pathname),
+                        handler: 'NetworkFirst',
+                        options: {
+                            cacheName: 'prospector-pages',
+                            networkTimeoutSeconds: 5,
+                            fetchOptions: { cache: 'no-store' },
+                            cacheableResponse: { statuses: [0, 200] },
+                            expiration: { maxEntries: 10, maxAgeSeconds: 60 * 60 * 24 * 7 },
+                        },
+                    },
                     {
                         urlPattern: /\/icarus-game\/Data\//,
                         handler: 'NetworkFirst',
                         options: {
-                            cacheName: 'game-data',
+                            cacheName: `prospector-game-data-${cacheVersion}`,
                             networkTimeoutSeconds: 5,
                             cacheableResponse: { statuses: [0, 200] },
                             expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 7 },
@@ -54,7 +70,7 @@ export default defineConfig({
                         urlPattern: /\/icarus-game\/ItemIcons\//,
                         handler: 'StaleWhileRevalidate',
                         options: {
-                            cacheName: 'game-icons',
+                            cacheName: `prospector-game-icons-${cacheVersion}`,
                             cacheableResponse: { statuses: [0, 200] },
                             expiration: { maxEntries: 2000, maxAgeSeconds: 60 * 60 * 24 * 30 },
                         },
