@@ -132,6 +132,18 @@ make test
 npm run build
 ```
 
+### Release Versioning
+
+The version in [package.json](package.json) is displayed in the app header and included in the game-data and icon cache names. Bump it for a release with:
+
+```bash
+npm version patch --no-git-tag-version
+```
+
+Use `minor` or `major` instead of `patch` when appropriate. The command updates both `package.json` and `package-lock.json`.
+
+UI updates do not depend on a version bump. The service worker checks the network for page navigations, so a refresh or newly opened tab loads the latest deployed HTML and its hashed assets. An already open tab is not forcibly reloaded, preserving in-progress work; the cached page remains available as an offline fallback.
+
 Build a local container image:
 
 ```bash

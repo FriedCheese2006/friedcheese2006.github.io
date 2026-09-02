@@ -10,7 +10,10 @@
                         :preview-disabled="true"
                     />
                     <div class="brand-copy px-2">
-                        <span class="brand-name">PROSPECTOR</span>
+                        <div class="brand-heading">
+                            <span class="brand-name">PROSPECTOR</span>
+                            <span class="brand-version">v{{ appVersion }}</span>
+                        </div>
                         <span class="brand-expansion">Planetary Resource Order &amp; Surface Prep Engine for Crafting, Tallying, Output &amp; Requisitions</span>
                     </div>
                 </div>
@@ -86,6 +89,7 @@ export default {
     },
     data() {
         return {
+            appVersion: __APP_VERSION__,
             gameAssetsUrl: GAME_ASSETS_URL,
             resizeObserver: null,
             showAbout: false,
@@ -144,9 +148,22 @@ export default {
             flex-direction: column;
         }
 
+        .brand-heading {
+            display: flex;
+            align-items: baseline;
+            gap: 0.45rem;
+        }
+
         .brand-name {
             font-size: 1.08rem;
             letter-spacing: 0.035em;
+        }
+
+        .brand-version {
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: var(--theme-text-dim);
         }
 
         .brand-expansion {
