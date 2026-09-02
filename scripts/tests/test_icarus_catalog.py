@@ -205,11 +205,19 @@ class CatalogTestCase(unittest.TestCase):
                     "Name": "Mortar_And_Pestle",
                     "Itemable": {"RowName": "Item_Mortar"},
                     "Processing": {"RowName": "Mortar_And_Pestle"},
+                    "Manual_Tags": {"GameplayTags": [{"TagName": "Item.Bench"}]},
                 },
                 {
                     "Name": "Windmill",
                     "Itemable": {"RowName": "Item_Windmill"},
                     "Processing": {"RowName": "Windmill"},
+                    "Manual_Tags": {"GameplayTags": [{"TagName": "Item.Bench"}]},
+                },
+                {
+                    "Name": "Prop_Mortar_And_Pestle",
+                    "Itemable": {"RowName": "Item_Prop_Mortar"},
+                    "Processing": {"RowName": "Mortar_And_Pestle"},
+                    "Manual_Tags": {"GameplayTags": [{"TagName": "Item.Decoration.Lab"}]},
                 },
             ]
         )
@@ -219,6 +227,7 @@ class CatalogTestCase(unittest.TestCase):
             [
                 {"Name": "Item_Mortar", "DisplayName": 'NSLOCTEXT("Items", "Mortar", "Mortar and Pestle")'},
                 {"Name": "Item_Windmill", "DisplayName": 'NSLOCTEXT("Items", "Windmill", "Windmill")'},
+                {"Name": "Item_Prop_Mortar", "DisplayName": 'NSLOCTEXT("Items", "PropMortar", "Sterile Mortar & Pestle")'},
             ]
         )
         self.write_table("D_Itemable.json", itemable_rows)
