@@ -118,6 +118,36 @@ describe('requirement traversal', () => {
         expect(result.rawComponents).toEqual([expect.objectContaining({ id: 'Metal_Ore', quantity: 3 })]);
     });
 
+    it('keeps a sub-item render key stable when its recipe changes', () => {
+        const alternateCatalog = {
+            ...catalog,
+            recipesById: {
+                ...catalog.recipesById,
+                'processor:Wood_Alternate': {
+                    ...catalog.recipesById['processor:Wood'],
+                    id: 'processor:Wood_Alternate',
+                    name: 'Wood_Alternate',
+                    inputs: [{ itemId: 'Resin', quantity: 3 }],
+                },
+            },
+            recipeIdsByOutputItemId: {
+                ...catalog.recipeIdsByOutputItemId,
+                Wood: ['processor:Wood', 'processor:Wood_Alternate'],
+            },
+        };
+        const defaultResult = calculateRequirements({ selectedItems: [{ id: 'Plank', quantity: 1 }], catalog: alternateCatalog });
+        const alternateResult = calculateRequirements({
+            selectedItems: [{ id: 'Plank', quantity: 1 }],
+            catalog: alternateCatalog,
+            recipeOverrides: { Wood: 'processor:Wood_Alternate' },
+        });
+        const defaultWood = defaultResult.requirementTrees.primary[0].children[0];
+        const alternateWood = alternateResult.requirementTrees.primary[0].children[0];
+
+        expect(alternateWood.renderKey).toBe(defaultWood.renderKey);
+        expect(alternateWood.nodeKey).not.toBe(defaultWood.nodeKey);
+    });
+
     it('returns every recipe variant in reverse lookup', () => {
         const results = calculateReverseLookup({ selectedItems: [{ id: 'Wood' }], catalog });
 

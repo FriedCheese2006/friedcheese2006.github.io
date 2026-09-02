@@ -76,7 +76,7 @@
                             <div class="requirement-section__ingredients-label">Ingredients:</div>
                             <requirement-tree-node 
                                 v-for="child in node.children"
-                                :key="child.nodeKey ?? `${node.id}-${child.id}-${child.quantity}`" 
+                                :key="child.renderKey ?? child.nodeKey ?? `${node.id}-${child.id}-${child.quantity}`"
                                 :node="child"
                                 :catalog="catalog"
                                 :recipe-overrides="tab.recipeOverrides"

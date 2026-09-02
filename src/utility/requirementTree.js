@@ -26,6 +26,7 @@ export const calculateRequirements = ({
         const node = {
             id: itemId,
             nodeKey,
+            renderKey: keyPrefix,
             quantity,
             label,
             imagePath: item?.imagePath,
@@ -56,6 +57,7 @@ export const calculateRequirements = ({
             const child = {
                 id: input.itemId,
                 nodeKey: childKey,
+                renderKey: childKeyPrefix,
                 quantity: inputQuantity,
                 label: childLabel,
                 imagePath: childItem?.imagePath,

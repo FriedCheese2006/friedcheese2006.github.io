@@ -65,7 +65,7 @@
         <div v-if="hasExpandableContent && isExpanded" class="ingredient-card__children">
             <requirement-tree-node
                 v-for="child in expandedChildren"
-                :key="child.nodeKey ?? `${node.id}-${child.id}-${child.quantity}`"
+                :key="child.renderKey ?? child.nodeKey ?? `${node.id}-${child.id}-${child.quantity}`"
                 :node="child"
                 :depth="depth + 1"
                 :catalog="catalog"
