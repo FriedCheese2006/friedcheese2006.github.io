@@ -13,10 +13,11 @@ export const calculateRequirements = ({
     isRawItem = () => false,
 }) => {
     const totals = {};
+    const rawTotals = {};
     const requiredRecipeSetIds = new Set();
     const completedKeys = new Set(completedNodeKeys);
 
-    const buildNode = (itemId, quantity, activePath, keyPrefix) => {
+    const buildNode = (itemId, quantity, activePath, keyPrefix, collectRawResources = true) => {
         const recipe = resolveRecipeForItem(catalog, itemId, recipeOverrides);
         const recipeId = recipe?.id ?? 'raw';
         const nodeKey = `${keyPrefix}:${recipeId}`;
@@ -25,6 +26,7 @@ export const calculateRequirements = ({
         const node = {
             id: itemId,
             nodeKey,
+            renderKey: keyPrefix,
             quantity,
             label,
             imagePath: item?.imagePath,
@@ -51,13 +53,15 @@ export const calculateRequirements = ({
             const childKey = `${childKeyPrefix}:${childRecipe?.id ?? 'raw'}`;
             const childLabel = getItemLabel(catalog, input.itemId);
             const childItem = catalog.itemsById?.[input.itemId];
+            const childIsRaw = childItem?.isResource || isRawItem(childLabel);
             const child = {
                 id: input.itemId,
                 nodeKey: childKey,
+                renderKey: childKeyPrefix,
                 quantity: inputQuantity,
                 label: childLabel,
                 imagePath: childItem?.imagePath,
-                isRaw: childItem?.isResource || isRawItem(childLabel),
+                isRaw: childIsRaw,
                 quantityUnit: childItem?.quantityUnit ?? input.quantityUnit ?? null,
                 children: [],
                 completed: completedKeys.has(childKey),
@@ -67,8 +71,12 @@ export const calculateRequirements = ({
             };
             node.children.push(child);
 
+            if (collectRawResources && childIsRaw) {
+                addToTotals(rawTotals, input.itemId, inputQuantity);
+            }
+
             if (childRecipe && !nextPath.has(input.itemId)) {
-                node.children[index] = buildNode(input.itemId, inputQuantity, nextPath, childKeyPrefix);
+                node.children[index] = buildNode(input.itemId, inputQuantity, nextPath, childKeyPrefix, collectRawResources && !childIsRaw);
             }
         });
         return node;
@@ -104,11 +112,24 @@ export const calculateRequirements = ({
             };
         })
         .sort((left, right) => right.quantity - left.quantity || left.label.localeCompare(right.label));
+    const rawComponents = Object.entries(rawTotals)
+        .map(([itemId, quantity]) => {
+            const item = catalog.itemsById?.[itemId];
+            return {
+                id: itemId,
+                quantity: item?.quantityUnit ? quantity : Math.ceil(quantity),
+                quantityUnit: item?.quantityUnit ?? null,
+                label: getItemLabel(catalog, itemId),
+                isRaw: true,
+            };
+        })
+        .sort((left, right) => right.quantity - left.quantity || left.label.localeCompare(right.label));
 
     return {
         requirementTrees: { primary, stations },
         requiredItemData: totals,
         requiredComponents,
+        rawComponents,
         requiredRecipeSetIds: [...requiredRecipeSetIds].sort(),
     };
 };

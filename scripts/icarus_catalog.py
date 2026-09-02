@@ -369,6 +369,8 @@ def build_catalog(
     processing_rows = row_map(source_tables["processing"].get("Rows", []))
     station_ids_by_recipe_set: dict[str, list[str]] = defaultdict(list)
     for station_id, static_row in resolver.statics.items():
+        if not has_gameplay_tag(static_row, "Item.Bench"):
+            continue
         processing_id = static_row.get("Processing", {}).get("RowName")
         recipe_set_id = processing_rows.get(processing_id, {}).get("DefaultRecipeSet", {}).get("RowName")
         if recipe_set_id not in (None, "None"):

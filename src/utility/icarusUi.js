@@ -33,7 +33,11 @@ export const rawItemMatchers = Object.freeze([
     'Wood',
 ]);
 
-export const isRawItem = (label) => rawItemMatchers.some((matcher) => (matcher instanceof RegExp ? matcher.test(label) : matcher === label));
+const processedMaterialMatchers = Object.freeze([/^Frozen\b/, /^Noxious Crust\b/]);
+
+export const isRawItem = (label) =>
+    !processedMaterialMatchers.some((matcher) => matcher.test(label)) &&
+    rawItemMatchers.some((matcher) => (matcher instanceof RegExp ? matcher.test(label) : matcher === label));
 
 export function generateHighlightedText(inputText, regions = []) {
     let content = '';
