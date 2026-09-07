@@ -22,7 +22,7 @@
         "@vueuse/integrations": "^14.4.0",
         "debounce": "^2.2.0",
         "fuse.js": "^7.5.0",
-        "pinia": "^3.0.4",
+        "pinia": "^4.0.3",
         "primeflex": "^4.0.0",
         "vue": "^3.5.42",
         "vue-router": "4.5.0",
