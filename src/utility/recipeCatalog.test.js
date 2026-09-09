@@ -91,6 +91,45 @@ describe('recipe catalog selectors', () => {
         expect(getCatalogItemOptions(catalogWithBlacklistedInput).map(({ id }) => id)).toEqual(['Flour']);
     });
 
+    it('excludes placeholder items from search options and migrated tabs', () => {
+        const catalogWithPlaceholder = {
+            ...catalog,
+            itemsById: {
+                ...catalog.itemsById,
+                Missing_Bench: { id: 'Missing_Bench', label: 'Missing Bench', isPlaceholder: true },
+            },
+            recipesById: {
+                ...catalog.recipesById,
+                'processor:Missing_Bench': {
+                    id: 'processor:Missing_Bench',
+                    name: 'Missing_Bench',
+                    enabled: true,
+                    inputs: [],
+                    outputs: [{ itemId: 'Missing_Bench', quantity: 1 }],
+                },
+            },
+            recipeIdsByOutputItemId: {
+                ...catalog.recipeIdsByOutputItemId,
+                Missing_Bench: ['processor:Missing_Bench'],
+            },
+            defaultRecipeIdByOutputItemId: {
+                ...catalog.defaultRecipeIdByOutputItemId,
+                Missing_Bench: 'processor:Missing_Bench',
+            },
+        };
+
+        expect(getCatalogItemOptions(catalogWithPlaceholder).map(({ id }) => id)).toEqual(['Flour', 'Wheat']);
+        expect(
+            migrateTabToCatalog(
+                {
+                    items: [{ id: 'Missing_Bench', quantity: 1 }],
+                    recipeOverrides: { Missing_Bench: 'processor:Missing_Bench' },
+                },
+                catalogWithPlaceholder
+            )
+        ).toEqual({ items: [], recipeOverrides: {}, completedNodeKeys: [] });
+    });
+
     it('returns every physical station for shared recipe sets with legacy fallback', () => {
         const stationCatalog = {
             recipeSetsById: {

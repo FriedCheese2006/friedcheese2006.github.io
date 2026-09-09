@@ -62,7 +62,7 @@ export const getCatalogItemOptions = (catalog) => {
         .map((itemId) => {
             const item = catalog.itemsById?.[itemId];
             const defaultRecipe = resolveRecipeForItem(catalog, itemId);
-            return item && !item.isBlacklisted
+            return item && !item.isBlacklisted && !item.isPlaceholder
                 ? {
                       ...item,
                       recipeCount: getRecipeIdsForItem(catalog, itemId).length,
@@ -80,14 +80,14 @@ export const migrateTabToCatalog = (tab, catalog) => {
 
     Object.entries(tab?.recipeOverrides ?? {}).forEach(([legacyItemId, recipeId]) => {
         const itemId = canonicalizeItemId(catalog, legacyItemId);
-        if (itemId && getRecipeIdsForItem(catalog, itemId).includes(recipeId)) {
+        if (itemId && !catalog.itemsById?.[itemId]?.isPlaceholder && getRecipeIdsForItem(catalog, itemId).includes(recipeId)) {
             recipeOverrides[itemId] = recipeId;
         }
     });
 
     (tab?.items ?? []).forEach((item) => {
         const itemId = canonicalizeItemId(catalog, item.id);
-        if (!itemId) return;
+        if (!itemId || catalog.itemsById?.[itemId]?.isPlaceholder) return;
 
         if (item.recipeId && getRecipeIdsForItem(catalog, itemId).includes(item.recipeId)) {
             recipeOverrides[itemId] = item.recipeId;
