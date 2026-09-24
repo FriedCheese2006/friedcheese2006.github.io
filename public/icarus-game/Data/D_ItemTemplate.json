@@ -20973,17 +20973,6 @@
             }
         },
         {
-            "Name": "Cobalt_Ingot",
-            "ItemStaticData": {
-                "RowName": "Cobalt_Ingot"
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "DangerousHorizons"
-                }
-            }
-        },
-        {
             "Name": "Pyritic_Crust_Lithium",
             "ItemStaticData": {
                 "RowName": "Pyritic_Crust_Lithium"
@@ -25471,7 +25460,7 @@
         {
             "Name": "Pig_Trophy",
             "ItemStaticData": {
-                "RowName": "Piglet_Trophy"
+                "RowName": "Pig_Trophy"
             },
             "Metadata": {
                 "RequiredFeatureLevel": {
@@ -26571,6 +26560,28 @@
             "Name": "Meta_Oxite_Dissolver_Printed",
             "ItemStaticData": {
                 "RowName": "Meta_Oxite_Dissolver_Printed"
+            }
+        },
+        {
+            "Name": "Meta_Powerbank",
+            "ItemStaticData": {
+                "RowName": "Meta_Powerbank"
+            },
+            "ItemDynamicData": [
+                {
+                    "PropertyType": "Fillable_StoredUnits",
+                    "Value": 15000
+                },
+                {
+                    "PropertyType": "Fillable_Type",
+                    "Value": 1
+                }
+            ]
+        },
+        {
+            "Name": "Electric_Seed_Extractor",
+            "ItemStaticData": {
+                "RowName": "Electric_Seed_Extractor"
             }
         },
         {
