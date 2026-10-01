@@ -3711,7 +3711,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Alpha_Desert_Wolf-DisplayName\", \"Alpha Hyena Carcass\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Desert_Wolf.ITEM_AnimalCarcass_Desert_Wolf",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Alpha_Desert_Wolf-Description\", \"A savage hunter.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Alpha_Desert_Wolf-FlavorText\", \"The Formidable Alpha wolf variant endures where little else survives.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Alpha_Desert_Wolf-FlavorText\", \"The formidable Alpha Hyena variant endures where little else survives.\")",
             "Weight": 12000
         },
         {
@@ -4969,7 +4969,7 @@
         },
         {
             "Name": "Item_Meta_Firewhacker_Printed",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Firewhacker_Printed-DisplayName\", \"MXC Firewhacker\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Firewhacker_Printed-DisplayName\", \"MXC Fire Whacker\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/ITEM_Meta_Firewhacker_Printed.ITEM_Meta_Firewhacker_Printed",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Firewhacker_Printed-Description\", \"A 3D printed fire fighting device.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Firewhacker_Printed-FlavorText\", \"Print, whack, snap, repeat.\")",
@@ -9471,7 +9471,7 @@
             "Name": "Item_Fish_Wall_Mount",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Wall_Mount-DisplayName\", \"Fish Trophy Mount\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Fish_Wall_Mount_2.ITEM_Fish_Wall_Mount_2",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Wall_Mount-Description\", \"You may display your favourite catch here for all to see.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Wall_Mount-Description\", \"You may display your favorite catch here for all to see.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Wall_Mount-FlavorText\", \"If only it could sing.\")",
             "Weight": 1000
         },
@@ -9479,7 +9479,7 @@
             "Name": "Item_Aquarium",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Aquarium-DisplayName\", \"Aquarium\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Aquarium.ITEM_Aquarium",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Aquarium-Description\", \"A handy fish tank for keeping your favourite finned friends around, powered by biofuel.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Aquarium-Description\", \"A handy fish tank for keeping your favorite finned friends around, powered by biofuel.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Aquarium-FlavorText\", \"Don\\'t tap on the glass.\")",
             "Weight": 1000
         },
@@ -9487,7 +9487,7 @@
             "Name": "Item_Advanced_Aquarium",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Advanced_Aquarium-DisplayName\", \"Advanced Aquarium\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Advanced_Aquarium.ITEM_Advanced_Aquarium",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Advanced_Aquarium-Description\", \"A very fancy fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Advanced_Aquarium-Description\", \"A very fancy fish tank for keeping your favorite finned friends around, must be connected to both power and water.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Advanced_Aquarium-FlavorText\", \"I repeat, do NOT tap on the glass.\")",
             "Weight": 2500
         },
@@ -9495,7 +9495,7 @@
             "Name": "Item_Large_Advanced_Aquarium",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-DisplayName\", \"Large Advanced Aquarium\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Large_Advanced_Aquarium.ITEM_Large_Advanced_Aquarium",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-Description\", \"A very fancy large fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-Description\", \"A very fancy large fish tank for keeping your favorite finned friends around, must be connected to both power and water.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Large_Advanced_Aquarium-FlavorText\", \"The latest technology for storing your fish friends.\")",
             "Weight": 5000
         },
@@ -9503,7 +9503,7 @@
             "Name": "Item_XL_Advanced_Aquarium",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium-DisplayName\", \"Extra Large Aquarium\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_XL_Advanced_Aquarium.T_ITEM_XL_Advanced_Aquarium",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium-Description\", \"A very fancy large fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium-Description\", \"A very fancy large fish tank for keeping your favorite finned friends around, must be connected to both power and water.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium-FlavorText\", \"The latest technology for storing your fish friends.\")",
             "Weight": 10000
         },
@@ -9511,7 +9511,7 @@
             "Name": "Item_XL_Advanced_Aquarium_Mission",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium_Mission-DisplayName\", \"Extra Large Aquarium\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_XL_Advanced_Aquarium.T_ITEM_XL_Advanced_Aquarium",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium_Mission-Description\", \"A very fancy large fish tank for keeping your favourite finned friends around, must be connected to both power and water.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium_Mission-Description\", \"A very fancy large fish tank for keeping your favorite finned friends around, must be connected to both power and water.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_XL_Advanced_Aquarium_Mission-FlavorText\", \"The latest technology for storing your fish friends.\")",
             "Weight": 10000
         },
@@ -16105,7 +16105,7 @@
             "Name": "Item_Egg",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg-DisplayName\", \"Egg\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Egg.T_ITEM_Egg",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg-Description\", \"A fresh chicken egg, can be cooked in all manner of ways.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg-Description\", \"A fresh egg, can be cooked in all manner of ways.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Egg-FlavorText\", \"An extremely versatile food.\")",
             "Weight": 250,
             "MaxStack": 100
@@ -18300,9 +18300,9 @@
         {
             "Name": "Item_Ape_Attachment",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Attachment-DisplayName\", \"Garganutan Force Attachment\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_AttArmor_SwampApe.T_ITEM_AttArmor_SwampApe",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_AttTool_SwampApe.T_ITEM_AttTool_SwampApe",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Attachment-Description\", \"An attachment which increases melee damage and has a blunt force trauma chance.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Attachment-FlavorText\", \"Can be equipped to a valid armor at an Alteration Bench.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ape_Attachment-FlavorText\", \"Can be equipped to a valid melee weapon at an Alteration Bench.\")",
             "Weight": 500
         },
         {
@@ -18463,6 +18463,7 @@
             "DisplayName": "INVTEXT(\"[DNT] Scyther Module\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_BOSS_WaterScyther.T_ITEM_MODULE_BOSS_WaterScyther",
             "Description": "INVTEXT(\"[DNT]\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Scyther_Module-FlavorText\", \"A heads-up is always handy.\")",
             "Weight": 500
         },
         {
@@ -18545,6 +18546,7 @@
             "DisplayName": "INVTEXT(\"[DNT] Hornet Module\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_BOSS_Hornet.T_ITEM_MODULE_BOSS_Hornet",
             "Description": "INVTEXT(\"[DNT]\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Hornet_Module-FlavorText\", \"A heads-up is always handy.\")",
             "Weight": 500
         },
         {
@@ -18624,6 +18626,7 @@
         {
             "Name": "Item_Plant_Boss_Fertilizer",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Fertilizer-DisplayName\", \"Vineshade Fertilizer\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_PlantBoss_Fertiliser.T_ITEM_PlantBoss_Fertiliser",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Fertilizer-Description\", \"A bag of fertilizer crafted from the spoils of victory against a Vineshade.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Fertilizer-FlavorText\", \"An item that was truly hard-won.\")",
             "Weight": 2000,
@@ -18631,14 +18634,18 @@
         },
         {
             "Name": "Item_Plant_Boss_Module",
-            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Module\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Module-DisplayName\", \"Vineshade Module\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Modules/T_ITEM_MODULE_BOSS_PlantBoss.T_ITEM_MODULE_BOSS_PlantBoss",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Module-Description\", \"Integration module calibrated to isolate the specific thermal frequencies emitted by a Vineshade.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Module-FlavorText\", \"A heads-up is always handy.\")",
             "Weight": 500
         },
         {
             "Name": "Item_Plant_Boss_Attachment",
-            "DisplayName": "INVTEXT(\"[DNT] Plant Boss Attachment\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Attachment-DisplayName\", \"Vineshade Attachment\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_AttTool_PlantBoss.T_ITEM_AttTool_PlantBoss",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Attachment-Description\", \"An attachment that increases the yield of infected bark from trees.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Plant_Boss_Attachment-FlavorText\", \"Can be equipped to a valid armor at an Alteration Bench.\")",
             "Weight": 500
         },
         {
@@ -19346,14 +19353,6 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bunker_Bunk_bed-Description\", \"Good for saving space and providing an adequate sleep environment.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Bunker_Bunk_bed-FlavorText\", \"You can feel like a kid again.\")",
             "Weight": 10000
-        },
-        {
-            "Name": "Item_ElectricMotor",
-            "DisplayName": "INVTEXT(\"[DNT] Electric Motor\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Mission_Alternator.T_ITEM_Mission_Alternator",
-            "Description": "INVTEXT(\"[DNT] Electric Motor\")",
-            "FlavorText": "INVTEXT(\"[DNT] Electric Motor\")",
-            "Weight": 2000
         },
         {
             "Name": "Item_Medical_Scanner",
@@ -20985,7 +20984,7 @@
             "Name": "Item_Ammo_EDS",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_EDS-DisplayName\", \"Enzymatic Mutation Ammo\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_EDS.T_ITEM_EDS",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_EDS-Description\", \"An Enzyme Delivery System - a hard outer case with Enzymes inside. Use with your favourite projectile-firing weapon - pistol, shotgun or rifle.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_EDS-Description\", \"An Enzyme Delivery System - a hard outer case with Enzymes inside. Use with your favorite projectile-firing weapon - pistol, shotgun or rifle.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Ammo_EDS-FlavorText\", \"Rapid mutation results in increased creature danger for increased skinning rewards.\")",
             "Weight": 10,
             "MaxStack": 100
@@ -24691,17 +24690,17 @@
         },
         {
             "Name": "Item_Attachment_Pickaxe_Bauxite_1",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_1-DisplayName\", \"Aluminum Attachment\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_1-DisplayName\", \"Aluminium Attachment\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_ATTACHMENT_BauxiteYield.T_ITEM_ATTACHMENT_BauxiteYield",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_1-Description\", \"An attachment that increases the yield of aluminum.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_1-Description\", \"An attachment that increases the yield of aluminium.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_1-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
             "Weight": 1000
         },
         {
             "Name": "Item_Attachment_Pickaxe_Bauxite_2",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_2-DisplayName\", \"Specialist Aluminum Attachment\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_2-DisplayName\", \"Specialist Aluminium Attachment\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Attachments/T_ITEM_ATTACHMENT_BauxiteYield2.T_ITEM_ATTACHMENT_BauxiteYield2",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_2-Description\", \"An attachment that increases the yield of aluminum.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_2-Description\", \"An attachment that increases the yield of aluminium.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Attachment_Pickaxe_Bauxite_2-FlavorText\", \"Can be equipped to a valid tool at an Alteration Bench.\")",
             "Weight": 1000
         },
@@ -28170,15 +28169,17 @@
             "Weight": 15000
         },
         {
-            "Name": "Item_Settlement_Starter",
-            "DisplayName": "INVTEXT(\"[DNT] Settlement Starter\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Name": "Item_Settlement_Origin",
+            "DisplayName": "INVTEXT(\"[DNT] Settlement Origin\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/FactionMissionTypes/icon-factionmission-build.icon-factionmission-build",
+            "Description": "INVTEXT(\"[DNT] A Settlement can be started here. Interact to Claim.\")",
             "Weight": 10000
         },
         {
-            "Name": "Item_Settlement_Building",
-            "DisplayName": "INVTEXT(\"[DNT] Settlement Building\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Flagpole.T_ITEM_Flagpole",
+            "Name": "Item_Settlement_Building_Tool",
+            "DisplayName": "INVTEXT(\"[DNT] Settlement Building Tool\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/FactionMissionTypes/icon-factionmission-build.icon-factionmission-build",
+            "Description": "INVTEXT(\"[DNT] Can be used to place any unlocked settlement structure in that settlement\\'s tech tree.\")",
             "Weight": 10000
         },
         {
@@ -28305,7 +28306,7 @@
         },
         {
             "Name": "Item_Envirosuit_Colonist",
-            "DisplayName": "INVTEXT(\"[DNT] Colonist Envirosuit\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit_Colonist-DisplayName\", \"Colonist Envirosuit\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Armour/T_ITEM_Envirosuit_Colonist.T_ITEM_Envirosuit_Colonist",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit_Colonist-Description\", \"A suit trialled by the unlucky colonists fo Group 15.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Envirosuit_Colonist-FlavorText\", \"G15 may be evil, but they\\'ve certainly got style.\")",
@@ -28443,7 +28444,7 @@
             "Name": "Item_LegendaryWeapon_Grenade_Launcher",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Grenade_Launcher-DisplayName\", \"MX-7 Rotary Grenade Launcher\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/LegendaryWeapons/T_ITEM_LegendaryWeapon_SlugLauncher.T_ITEM_LegendaryWeapon_SlugLauncher",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Grenade_Launcher-Description\", \"High-capacity rotary launcher engineered to propel heavy explosive canisters over long distances. Eliminates the operational hazard of manually throwing ordnance in unpredictable atmospheric conditions.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Grenade_Launcher-Description\", \"High-capacity rotary launcher engineered to propel heavy explosive canisters over long distances.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_LegendaryWeapon_Grenade_Launcher-FlavorText\", \"Because throwing high-yield explosives by hand is a short path to an early retirement.\")",
             "Weight": 7500
         },
@@ -28570,20 +28571,6 @@
             "Weight": 8000
         },
         {
-            "Name": "Item_Rudimentary_Stone",
-            "DisplayName": "INVTEXT(\"[DNT] Bundle Of Stones\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Launcher_Ammo_Rudimentary_Stone.T_ITEM_Launcher_Ammo_Rudimentary_Stone",
-            "Weight": 300,
-            "MaxStack": 100
-        },
-        {
-            "Name": "Item_Rudimentary_Nails",
-            "DisplayName": "INVTEXT(\"[DNT] Rudimentary Nail Ammo\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Launcher_Ammo_Rudimentary_Nail.T_ITEM_Launcher_Ammo_Rudimentary_Nail",
-            "Weight": 300,
-            "MaxStack": 5
-        },
-        {
             "Name": "Item_Rudimentary_Smoke",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Rudimentary_Smoke-DisplayName\", \"Smoke Bomb\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Launcher_Ammo_Rudimentary_Smoke.T_ITEM_Launcher_Ammo_Rudimentary_Smoke",
@@ -28600,12 +28587,6 @@
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Rudimentary_Grenade-FlavorText\", \"Easy to make - easy to throw - easy to damage. \")",
             "Weight": 300,
             "MaxStack": 10
-        },
-        {
-            "Name": "Item_Rudimentary_Nail_Caltrops",
-            "DisplayName": "INVTEXT(\"[DNT] Rudimentary Caltrops\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/T_ITEM_Launcher_Ammo_Rudimentary_Nail_Caltrop.T_ITEM_Launcher_Ammo_Rudimentary_Nail_Caltrop",
-            "Weight": 50
         },
         {
             "Name": "Item_Mission_Bull",
@@ -28799,6 +28780,7 @@
         {
             "Name": "Item_Roast_Rabbit",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Rabbit-DisplayName\", \"Roast Rabbit\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Skewer_Rabbit.T_ITEM_Roasted_Skewer_Rabbit",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Rabbit-Description\", \"A rabbit roasted whole. Light, quick, and good for covering ground.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Rabbit-FlavorText\", \"Lean enough that you will be hungry again by dusk.\")",
             "Weight": 400,
@@ -28807,6 +28789,7 @@
         {
             "Name": "Item_Roast_Critter",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Critter-DisplayName\", \"Roast Critter\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Skewer_Critter.T_ITEM_Roasted_Skewer_Critter",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Critter-Description\", \"Whatever small thing you caught, roasted on a spit. Survival fare.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Critter-FlavorText\", \"Nobody has to know.\")",
             "Weight": 300,
@@ -28815,6 +28798,7 @@
         {
             "Name": "Item_Roast_Fowl",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fowl-DisplayName\", \"Roast Fowl\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Skewer_Fowl.T_ITEM_Roasted_Skewer_Fowl",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fowl-Description\", \"Roasted wild bird. Light on the stomach and easy on the lungs in thin air.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fowl-FlavorText\", \"Tastes like every other unfamiliar thing on this rock.\")",
             "Weight": 500,
@@ -28823,6 +28807,7 @@
         {
             "Name": "Item_Roast_Fish",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fish-DisplayName\", \"Roast Fish\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Skewer_Fish.T_ITEM_Roasted_Skewer_Fish",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fish-Description\", \"A whole catch roasted together. Light, clean eating that helps you hold your breath.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Fish-FlavorText\", \"It took all morning at the water for one tray.\")",
             "Weight": 500,
@@ -28831,6 +28816,7 @@
         {
             "Name": "Item_Roast_Reptile_Piece",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile_Piece-DisplayName\", \"Roast Reptile Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Reptile.T_ITEM_Roasted_Piece_Reptile",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile_Piece-Description\", \"A portion of cold-blooded meat, oddly steadying.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile_Piece-FlavorText\", \"Tastes like whatever it ate last.\")",
             "Weight": 250,
@@ -28839,6 +28825,7 @@
         {
             "Name": "Item_Roast_Venison_Piece",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison_Piece-DisplayName\", \"Roast Venison Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Venison.T_ITEM_Roasted_Piece_Venison",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison_Piece-Description\", \"A carved portion of lean roast venison.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison_Piece-FlavorText\", \"Cut thin, eaten fast.\")",
             "Weight": 250,
@@ -28847,6 +28834,7 @@
         {
             "Name": "Item_Roast_Panther_Piece",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther_Piece-DisplayName\", \"Roast Panthera Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Panther.T_ITEM_Roasted_Piece_Panther",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther_Piece-Description\", \"A dense, dark portion of prime cat meat.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther_Piece-FlavorText\", \"Chewy, and worth it.\")",
             "Weight": 250,
@@ -28855,6 +28843,7 @@
         {
             "Name": "Item_Roast_Pork_Piece",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork_Piece-DisplayName\", \"Roast Pork Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Pork.T_ITEM_Roasted_Piece_Pork",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork_Piece-Description\", \"A rich, fatty portion carved from the hog.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork_Piece-FlavorText\", \"Crackling included, if you are quick.\")",
             "Weight": 250,
@@ -28863,6 +28852,7 @@
         {
             "Name": "Item_Roast_Exotic_Meat_Piece",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat_Piece-DisplayName\", \"Roast Exotic Meat Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Exotic.T_ITEM_Roasted_Piece_Exotic",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat_Piece-Description\", \"A portion of something the UDA has no menu entry for.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat_Piece-FlavorText\", \"Still taking notes.\")",
             "Weight": 250,
@@ -28871,6 +28861,7 @@
         {
             "Name": "Item_Roast_Mutton_Piece",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton_Piece-DisplayName\", \"Roast Mutton Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Mutton.T_ITEM_Roasted_Piece_Mutton",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton_Piece-Description\", \"A warming portion of fatty roast mutton.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton_Piece-FlavorText\", \"Worth more than the wool. Barely.\")",
             "Weight": 250,
@@ -28879,6 +28870,7 @@
         {
             "Name": "Item_Roast_Wolf_Piece",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf_Piece-DisplayName\", \"Roast Wolf Piece\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Piece_Wolf.T_ITEM_Roasted_Piece_Wolf",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf_Piece-Description\", \"A stringy portion carved off the roast.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf_Piece-FlavorText\", \"The pack will remember this.\")",
             "Weight": 250,
@@ -28887,6 +28879,7 @@
         {
             "Name": "Item_Roast_Venison",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison-DisplayName\", \"Roast Venison\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Venison.T_ITEM_Roast_Whole_Venison",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison-Description\", \"A whole roast deer, carved into 6 portions. Deploy it to serve.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Venison-FlavorText\", \"The reward for a patient stalk and a steady hand.\")",
             "Weight": 2500
@@ -28894,6 +28887,7 @@
         {
             "Name": "Item_Roast_Panther",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther-DisplayName\", \"Roast Panthera\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Panther.T_ITEM_Roast_Whole_Panther",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther-Description\", \"A whole roasted great cat, carved into 8 portions. Deploy it to serve.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Panther-FlavorText\", \"It had the same idea about you.\")",
             "Weight": 2500
@@ -28901,6 +28895,7 @@
         {
             "Name": "Item_Roast_Pork",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork-DisplayName\", \"Roast Pork\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Pork.T_ITEM_Roast_Whole_Pork",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork-Description\", \"A whole hog roast, carved into 6 portions. Deploy it to serve.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Pork-FlavorText\", \"Crackling optional. Highly recommended.\")",
             "Weight": 2500
@@ -28908,6 +28903,7 @@
         {
             "Name": "Item_Roast_Exotic_Meat",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat-DisplayName\", \"Roast Exotic Meat\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Whole_Exotic.T_ITEM_Roasted_Whole_Exotic",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat-Description\", \"A whole roasted oddity, carved into 4 portions. Deploy it to serve.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Exotic_Meat-FlavorText\", \"Field research. Delicious field research.\")",
             "Weight": 2500
@@ -28915,6 +28911,7 @@
         {
             "Name": "Item_Roast_Mutton",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton-DisplayName\", \"Roast Mutton\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Mutton.T_ITEM_Roast_Whole_Mutton",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton-Description\", \"A whole roast sheep, carved into 4 portions. Deploy it to serve.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Mutton-FlavorText\", \"Worth more than the wool. Barely.\")",
             "Weight": 2500
@@ -28922,6 +28919,7 @@
         {
             "Name": "Item_Roast_Wolf",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf-DisplayName\", \"Roast Wolf\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roasted_Whole_Wolf.T_ITEM_Roasted_Whole_Wolf",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf-Description\", \"A whole roasted wolf, carved into 4 portions. Deploy it to serve.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Wolf-FlavorText\", \"The pack will remember this.\")",
             "Weight": 2500
@@ -28929,6 +28927,7 @@
         {
             "Name": "Item_Roast_Reptile",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile-DisplayName\", \"Roast Reptile\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Roast_Whole_Reptile.T_ITEM_Roast_Whole_Reptile",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile-Description\", \"A whole roasted reptile, carved into 4 portions. Deploy it to serve.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roast_Reptile-FlavorText\", \"Tastes like whatever it ate last.\")",
             "Weight": 2500
@@ -29129,6 +29128,31 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-Description\", \"An LED Lantern for illuminating dark corners. Can be recharged in a Charging Station.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-FlavorText\", \"Activate with secondary fire.\")",
             "Weight": 250
+        },
+        {
+            "Name": "Item_Prop_Glass_Display_Cabinet",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Glass_Display_Cabinet-DisplayName\", \"Glass Display Cabinet\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Prop_Glass_Display_Cabinet_Large.T_ITEM_Prop_Glass_Display_Cabinet_Large",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Prop_Glass_Display_Cabinet-Description\", \"A Glass Cabinet for Displaying items.\")",
+            "Weight": 10000,
+            "MaxStack": 5
+        },
+        {
+            "Name": "Pyritic_Crust_Lead",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Pyritic_Crust_Lead-DisplayName\", \"Noxious Crust (Lead)\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Pyritic_Crust.T_ITEM_Pyritic_Crust",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Pyritic_Crust_Lead-Description\", \"A heavily scarred stone with traces of metal and minerals. Use the Organic Residue Cleanser to gain Coal. Toxic to humans, this will damage you when carried.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Pyritic_Crust_Lead-FlavorText\", \"The UDA has issued an Icarus-wide health warning regarding this material. Use at your own risk.\")",
+            "Weight": 250,
+            "MaxStack": 50
+        },
+        {
+            "Name": "Item_Flightless_Tank_Horn",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Flightless_Tank_Horn-DisplayName\", \"Sandhorn Horn\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Flightless_Tank_Horn.T_ITEM_Flightless_Tank_Horn",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flightless_Tank_Horn-Description\", \"A large tusk of the Sandhorn, can be broken down into a large armount of organic resin.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Flightless_Tank_Horn-FlavorText\", \"Is this poaching?\")",
+            "Weight": 7500
         }
     ]
 }
