@@ -16683,12 +16683,6 @@
             }
         },
         {
-            "Name": "Electric_Motor",
-            "ItemStaticData": {
-                "RowName": "Electric_Motor"
-            }
-        },
-        {
             "Name": "Mission_Medical_Device",
             "ItemStaticData": {
                 "RowName": "Mission_Medical_Device"
@@ -26618,6 +26612,24 @@
             "Name": "Fertility_Serum_Tusker",
             "ItemStaticData": {
                 "RowName": "Fertility_Serum_Tusker"
+            }
+        },
+        {
+            "Name": "CreatureBait_Kiwi",
+            "ItemStaticData": {
+                "RowName": "CreatureBait_Kiwi"
+            }
+        },
+        {
+            "Name": "Prop_Glass_Display_Cabinet",
+            "ItemStaticData": {
+                "RowName": "Prop_Glass_Display_Cabinet"
+            }
+        },
+        {
+            "Name": "Flightless_Tank_Horn",
+            "ItemStaticData": {
+                "RowName": "Flightless_Tank_Horn"
             }
         }
     ]
