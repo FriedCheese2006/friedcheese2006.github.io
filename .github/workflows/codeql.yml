@@ -4,9 +4,17 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - "**/*.md"
+      - ".gitignore"
+      - "LICENSE"
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - "**/*.md"
+      - ".gitignore"
+      - "LICENSE"
   schedule:
     - cron: "17 3 * * 0"
   workflow_dispatch:
@@ -37,7 +45,7 @@ jobs:
           persist-credentials: false
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@cdf488f595d80d6e07e03d4674febd5ab45fa938 # v4
+        uses: github/codeql-action/init@cdf488f595d80d6e07e03d4674febd5ab45fa938 # v4.37.9
         with:
           languages: ${{ matrix.language }}
           queries: security-extended
@@ -48,6 +56,6 @@ jobs:
               - public/icarus-game/**
 
       - name: Analyze source
-        uses: github/codeql-action/analyze@cdf488f595d80d6e07e03d4674febd5ab45fa938 # v4
+        uses: github/codeql-action/analyze@cdf488f595d80d6e07e03d4674febd5ab45fa938 # v4.37.9
         with:
           category: /language:${{ matrix.language }}
