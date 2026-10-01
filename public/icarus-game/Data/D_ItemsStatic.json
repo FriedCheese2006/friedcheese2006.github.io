@@ -4284,7 +4284,7 @@
                 "RowName": "Generic_WaterSkin"
             },
             "Consumable": {
-                "RowName": "Canteen"
+                "RowName": "BasicWater"
             },
             "Usable": {
                 "RowName": "Consume_Empty"
@@ -6200,6 +6200,9 @@
                     },
                     {
                         "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -6213,6 +6216,9 @@
                     },
                     {
                         "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -6240,6 +6246,9 @@
                     }
                 ],
                 "ParentTags": []
+            },
+            "Metadata": {
+                "bIsDeprecated": true
             }
         },
         {
@@ -15246,7 +15255,7 @@
                 "RowName": "Generic_WaterSkin"
             },
             "Consumable": {
-                "RowName": "Drink_Sponge"
+                "RowName": "BasicWater"
             },
             "Usable": {
                 "RowName": "Consume_Empty"
@@ -18125,7 +18134,7 @@
                 "RowName": "Generic_WaterSkin"
             },
             "Consumable": {
-                "RowName": "Thermos"
+                "RowName": "BasicWater"
             },
             "Usable": {
                 "RowName": "Consume_Empty"
@@ -33516,6 +33525,112 @@
             }
         },
         {
+            "Name": "AnimalCarcass_Conifer_Wolf_Tame",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Conifer_Wolf_Tame"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Conifer_Wolf"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Equippable": {
+                "RowName": "Equippable_Carcass_Medium"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Carcass_Wolf"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Utilityslot_Drop"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.query.carcass_wolf"
+                    },
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.query.carcass_wolf"
+                    },
+                    {
+                        "TagName": "Traits.Equippable.FocusLock"
+                    },
+                    {
+                        "TagName": "Item.Slot.SkinningBench"
+                    },
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "Item.Utility"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Equippable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "Portable_Beacon",
             "Meshable": {
                 "RowName": "Mesh_Portable_Beacon"
@@ -38632,8 +38747,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1,
                 "(Value=\"IsInvulnerable_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -46220,7 +46345,7 @@
                 "RowName": "Generic_WaterSkin"
             },
             "Consumable": {
-                "RowName": "Canteen_Shengong"
+                "RowName": "BasicWater"
             },
             "Usable": {
                 "RowName": "Consume_Empty"
@@ -50140,8 +50265,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -53933,7 +54068,6 @@
             "AdditionalStats": {
                 "(Value=\"BasePoisonDamage_+\")": 50,
                 "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
-                "(Value=\"BaseMiningRewards_+%\")": -50,
                 "(Value=\"BasePyriticCrustPerMinedResource_%\")": 100,
                 "(Value=\"BaseArmorDamageModifier_+%\")": 500
             },
@@ -60315,6 +60449,9 @@
                     },
                     {
                         "TagName": "Item.Tool.Pickaxe.T2"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -60325,6 +60462,9 @@
                     },
                     {
                         "TagName": "Item.Tool.Pickaxe.T2"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -65414,8 +65554,18 @@
             "AdditionalStats": {
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -67164,6 +67314,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "FactionMission.Item"
+                    },
+                    {
+                        "TagName": "FieldGuide.ForceShowQuestItem"
                     }
                 ]
             },
@@ -67171,6 +67324,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "FactionMission.Item"
+                    },
+                    {
+                        "TagName": "FieldGuide.ForceShowQuestItem"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -101993,7 +102149,6 @@
             "AdditionalStats": {
                 "(Value=\"BasePoisonDamage_+\")": 23,
                 "(Value=\"BaseAttacksCauseMiasma_%\")": 15,
-                "(Value=\"BaseMiningRewards_+%\")": -50,
                 "(Value=\"BasePyriticCrustPerMinedResource_%\")": 100,
                 "(Value=\"BaseArmorDamageModifier_+%\")": 500
             },
@@ -103046,7 +103201,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Iron"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103103,7 +103258,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Gold"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103160,7 +103315,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Copper"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103217,7 +103372,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Silicon"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103274,7 +103429,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Coal"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103331,7 +103486,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Sulfur"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103388,7 +103543,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Bauxite"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103445,7 +103600,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Oxite"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103502,7 +103657,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Titanium"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103559,7 +103714,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Platinum"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103616,7 +103771,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Obsidian"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103673,7 +103828,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Scoria"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103730,7 +103885,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Clay"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103787,7 +103942,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Purple_Exotic"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -103844,7 +103999,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -107367,7 +107522,7 @@
                 "RowName": "Generic_WaterSkin"
             },
             "Consumable": {
-                "RowName": "Warming_Drink"
+                "RowName": "BasicWater"
             },
             "Usable": {
                 "RowName": "Consume_Empty"
@@ -107793,6 +107948,9 @@
                     },
                     {
                         "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -107803,6 +107961,9 @@
                     },
                     {
                         "TagName": "Item.Consumable.Food.Raw"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -140148,14 +140309,14 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Tool"
+                        "TagName": "Item.Tool.Shears"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Tool"
+                        "TagName": "Item.Tool.Shears"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -141466,7 +141627,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Stone"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -141523,7 +141684,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Salt"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -141580,7 +141741,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Limestone"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -153860,9 +154021,6 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
                         "TagName": "Prebuilt.IgnoreUnobtainable"
                     },
                     {
@@ -153872,9 +154030,6 @@
             },
             "Generated_Tags": {
                 "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
                     {
                         "TagName": "Prebuilt.IgnoreUnobtainable"
                     },
@@ -162995,7 +163150,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -163005,7 +163160,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -163085,7 +163240,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -163095,7 +163250,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -163170,6 +163325,9 @@
                     },
                     {
                         "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -163183,6 +163341,9 @@
                     },
                     {
                         "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -163262,7 +163423,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -163272,7 +163433,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -163352,7 +163513,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -163362,7 +163523,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -163442,7 +163603,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -163452,7 +163613,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -163532,7 +163693,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -163542,7 +163703,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -163624,7 +163785,7 @@
                         "TagName": "Item.Deployable.Bed"
                     },
                     {
-                        "TagName": "Item.Decoration.Wood"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -163634,7 +163795,7 @@
                         "TagName": "Item.Deployable.Bed"
                     },
                     {
-                        "TagName": "Item.Decoration.Wood"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -164098,7 +164259,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -164108,7 +164269,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -164188,7 +164349,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -164198,7 +164359,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -164279,6 +164440,9 @@
                     },
                     {
                         "TagName": "Item.Deployable.Storage"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -164289,6 +164453,9 @@
                     },
                     {
                         "TagName": "Item.Deployable.Storage"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -164375,6 +164542,9 @@
                     },
                     {
                         "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -164388,6 +164558,9 @@
                     },
                     {
                         "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -166888,6 +167061,9 @@
                     },
                     {
                         "TagName": "Item.Decoration.ArtDeco"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -166898,6 +167074,9 @@
                     },
                     {
                         "TagName": "Item.Decoration.ArtDeco"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -166978,6 +167157,9 @@
                     },
                     {
                         "TagName": "Item.Decoration"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -166988,6 +167170,9 @@
                     },
                     {
                         "TagName": "Item.Decoration"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -167273,6 +167458,9 @@
                     },
                     {
                         "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -167283,6 +167471,9 @@
                     },
                     {
                         "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -167551,7 +167742,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     }
                 ]
             },
@@ -167561,7 +167752,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Bunker"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -173564,24 +173755,8 @@
             "Audio": {
                 "RowName": "Default"
             },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "FieldGuide.ForceShowQuestItem"
-                    }
-                ]
-            },
             "Generated_Tags": {
                 "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "FieldGuide.ForceShowQuestItem"
-                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -173653,24 +173828,8 @@
             "Audio": {
                 "RowName": "Default"
             },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "FieldGuide.ForceShowQuestItem"
-                    }
-                ]
-            },
             "Generated_Tags": {
                 "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "FieldGuide.ForceShowQuestItem"
-                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -173742,24 +173901,8 @@
             "Audio": {
                 "RowName": "Default"
             },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "FieldGuide.ForceShowQuestItem"
-                    }
-                ]
-            },
             "Generated_Tags": {
                 "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "FieldGuide.ForceShowQuestItem"
-                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -173831,18 +173974,8 @@
             "Audio": {
                 "RowName": "Default"
             },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    }
-                ]
-            },
             "Generated_Tags": {
                 "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -173914,18 +174047,8 @@
             "Audio": {
                 "RowName": "Default"
             },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    }
-                ]
-            },
             "Generated_Tags": {
                 "GameplayTags": [
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -174387,7 +174510,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration"
+                        "TagName": "Item.Decoration.Lab"
                     }
                 ]
             },
@@ -174397,7 +174520,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration"
+                        "TagName": "Item.Decoration.Lab"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -181241,26 +181364,26 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "FieldGuide.Defense"
-                    },
-                    {
                         "TagName": "Prebuilt.IgnoreUnobtainable"
                     },
                     {
                         "TagName": "Prebuilt.Destroyable"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "FieldGuide.Defense"
-                    },
-                    {
                         "TagName": "Prebuilt.IgnoreUnobtainable"
                     },
                     {
                         "TagName": "Prebuilt.Destroyable"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -185763,8 +185886,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
             "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -185810,8 +185943,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
             "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -186590,8 +186733,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
             "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -187080,6 +187233,9 @@
                     },
                     {
                         "TagName": "Item.Decoration.Lab"
+                    },
+                    {
+                        "TagName": "FieldGuide.ForceShowQuestItem"
                     }
                 ]
             },
@@ -187090,6 +187246,9 @@
                     },
                     {
                         "TagName": "Item.Decoration.Lab"
+                    },
+                    {
+                        "TagName": "FieldGuide.ForceShowQuestItem"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189264,6 +189423,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189271,6 +189433,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189327,6 +189492,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189337,6 +189505,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189459,6 +189630,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189469,6 +189643,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189525,6 +189702,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189535,6 +189715,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189591,6 +189774,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189601,6 +189787,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189657,6 +189846,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189667,6 +189859,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189723,6 +189918,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189733,6 +189931,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189789,6 +189990,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189799,6 +190003,9 @@
                     },
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189852,6 +190059,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189859,6 +190069,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -189912,6 +190125,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -189919,6 +190135,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -190195,6 +190414,9 @@
                     },
                     {
                         "TagName": "Item.Quest"
+                    },
+                    {
+                        "TagName": "FieldGuide.ForceShowQuestItem"
                     }
                 ]
             },
@@ -190217,6 +190439,9 @@
                     },
                     {
                         "TagName": "Item.Quest"
+                    },
+                    {
+                        "TagName": "FieldGuide.ForceShowQuestItem"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -190554,8 +190779,18 @@
                 "(Value=\"IsInvolvedInQuest_?\")": 1
             },
             "CraftingExperience": 10,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    }
+                ]
+            },
             "Generated_Tags": {
                 "GameplayTags": [
+                    {
+                        "TagName": "Item.Quest"
+                    },
                     {
                         "TagName": "Traits.Meshable"
                     },
@@ -199743,66 +199978,6 @@
             }
         },
         {
-            "Name": "Cobalt_Ingot",
-            "Meshable": {
-                "RowName": "Mesh_Cobalt_Ingot"
-            },
-            "Itemable": {
-                "RowName": "Item_Cobalt_Ingot"
-            },
-            "Interactable": {
-                "RowName": "Item"
-            },
-            "Highlightable": {
-                "RowName": "Generic"
-            },
-            "Decayable": {
-                "RowName": "Decay_General"
-            },
-            "Audio": {
-                "RowName": "Default"
-            },
-            "CraftingExperience": 360,
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Item.Resource.Ingot"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    }
-                ]
-            },
-            "Generated_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Item.Resource.Ingot"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "Traits.Meshable"
-                    },
-                    {
-                        "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
-                    },
-                    {
-                        "TagName": "Traits.Highlightable"
-                    }
-                ],
-                "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "DangerousHorizons"
-                }
-            }
-        },
-        {
             "Name": "Ruby_Ore",
             "Meshable": {
                 "RowName": "Mesh_Ruby_Ore"
@@ -199931,7 +200106,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Lithium"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -199988,7 +200163,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Cobalt"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -200051,7 +200226,7 @@
                 "RowName": "Generic"
             },
             "Decayable": {
-                "RowName": "Decay_General"
+                "RowName": "Decay_Pyritic_Crust_Ruby"
             },
             "Transmutable": {
                 "RowName": "Fiber"
@@ -209666,6 +209841,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     }
                 ]
             },
@@ -209673,6 +209851,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Quest"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -220547,7 +220728,10 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -220557,7 +220741,10 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -221327,9 +221514,6 @@
                     },
                     {
                         "TagName": "Item.Decoration.Lab"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -221340,9 +221524,6 @@
                     },
                     {
                         "TagName": "Item.Decoration.Lab"
-                    },
-                    {
-                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -221590,7 +221771,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Lab"
                     }
                 ]
             },
@@ -221600,7 +221781,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration.ArtDeco"
+                        "TagName": "Item.Decoration.Lab"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -221685,7 +221866,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration"
+                        "TagName": "Item.Decoration.Lab"
                     }
                 ]
             },
@@ -221695,7 +221876,7 @@
                         "TagName": "Audio.Shelter.Check"
                     },
                     {
-                        "TagName": "Item.Decoration"
+                        "TagName": "Item.Decoration.Lab"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -222340,9 +222521,6 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "FieldGuide.Defense"
-                    },
-                    {
                         "TagName": "HostileTurret.Flamethrower"
                     },
                     {
@@ -222350,15 +222528,15 @@
                     },
                     {
                         "TagName": "Prebuilt.Destroyable"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "FieldGuide.Defense"
-                    },
-                    {
                         "TagName": "HostileTurret.Flamethrower"
                     },
                     {
@@ -222366,6 +222544,9 @@
                     },
                     {
                         "TagName": "Prebuilt.Destroyable"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -222446,6 +222627,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     }
                 ]
             },
@@ -222453,6 +222637,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "Audio.Shelter.Check"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -235175,18 +235362,12 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Weapon.GrenadeLauncher"
-                    },
-                    {
                         "TagName": "Item.Weapon.Launcher.T2"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
-                    {
-                        "TagName": "Item.Weapon.GrenadeLauncher"
-                    },
                     {
                         "TagName": "Item.Weapon.Launcher.T2"
                     },
@@ -235475,49 +235656,84 @@
             }
         },
         {
-            "Name": "Meta_Resource_Pack_Salt",
+            "Name": "Meta_Powerbank",
             "Meshable": {
-                "RowName": "Mesh_Meta_Resource_Pack"
+                "RowName": "Mesh_Workshop_PowerBank"
             },
             "Itemable": {
-                "RowName": "Item_Meta_Resource_Pack_Salt"
+                "RowName": "Item_Meta_Powerbank"
             },
             "Interactable": {
                 "RowName": "Item"
             },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
             "Highlightable": {
                 "RowName": "Generic"
             },
-            "Consumable": {
-                "RowName": "Meta_Resource_Pack_Salt"
+            "Actionable": {
+                "RowName": "Generic_Fillable"
             },
             "Usable": {
-                "RowName": "Consume_Stack"
+                "RowName": "Transfer_Resource"
+            },
+            "Fillable": {
+                "RowName": "Meta_Powerbank"
             },
             "Decayable": {
-                "RowName": "Decay_MetaItem"
+                "RowName": "Decay_General"
             },
             "Audio": {
-                "RowName": "Default"
+                "RowName": "Jerrycan"
             },
-            "CraftingExperience": 10,
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Meta.Consumable"
+                        "TagName": "FieldGuide.ResourceNetwork"
                     },
                     {
-                        "TagName": "Item.Meta.Package.Resource"
+                        "TagName": "Item.Deployable.ResourceStorage.Energy"
+                    },
+                    {
+                        "TagName": "Item.Fillable.Energy"
+                    },
+                    {
+                        "TagName": "Item.Powered.Battery.Portable"
+                    },
+                    {
+                        "TagName": "Resource.Transfer"
+                    },
+                    {
+                        "TagName": "Item.Meta"
+                    },
+                    {
+                        "TagName": "MetaItem.Convert.ReplenishFillable"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Meta.Consumable"
+                        "TagName": "FieldGuide.ResourceNetwork"
                     },
                     {
-                        "TagName": "Item.Meta.Package.Resource"
+                        "TagName": "Item.Deployable.ResourceStorage.Energy"
+                    },
+                    {
+                        "TagName": "Item.Fillable.Energy"
+                    },
+                    {
+                        "TagName": "Item.Powered.Battery.Portable"
+                    },
+                    {
+                        "TagName": "Resource.Transfer"
+                    },
+                    {
+                        "TagName": "Item.Meta"
+                    },
+                    {
+                        "TagName": "MetaItem.Convert.ReplenishFillable"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -235532,10 +235748,118 @@
                         "TagName": "Traits.Highlightable"
                     },
                     {
-                        "TagName": "Traits.Consumable"
+                        "TagName": "Traits.Actionable"
                     },
                     {
                         "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Electric_Seed_Extractor",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Machining"
+            },
+            "Itemable": {
+                "RowName": "Item_Electric_Seed_Extractor"
+            },
+            "Interactable": {
+                "RowName": "Deployable"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Electric_Seed_Extractor"
+            },
+            "Durable": {
+                "RowName": "Deployable_1000"
+            },
+            "Inventory": {
+                "RowName": "Processor_NoFuel_T5"
+            },
+            "Processing": {
+                "RowName": "Electric_Seed_Extractor"
+            },
+            "Experience": {
+                "RowName": "CraftedItem"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Weight": {
+                "RowName": "MediumDeployable"
+            },
+            "Resource": {
+                "RowName": "Material_Processor"
+            },
+            "Audio": {
+                "RowName": "GenericDeployable"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseCraftingSpeed_+%\")": 50
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Bench"
+                    },
+                    {
+                        "TagName": "Item.Machine"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Bench"
+                    },
+                    {
+                        "TagName": "Item.Machine"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Inventory"
+                    },
+                    {
+                        "TagName": "Traits.Processing"
                     }
                 ],
                 "ParentTags": []
@@ -235550,7 +235874,7 @@
                 "RowName": "Item_Mission_Bull"
             },
             "Interactable": {
-                "RowName": "Deployable_NoPickup"
+                "RowName": "Item"
             },
             "Focusable": {
                 "RowName": "Focusable_1H"
@@ -235573,6 +235897,9 @@
             "Weight": {
                 "RowName": "LightDeployable"
             },
+            "Audio": {
+                "RowName": "Default"
+            },
             "AdditionalStats": {
                 "(Value=\"IsInvulnerable_?\")": 1
             },
@@ -235580,9 +235907,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "IgnoreValidation"
                     }
                 ]
             },
@@ -235590,9 +235914,6 @@
                 "GameplayTags": [
                     {
                         "TagName": "FieldGuide.BlackList"
-                    },
-                    {
-                        "TagName": "IgnoreValidation"
                     },
                     {
                         "TagName": "Traits.Meshable"

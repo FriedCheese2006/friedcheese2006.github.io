@@ -520,6 +520,7 @@
     "Electric_Fireplace_Ext": "processor:Electric_Fireplace_Ext",
     "Electric_Furnace_Large": "processor:Electric_Furnace",
     "Electric_Oxite_Dissolver": "processor:Electric_Oxite_Dissolver",
+    "Electric_Seed_Extractor": "processor:Electric_Seed_Extractor",
     "Electric_Stove": "processor:Electric_Stove",
     "Electronics": "processor:Electronics",
     "Elephant_Statue_Bronze": "processor:Elephant_Statue_Bronze",
@@ -1033,6 +1034,7 @@
     "Lava_Hunter_Head": "processor:Biomass_To_Boss_Vestiage_LavaHunter",
     "Lava_Hunter_Horn": "processor:Biomass_To_Lava_Hunter_Horn",
     "Lava_Hunter_Magma": "processor:Biomass_To_Lava_Hunter_Magma",
+    "Lava_Hunter_Mine": "processor:Lava_Hunter_Mine",
     "Lava_Hunter_Module": "processor:Lava_Hunter_Module",
     "Lava_Hunter_Sickle": "processor:Lava_Hunter_Sickle",
     "Lava_Hunter_Trophy": "processor:Lava_Hunter_Trophy_Head",
@@ -1236,6 +1238,7 @@
     "Pickled_Avocado": "processor:Pickled_Avocado",
     "Pickled_Eggs": "processor:Food_Pickled_Eggs",
     "Pickled_Freshwater_Fillet": "processor:Pickled_Freshwater_Fillet",
+    "Pig_Trophy": "processor:Pig_Trophy",
     "Piglet_Trophy": "processor:Piglet_Trophy",
     "Piranha_Statue_Stone": "processor:Piranha_Statue_Stone",
     "Piranha_Statue_Wood": "processor:Piranha_Statue_Wood",
@@ -1385,6 +1388,11 @@
     "Reinforced_Window": "processor:Reinforced_Window",
     "Ren": "processor:Common_Vestige",
     "Repair_Bench": "processor:Repair_Bench",
+    "ResearchEquipment_Centrifuge": "processor:ResearchEquipment_Centrifuge",
+    "ResearchEquipment_Flasks": "processor:ResearchEquipment_Flasks",
+    "ResearchEquipment_LabDesk": "processor:ResearchEquipment_LabDesk",
+    "ResearchEquipment_Microscope": "processor:ResearchEquipment_Microscope",
+    "ResearchEquipment_TestTubes": "processor:ResearchEquipment_TestTubes",
     "Resistance_Fertilizer": "processor:Resistance_Fertilizer",
     "ResourceStack_Stone": "processor:ResourceStack_Stone",
     "ResourceStack_Wood": "processor:ResourceStack_Wood",
@@ -2012,6 +2020,13 @@
         ]
       },
       {
+        "alias": "Item_Carcass_Conifer_Wolf",
+        "itemIds": [
+          "AnimalCarcass_Conifer_Wolf",
+          "AnimalCarcass_Conifer_Wolf_Tame"
+        ]
+      },
+      {
         "alias": "Item_Carcass_Dog_C",
         "itemIds": [
           "AnimalCarcass_Tame_Dog_C",
@@ -2243,20 +2258,6 @@
         ]
       },
       {
-        "alias": "Pig_Trophy",
-        "itemIds": [
-          "Pig_Trophy",
-          "Piglet_Trophy"
-        ]
-      },
-      {
-        "alias": "Pig_Trophy",
-        "itemIds": [
-          "Pig_Trophy",
-          "Piglet_Trophy"
-        ]
-      },
-      {
         "alias": "Rocket_Part_Mid",
         "itemIds": [
           "Rocket_Part_Mid_Mk1",
@@ -2462,6 +2463,7 @@
           "processor:Carcass_Chew",
           "processor:Carcass_Chick",
           "processor:Carcass_Conifer_Wolf",
+          "processor:Carcass_Conifer_Wolf_Tame",
           "processor:Carcass_Deer",
           "processor:Carcass_Deer_Desert",
           "processor:Carcass_Deer_Variant",
@@ -2750,6 +2752,7 @@
           "processor:Carcass_Chew",
           "processor:Carcass_Chick",
           "processor:Carcass_Conifer_Wolf",
+          "processor:Carcass_Conifer_Wolf_Tame",
           "processor:Carcass_Deer",
           "processor:Carcass_Deer_Desert",
           "processor:Carcass_Deer_Variant",
@@ -2944,6 +2947,7 @@
           "processor:Carcass_Chew",
           "processor:Carcass_Chick",
           "processor:Carcass_Conifer_Wolf",
+          "processor:Carcass_Conifer_Wolf_Tame",
           "processor:Carcass_Deer",
           "processor:Carcass_Deer_Desert",
           "processor:Carcass_Deer_Variant",
@@ -3087,13 +3091,6 @@
         ]
       ],
       [
-        "Piglet_Trophy",
-        [
-          "processor:Pig_Trophy",
-          "processor:Piglet_Trophy"
-        ]
-      ],
-      [
         "Platinum_Ingot",
         [
           "processor:Platinum_Ingot",
@@ -3154,6 +3151,7 @@
           "processor:Carcass_Chamois_Var",
           "processor:Carcass_Chew",
           "processor:Carcass_Conifer_Wolf",
+          "processor:Carcass_Conifer_Wolf_Tame",
           "processor:Carcass_Deer",
           "processor:Carcass_Deer_Desert",
           "processor:Carcass_Deer_Variant",
@@ -3375,6 +3373,7 @@
         [
           "processor:Butcher_Meat_Rooster",
           "processor:Carcass_Conifer_Wolf",
+          "processor:Carcass_Conifer_Wolf_Tame",
           "processor:Carcass_Desert_Wolf",
           "processor:Carcass_Jaguar",
           "processor:Carcass_Juvenile_Snow_Wolf",
@@ -3862,6 +3861,7 @@
     "AnimalCarcass_Chicken": "AnimalCarcass_Chicken",
     "AnimalCarcass_Conifer_Wolf": "AnimalCarcass_Conifer_Wolf",
     "AnimalCarcass_Conifer_Wolf_Juvenile": "AnimalCarcass_Conifer_Wolf_Juvenile",
+    "AnimalCarcass_Conifer_Wolf_Tame": "AnimalCarcass_Conifer_Wolf_Tame",
     "AnimalCarcass_Cougar_Alpha": "AnimalCarcass_Cougar_Alpha",
     "AnimalCarcass_Cow": "AnimalCarcass_Cow",
     "AnimalCarcass_Crocodile": "AnimalCarcass_Crocodile",
@@ -4387,7 +4387,6 @@
     "Cloth_Head": "Cloth_Head",
     "Cloth_Legs": "Cloth_Legs",
     "Coal_Ore": "Coal_Ore",
-    "Cobalt_Ingot": "Cobalt_Ingot",
     "Cobalt_Ore": "Cobalt_Ore",
     "Cocoa": "Cocoa",
     "Cocoa_Seed": "Seed",
@@ -4636,6 +4635,7 @@
     "Electric_Furnace_Large": "Electric_Furnace_Large",
     "Electric_Motor": "Electric_Motor",
     "Electric_Oxite_Dissolver": "Electric_Oxite_Dissolver",
+    "Electric_Seed_Extractor": "Electric_Seed_Extractor",
     "Electric_Stove": "Electric_Stove",
     "Electronics": "Electronics",
     "Elephant_Head": "Elephant_Head",
@@ -5950,7 +5950,6 @@
     "Item_Cloth_Head": "Cloth_Head",
     "Item_Cloth_Legs": "Cloth_Legs",
     "Item_Coal_Ore": "Coal_Ore",
-    "Item_Cobalt_Ingot": "Cobalt_Ingot",
     "Item_Cobalt_Ore": "Cobalt_Ore",
     "Item_Cocoa": "Cocoa",
     "Item_Coconut": "Coconut_young",
@@ -6170,6 +6169,7 @@
     "Item_Electric_Fireplace_Ext": "Electric_Fireplace_Ext",
     "Item_Electric_Furnace_Large": "Electric_Furnace_Large",
     "Item_Electric_Oxite_Dissolver": "Electric_Oxite_Dissolver",
+    "Item_Electric_Seed_Extractor": "Electric_Seed_Extractor",
     "Item_Electric_Stove": "Electric_Stove",
     "Item_Electronics": "Electronics",
     "Item_Elephant_Head": "Elephant_Head",
@@ -7054,6 +7054,7 @@
     "Item_Meta_Pickaxe_Shengong_Echo": "Meta_Pickaxe_Shengong_Echo",
     "Item_Meta_Potato_Seed": "Meta_Potato_Seed",
     "Item_Meta_Power_Source": "Meta_Power_Source",
+    "Item_Meta_Powerbank": "Meta_Powerbank",
     "Item_Meta_PricklyPear_Seed": "Meta_PricklyPear_Seed",
     "Item_Meta_Pumpkin_Seed": "Meta_Pumpkin_Seed",
     "Item_Meta_Ration": "Meta_Ration",
@@ -7072,7 +7073,6 @@
     "Item_Meta_Resource_Pack_Oxite": "Meta_Resource_Pack_Oxite",
     "Item_Meta_Resource_Pack_Platinum": "Meta_Resource_Pack_Platinum",
     "Item_Meta_Resource_Pack_Ruby": "Meta_Resource_Pack_Ruby",
-    "Item_Meta_Resource_Pack_Salt": "Meta_Resource_Pack_Salt",
     "Item_Meta_Resource_Pack_Scoria": "Meta_Resource_Pack_Scoria",
     "Item_Meta_Resource_Pack_Silica": "Meta_Resource_Pack_Silica",
     "Item_Meta_Resource_Pack_Stone": "Meta_Resource_Pack_Stone",
@@ -8650,6 +8650,7 @@
     "Meta_Pickaxe_Shengong_Echo": "Meta_Pickaxe_Shengong_Echo",
     "Meta_Potato_Seed": "Meta_Potato_Seed",
     "Meta_Power_Source": "Meta_Power_Source",
+    "Meta_Powerbank": "Meta_Powerbank",
     "Meta_PricklyPear_Seed": "Meta_PricklyPear_Seed",
     "Meta_Pumpkin_Seed": "Meta_Pumpkin_Seed",
     "Meta_Ration": "Meta_Ration",
@@ -8670,7 +8671,6 @@
     "Meta_Resource_Pack_Oxite": "Meta_Resource_Pack_Oxite",
     "Meta_Resource_Pack_Platinum": "Meta_Resource_Pack_Platinum",
     "Meta_Resource_Pack_Ruby": "Meta_Resource_Pack_Ruby",
-    "Meta_Resource_Pack_Salt": "Meta_Resource_Pack_Salt",
     "Meta_Resource_Pack_Scoria": "Meta_Resource_Pack_Scoria",
     "Meta_Resource_Pack_Silica": "Meta_Resource_Pack_Silica",
     "Meta_Resource_Pack_Stone": "Meta_Resource_Pack_Stone",
@@ -11581,6 +11581,16 @@
       "isPlaceholder": false,
       "itemableId": "Item_Carcass_Juvenile_Conifer_Wolf",
       "label": "Juvenile Wolf Carcass",
+      "templateIds": []
+    },
+    "AnimalCarcass_Conifer_Wolf_Tame": {
+      "id": "AnimalCarcass_Conifer_Wolf_Tame",
+      "imagePath": "/icarus-game/ItemIcons/Carcasses/ITEM_AnimalCarcass_Conifer_Wolf.png",
+      "isBlacklisted": true,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Carcass_Conifer_Wolf",
+      "label": "Wolf Carcass",
       "templateIds": []
     },
     "AnimalCarcass_Cougar_Alpha": {
@@ -17233,18 +17243,6 @@
         "Meta_Coal_x100"
       ]
     },
-    "Cobalt_Ingot": {
-      "id": "Cobalt_Ingot",
-      "imagePath": "/icarus-game/ItemIcons/Resources/T_ITEM_Cobalt_Ingot.png",
-      "isBlacklisted": true,
-      "isFood": false,
-      "isPlaceholder": false,
-      "itemableId": "Item_Cobalt_Ingot",
-      "label": "Cobalt Ingot",
-      "templateIds": [
-        "Cobalt_Ingot"
-      ]
-    },
     "Cobalt_Ore": {
       "id": "Cobalt_Ore",
       "imagePath": "/icarus-game/ItemIcons/Voxels/T_ITEM_Cobalt_Ore.png",
@@ -19924,6 +19922,18 @@
         "Electric_Oxite_Dissolver"
       ]
     },
+    "Electric_Seed_Extractor": {
+      "id": "Electric_Seed_Extractor",
+      "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_T4_Seed_Extractor.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Electric_Seed_Extractor",
+      "label": "Electric Seed Extractor",
+      "templateIds": [
+        "Electric_Seed_Extractor"
+      ]
+    },
     "Electric_Stove": {
       "id": "Electric_Stove",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Electric_Stove.png",
@@ -20011,7 +20021,7 @@
     "Enemy_Turret_Flamethrower": {
       "id": "Enemy_Turret_Flamethrower",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Turret_Flamethrower.png",
-      "isBlacklisted": false,
+      "isBlacklisted": true,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Enemy_Turret_Flamethrower",
@@ -20023,7 +20033,7 @@
     "Enemy_Turret_Pistol": {
       "id": "Enemy_Turret_Pistol",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Turret_Pistol.png",
-      "isBlacklisted": false,
+      "isBlacklisted": true,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Enemy_Turret_Pistol",
@@ -24523,7 +24533,7 @@
     },
     "Gold_Ore": {
       "id": "Gold_Ore",
-      "imagePath": "/icarus-game/ItemIcons/Voxels/T_ITEM_Gold_Ore.png",
+      "imagePath": "/icarus-game/ItemIcons/Voxels/ITEM_Ore_Gold.png",
       "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
@@ -27587,7 +27597,7 @@
     "Kit_Radar": {
       "id": "Kit_Radar",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Kit_Radar.png",
-      "isBlacklisted": false,
+      "isBlacklisted": true,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Kit_Radar",
@@ -27993,7 +28003,7 @@
     "Landing_Pad_Prop": {
       "id": "Landing_Pad_Prop",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Landing_Pad_Prop.png",
-      "isBlacklisted": false,
+      "isBlacklisted": true,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Landing_Pad_Prop",
@@ -28477,7 +28487,7 @@
     "Lava_Hunter_Mine": {
       "id": "Lava_Hunter_Mine",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Lava_Hunter_Mine.png",
-      "isBlacklisted": true,
+      "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Lava_Hunter_Mine",
@@ -31171,7 +31181,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Module_ExposureResist",
-      "label": " Exposure Resist Module",
+      "label": "Exposure Resist Module",
       "templateIds": [
         "Meta_Module_ExposureResist"
       ]
@@ -31704,6 +31714,18 @@
         "Meta_Power_Source"
       ]
     },
+    "Meta_Powerbank": {
+      "id": "Meta_Powerbank",
+      "imagePath": "/icarus-game/ItemIcons/Resources/T_ITEM_Meta_Powerbank.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Meta_Powerbank",
+      "label": "Inaris Powerbank",
+      "templateIds": [
+        "Meta_Powerbank"
+      ]
+    },
     "Meta_PricklyPear_Seed": {
       "id": "Meta_PricklyPear_Seed",
       "imagePath": "/icarus-game/ItemIcons/Seeds/T_ITEM_FarmingPacket_Prickly_Pear.png",
@@ -31919,18 +31941,6 @@
       "label": "UDA Crystallized Ruby Resource Supply",
       "templateIds": [
         "Meta_Resource_Pack_Ruby"
-      ]
-    },
-    "Meta_Resource_Pack_Salt": {
-      "id": "Meta_Resource_Pack_Salt",
-      "imagePath": "/icarus-game/ItemIcons/ResourcePack/T_ITEM_Resource_Pack_Salt.png",
-      "isBlacklisted": false,
-      "isFood": false,
-      "isPlaceholder": false,
-      "itemableId": "Item_Meta_Resource_Pack_Salt",
-      "label": "UDA Salt Resource Supply",
-      "templateIds": [
-        "Meta_Resource_Pack_Salt"
       ]
     },
     "Meta_Resource_Pack_Scoria": {
@@ -35292,7 +35302,9 @@
       "isPlaceholder": false,
       "itemableId": "Item_Pig_Trophy",
       "label": "Pig Trophy",
-      "templateIds": []
+      "templateIds": [
+        "Pig_Trophy"
+      ]
     },
     "Piglet_Head": {
       "id": "Piglet_Head",
@@ -35315,7 +35327,6 @@
       "itemableId": "Item_Piglet_Trophy",
       "label": "Piglet Trophy",
       "templateIds": [
-        "Pig_Trophy",
         "Piglet_Trophy"
       ]
     },
@@ -36351,7 +36362,7 @@
     "Prop_Eden_Whiteboard": {
       "id": "Prop_Eden_Whiteboard",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Bunker_Whiteboard.png",
-      "isBlacklisted": false,
+      "isBlacklisted": true,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Prop_Eden_Whiteboard",
@@ -36555,7 +36566,7 @@
     "Prop_LaserControls": {
       "id": "Prop_LaserControls",
       "imagePath": "/icarus-game/ItemIcons/Props/T_ITEM_Prop_LaserControls.png",
-      "isBlacklisted": true,
+      "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Prop_LaserControls",
@@ -38560,7 +38571,7 @@
     "ResearchEquipment_Centrifuge": {
       "id": "ResearchEquipment_Centrifuge",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_ResearchEquipment_Centrifuge.png",
-      "isBlacklisted": true,
+      "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_ResearchEquipment_Centrifuge",
@@ -38572,7 +38583,7 @@
     "ResearchEquipment_Flasks": {
       "id": "ResearchEquipment_Flasks",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_ResearchEquipment_Flasks.png",
-      "isBlacklisted": true,
+      "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_ResearchEquipment_Flasks",
@@ -38584,7 +38595,7 @@
     "ResearchEquipment_LabDesk": {
       "id": "ResearchEquipment_LabDesk",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_ResearchEquipment_LabDesk.png",
-      "isBlacklisted": true,
+      "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_ResearchEquipment_LabDesk",
@@ -38596,7 +38607,7 @@
     "ResearchEquipment_Microscope": {
       "id": "ResearchEquipment_Microscope",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_ResearchEquipment_Microscope.png",
-      "isBlacklisted": true,
+      "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_ResearchEquipment_Microscope",
@@ -38608,7 +38619,7 @@
     "ResearchEquipment_TestTubes": {
       "id": "ResearchEquipment_TestTubes",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_ResearchEquipment_TestTubes.png",
-      "isBlacklisted": true,
+      "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_ResearchEquipment_TestTubes",
@@ -43859,7 +43870,7 @@
     },
     "Sulfur": {
       "id": "Sulfur",
-      "imagePath": "/icarus-game/ItemIcons/Voxels/T_ITEM_Sulfur.png",
+      "imagePath": "/icarus-game/ItemIcons/Voxels/ITEM_Ore_Sulfur.png",
       "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
@@ -44196,7 +44207,7 @@
     "Teddy_Bear": {
       "id": "Teddy_Bear",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Teddy_Bear.png",
-      "isBlacklisted": false,
+      "isBlacklisted": true,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Teddy_Bear",
@@ -44771,7 +44782,7 @@
     "Toilet": {
       "id": "Toilet",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Toilet.png",
-      "isBlacklisted": false,
+      "isBlacklisted": true,
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Toilet",
@@ -47008,6 +47019,7 @@
       "processor:Electric_Fireplace",
       "processor:Electric_Fireplace_Cap",
       "processor:Electric_Fireplace_Ext",
+      "processor:Electric_Seed_Extractor",
       "processor:Electric_Stove",
       "processor:Fabricator",
       "processor:Flamethrower",
@@ -47178,6 +47190,9 @@
     ],
     "AnimalCarcass_Conifer_Wolf_Juvenile": [
       "processor:Carcass_Juvenile_Wolf"
+    ],
+    "AnimalCarcass_Conifer_Wolf_Tame": [
+      "processor:Carcass_Conifer_Wolf_Tame"
     ],
     "AnimalCarcass_Deer": [
       "processor:Carcass_Deer"
@@ -48090,6 +48105,7 @@
       "processor:Portable_Tank_Water",
       "processor:Pump_Jack",
       "processor:Radar",
+      "processor:ResearchEquipment_LabDesk",
       "processor:Shield_Composites",
       "processor:Solar_Panel",
       "processor:Solar_Panel_Lithium",
@@ -48377,6 +48393,7 @@
       "processor:Deep_Ore_Scanner",
       "processor:Dehumidifier",
       "processor:Electric_Oxite_Dissolver",
+      "processor:Electric_Seed_Extractor",
       "processor:Electric_Stove",
       "processor:Electronics",
       "processor:Exotic_Harvester",
@@ -48413,6 +48430,9 @@
       "processor:Radar_Biofuel",
       "processor:Radiation_Tracker",
       "processor:Recovery_Beacon_Tracker",
+      "processor:ResearchEquipment_Centrifuge",
+      "processor:ResearchEquipment_Flasks",
+      "processor:ResearchEquipment_Microscope",
       "processor:Shroud_Light",
       "processor:Single_Ceiling_Light",
       "processor:SplineTool_Electricity",
@@ -48635,6 +48655,7 @@
       "processor:Electric_Dehumidifier",
       "processor:Electric_Furnace",
       "processor:Electric_Oxite_Dissolver",
+      "processor:Electric_Seed_Extractor",
       "processor:Electric_Stove",
       "processor:Enzyme_Cannon_Hub",
       "processor:Enzyme_Propagation_Unit",
@@ -48660,6 +48681,7 @@
       "processor:Large_Advanced_Aquarium",
       "processor:Laser_Pistol",
       "processor:Lava_Hunter_Backpack",
+      "processor:Lava_Hunter_Mine",
       "processor:LightningRod_Platinum",
       "processor:Lithium_Axe",
       "processor:Lithium_Bow",
@@ -48700,6 +48722,9 @@
       "processor:Raw_Wood_Lamp",
       "processor:Recovery_Beacon_Tracker",
       "processor:Refrigerator",
+      "processor:ResearchEquipment_Centrifuge",
+      "processor:ResearchEquipment_Flasks",
+      "processor:ResearchEquipment_Microscope",
       "processor:Sand_Armor_Arms",
       "processor:Sand_Armor_Backpack",
       "processor:Sand_Armor_Chest",
@@ -48821,6 +48846,7 @@
       "processor:Electric_Fireplace",
       "processor:Electric_Fireplace_Cap",
       "processor:Electric_Fireplace_Ext",
+      "processor:Electric_Seed_Extractor",
       "processor:Electronics",
       "processor:Enzyme_Cannon_Hub",
       "processor:Enzyme_Propagation_Unit",
@@ -48935,6 +48961,8 @@
       "processor:PotBellyStove",
       "processor:Rain_Reservoir_T3",
       "processor:Recurve_Bow",
+      "processor:ResearchEquipment_Microscope",
+      "processor:ResearchEquipment_TestTubes",
       "processor:Rock_Golem_Gun",
       "processor:Rock_Golem_Module",
       "processor:Rubber_Lure",
@@ -49505,6 +49533,10 @@
       "processor:Radar_Biofuel",
       "processor:Radiation_Protection_Armor_Head",
       "processor:Raw_Wood_Lamp",
+      "processor:ResearchEquipment_Centrifuge",
+      "processor:ResearchEquipment_Flasks",
+      "processor:ResearchEquipment_Microscope",
+      "processor:ResearchEquipment_TestTubes",
       "processor:Sandwyrm_Lantern",
       "processor:Shroud_Light",
       "processor:Single_Ceiling_Light",
@@ -49586,6 +49618,7 @@
       "processor:Radar_Biofuel",
       "processor:Radiation_Tracker",
       "processor:Recovery_Beacon_Tracker",
+      "processor:ResearchEquipment_Centrifuge",
       "processor:Sand_Armor_Arms",
       "processor:Sand_Armor_Backpack",
       "processor:Sand_Armor_Chest",
@@ -49950,6 +49983,7 @@
       "processor:Lava_Hunter_Attachment",
       "processor:Lava_Hunter_Backpack",
       "processor:Lava_Hunter_Biomass_1",
+      "processor:Lava_Hunter_Mine",
       "processor:Lava_Hunter_Module",
       "processor:Lava_Hunter_Sickle",
       "processor:Lava_Hunter_Trophy_Feature",
@@ -49959,6 +49993,7 @@
       "processor:Lava_Hunter_Attachment",
       "processor:Lava_Hunter_Backpack",
       "processor:Lava_Hunter_Biomass_2",
+      "processor:Lava_Hunter_Mine",
       "processor:Lava_Hunter_Module",
       "processor:Lava_Hunter_Sickle",
       "processor:Lava_Hunter_Trophy_Feature",
@@ -52050,6 +52085,11 @@
       "processor:Radiation_Tracker",
       "processor:Recovery_Beacon_Tracker",
       "processor:Recurve_Bow",
+      "processor:ResearchEquipment_Centrifuge",
+      "processor:ResearchEquipment_Flasks",
+      "processor:ResearchEquipment_LabDesk",
+      "processor:ResearchEquipment_Microscope",
+      "processor:ResearchEquipment_TestTubes",
       "processor:Rock_Golem_Gun",
       "processor:Rock_Golem_Module",
       "processor:Sandworm_Module",
@@ -52211,6 +52251,7 @@
       "processor:Electric_Armor_Bench",
       "processor:Electric_Dehumidifier",
       "processor:Electric_Furnace",
+      "processor:Electric_Seed_Extractor",
       "processor:Electric_Stove",
       "processor:Enzyme_Cannon_Hub",
       "processor:Enzyme_Propagation_Unit",
@@ -53069,6 +53110,7 @@
       "processor:Frag_Grenade",
       "processor:Frag_Grenade_Impact",
       "processor:Landmine",
+      "processor:Lava_Hunter_Mine",
       "processor:Mission_Explosive_Crafted",
       "processor:Mission_LiquidDeployment",
       "processor:Mission_Neurotoxic_Aerosol",
@@ -53725,6 +53767,7 @@
       "processor:Refined_Wood_Fishing_Rod",
       "processor:Refined_Wood_Lure",
       "processor:Repair_Bench",
+      "processor:ResearchEquipment_LabDesk",
       "processor:Roat_Trophy",
       "processor:Rock_Golem_Sledgehammer",
       "processor:Rooster_Trophy",
@@ -54562,6 +54605,7 @@
       "processor:Carcass_Chew",
       "processor:Carcass_Chick",
       "processor:Carcass_Conifer_Wolf",
+      "processor:Carcass_Conifer_Wolf_Tame",
       "processor:Carcass_Deer",
       "processor:Carcass_Deer_Desert",
       "processor:Carcass_Deer_Variant",
@@ -55545,6 +55589,9 @@
     "Electric_Oxite_Dissolver": [
       "processor:Electric_Oxite_Dissolver"
     ],
+    "Electric_Seed_Extractor": [
+      "processor:Electric_Seed_Extractor"
+    ],
     "Electric_Stove": [
       "processor:Electric_Stove"
     ],
@@ -56008,6 +56055,7 @@
       "processor:Carcass_Chew",
       "processor:Carcass_Chick",
       "processor:Carcass_Conifer_Wolf",
+      "processor:Carcass_Conifer_Wolf_Tame",
       "processor:Carcass_Deer",
       "processor:Carcass_Deer_Desert",
       "processor:Carcass_Deer_Variant",
@@ -57189,6 +57237,9 @@
     "Lava_Hunter_Magma": [
       "processor:Biomass_To_Lava_Hunter_Magma"
     ],
+    "Lava_Hunter_Mine": [
+      "processor:Lava_Hunter_Mine"
+    ],
     "Lava_Hunter_Module": [
       "processor:Lava_Hunter_Module"
     ],
@@ -57216,6 +57267,7 @@
       "processor:Carcass_Chew",
       "processor:Carcass_Chick",
       "processor:Carcass_Conifer_Wolf",
+      "processor:Carcass_Conifer_Wolf_Tame",
       "processor:Carcass_Deer",
       "processor:Carcass_Deer_Desert",
       "processor:Carcass_Deer_Variant",
@@ -57888,8 +57940,10 @@
     "Pickled_Freshwater_Fillet": [
       "processor:Pickled_Freshwater_Fillet"
     ],
+    "Pig_Trophy": [
+      "processor:Pig_Trophy"
+    ],
     "Piglet_Trophy": [
-      "processor:Pig_Trophy",
       "processor:Piglet_Trophy"
     ],
     "Piranha_Statue_Stone": [
@@ -58254,6 +58308,7 @@
       "processor:Carcass_Chamois_Var",
       "processor:Carcass_Chew",
       "processor:Carcass_Conifer_Wolf",
+      "processor:Carcass_Conifer_Wolf_Tame",
       "processor:Carcass_Deer",
       "processor:Carcass_Deer_Desert",
       "processor:Carcass_Deer_Variant",
@@ -58416,6 +58471,21 @@
     ],
     "Repair_Bench": [
       "processor:Repair_Bench"
+    ],
+    "ResearchEquipment_Centrifuge": [
+      "processor:ResearchEquipment_Centrifuge"
+    ],
+    "ResearchEquipment_Flasks": [
+      "processor:ResearchEquipment_Flasks"
+    ],
+    "ResearchEquipment_LabDesk": [
+      "processor:ResearchEquipment_LabDesk"
+    ],
+    "ResearchEquipment_Microscope": [
+      "processor:ResearchEquipment_Microscope"
+    ],
+    "ResearchEquipment_TestTubes": [
+      "processor:ResearchEquipment_TestTubes"
     ],
     "Resistance_Fertilizer": [
       "processor:Resistance_Fertilizer"
@@ -59492,6 +59562,7 @@
     "Stringy_Meat": [
       "processor:Butcher_Meat_Rooster",
       "processor:Carcass_Conifer_Wolf",
+      "processor:Carcass_Conifer_Wolf_Tame",
       "processor:Carcass_Desert_Wolf",
       "processor:Carcass_Jaguar",
       "processor:Carcass_Juvenile_Snow_Wolf",
@@ -61020,6 +61091,12 @@
       "itemId": "Seed_Extractor",
       "label": "Seed Extractor",
       "stations": [
+        {
+          "id": "Electric_Seed_Extractor",
+          "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_T4_Seed_Extractor.png",
+          "itemId": "Electric_Seed_Extractor",
+          "label": "Electric Seed Extractor"
+        },
         {
           "id": "Seed_Extractor",
           "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Seed_Extractor.png",
@@ -74923,6 +75000,46 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Carcass_Conifer_Wolf_Tame": {
+      "enabled": true,
+      "id": "processor:Carcass_Conifer_Wolf_Tame",
+      "inputs": [
+        {
+          "itemId": "AnimalCarcass_Conifer_Wolf_Tame",
+          "quantity": 1
+        }
+      ],
+      "name": "Carcass_Conifer_Wolf_Tame",
+      "outputs": [
+        {
+          "itemId": "Raw_Meat",
+          "quantity": 3
+        },
+        {
+          "itemId": "Leather",
+          "quantity": 30
+        },
+        {
+          "itemId": "Fur",
+          "quantity": 6
+        },
+        {
+          "itemId": "Bone",
+          "quantity": 20
+        },
+        {
+          "itemId": "Stringy_Meat",
+          "quantity": 2
+        }
+      ],
+      "recipeSetIds": [
+        "Skinning_Bench"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Carcass_Deer": {
       "enabled": true,
       "id": "processor:Carcass_Deer",
@@ -85111,6 +85228,47 @@
         "Manufacturer"
       ],
       "requiredMillijoules": 7500,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Electric_Seed_Extractor": {
+      "enabled": true,
+      "id": "processor:Electric_Seed_Extractor",
+      "inputs": [
+        {
+          "itemId": "Aluminium",
+          "quantity": 20
+        },
+        {
+          "itemId": "Electronics",
+          "quantity": 30
+        },
+        {
+          "itemId": "Steel_Screw",
+          "quantity": 120
+        },
+        {
+          "itemId": "Epoxy",
+          "quantity": 10
+        },
+        {
+          "itemId": "Copper_Wire",
+          "quantity": 30
+        }
+      ],
+      "name": "Electric_Seed_Extractor",
+      "outputs": [
+        {
+          "itemId": "Electric_Seed_Extractor",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Fabricator",
+        "Manufacturer"
+      ],
+      "requiredMillijoules": null,
       "resourceInputs": [],
       "resourceOutputs": [],
       "source": "processor"
@@ -103058,6 +103216,43 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Lava_Hunter_Mine": {
+      "enabled": true,
+      "id": "processor:Lava_Hunter_Mine",
+      "inputs": [
+        {
+          "itemId": "Lava_Hunter_Magma",
+          "quantity": 2
+        },
+        {
+          "itemId": "Electronics",
+          "quantity": 1
+        },
+        {
+          "itemId": "Lava_Hunter_Horn",
+          "quantity": 6
+        },
+        {
+          "itemId": "Volatile_Substance",
+          "quantity": 2
+        }
+      ],
+      "name": "Lava_Hunter_Mine",
+      "outputs": [
+        {
+          "itemId": "Lava_Hunter_Mine",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Fabricator",
+        "Manufacturer"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Lava_Hunter_Module": {
       "enabled": true,
       "id": "processor:Lava_Hunter_Module",
@@ -110781,7 +110976,7 @@
       "name": "Pig_Trophy",
       "outputs": [
         {
-          "itemId": "Piglet_Trophy",
+          "itemId": "Pig_Trophy",
           "quantity": 1
         }
       ],
@@ -113489,7 +113684,7 @@
       "outputs": [
         {
           "itemId": "MetaResource",
-          "quantity": 5
+          "quantity": 3
         }
       ],
       "recipeSetIds": [
@@ -115711,6 +115906,186 @@
         "Fabricator",
         "Machining_Bench",
         "Manufacturer"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:ResearchEquipment_Centrifuge": {
+      "enabled": true,
+      "id": "processor:ResearchEquipment_Centrifuge",
+      "inputs": [
+        {
+          "itemId": "Steel_Ingot",
+          "quantity": 6
+        },
+        {
+          "itemId": "Electronics",
+          "quantity": 6
+        },
+        {
+          "itemId": "Glass",
+          "quantity": 4
+        },
+        {
+          "itemId": "Copper_Wire",
+          "quantity": 6
+        },
+        {
+          "itemId": "Gold_Wire",
+          "quantity": 12
+        }
+      ],
+      "name": "ResearchEquipment_Centrifuge",
+      "outputs": [
+        {
+          "itemId": "ResearchEquipment_Centrifuge",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Chemistry_Bench"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:ResearchEquipment_Flasks": {
+      "enabled": true,
+      "id": "processor:ResearchEquipment_Flasks",
+      "inputs": [
+        {
+          "itemId": "Steel_Ingot",
+          "quantity": 6
+        },
+        {
+          "itemId": "Electronics",
+          "quantity": 2
+        },
+        {
+          "itemId": "Glass",
+          "quantity": 16
+        },
+        {
+          "itemId": "Copper_Wire",
+          "quantity": 4
+        }
+      ],
+      "name": "ResearchEquipment_Flasks",
+      "outputs": [
+        {
+          "itemId": "ResearchEquipment_Flasks",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Chemistry_Bench"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:ResearchEquipment_LabDesk": {
+      "enabled": true,
+      "id": "processor:ResearchEquipment_LabDesk",
+      "inputs": [
+        {
+          "itemId": "Steel_Ingot",
+          "quantity": 16
+        },
+        {
+          "itemId": "Wood_Refined",
+          "quantity": 25
+        },
+        {
+          "itemId": "Composites",
+          "quantity": 6
+        }
+      ],
+      "name": "ResearchEquipment_LabDesk",
+      "outputs": [
+        {
+          "itemId": "ResearchEquipment_LabDesk",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Chemistry_Bench"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:ResearchEquipment_Microscope": {
+      "enabled": true,
+      "id": "processor:ResearchEquipment_Microscope",
+      "inputs": [
+        {
+          "itemId": "Steel_Ingot",
+          "quantity": 6
+        },
+        {
+          "itemId": "Electronics",
+          "quantity": 6
+        },
+        {
+          "itemId": "Glass",
+          "quantity": 10
+        },
+        {
+          "itemId": "Copper_Wire",
+          "quantity": 4
+        },
+        {
+          "itemId": "Epoxy",
+          "quantity": 8
+        }
+      ],
+      "name": "ResearchEquipment_Microscope",
+      "outputs": [
+        {
+          "itemId": "ResearchEquipment_Microscope",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Chemistry_Bench"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:ResearchEquipment_TestTubes": {
+      "enabled": true,
+      "id": "processor:ResearchEquipment_TestTubes",
+      "inputs": [
+        {
+          "itemId": "Steel_Ingot",
+          "quantity": 2
+        },
+        {
+          "itemId": "Glass",
+          "quantity": 10
+        },
+        {
+          "itemId": "Epoxy",
+          "quantity": 16
+        }
+      ],
+      "name": "ResearchEquipment_TestTubes",
+      "outputs": [
+        {
+          "itemId": "ResearchEquipment_TestTubes",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Chemistry_Bench"
       ],
       "requiredMillijoules": 10000,
       "resourceInputs": [],
@@ -132534,11 +132909,11 @@
   "schemaVersion": 2,
   "sourceRowCounts": {
     "D_ExtractorRecipes.json": 1,
-    "D_ItemTemplate.json": 3082,
-    "D_Itemable.json": 3462,
-    "D_ItemsStatic.json": 3075,
+    "D_ItemTemplate.json": 3083,
+    "D_Itemable.json": 3470,
+    "D_ItemsStatic.json": 3076,
     "D_Processing.json": 75,
-    "D_ProcessorRecipes.json": 2211,
+    "D_ProcessorRecipes.json": 2213,
     "D_RecipeSets.json": 68
   }
 }
