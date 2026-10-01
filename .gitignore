@@ -40,3 +40,5 @@ dist
 dist-ssr
 *.local
 *.db
+
+scripts/run_ue4_export.sh

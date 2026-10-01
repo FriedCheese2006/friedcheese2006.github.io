@@ -2,11 +2,19 @@ name: Publish Container
 
 on:
   pull_request:
+    paths-ignore:
+      - "**/*.md"
+      - ".gitignore"
+      - "LICENSE"
   push:
     branches:
       - main
     tags:
       - "v*"
+    paths-ignore:
+      - "**/*.md"
+      - ".gitignore"
+      - "LICENSE"
   workflow_dispatch:
 
 permissions: {}
