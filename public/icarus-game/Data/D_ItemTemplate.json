@@ -26627,9 +26627,87 @@
             }
         },
         {
+            "Name": "Bandage_Poultice",
+            "ItemStaticData": {
+                "RowName": "Bandage_Poultice"
+            }
+        },
+        {
             "Name": "Flightless_Tank_Horn",
             "ItemStaticData": {
                 "RowName": "Flightless_Tank_Horn"
+            }
+        },
+        {
+            "Name": "Dried_Fish_Chunks",
+            "ItemStaticData": {
+                "RowName": "Dried_Fish_Chunks"
+            }
+        },
+        {
+            "Name": "Fish_Chowder",
+            "ItemStaticData": {
+                "RowName": "Fish_Chowder"
+            }
+        },
+        {
+            "Name": "Freshwater_Tartare",
+            "ItemStaticData": {
+                "RowName": "Freshwater_Tartare"
+            }
+        },
+        {
+            "Name": "Pickled_Saltwater_Fillet",
+            "ItemStaticData": {
+                "RowName": "Pickled_Saltwater_Fillet"
+            }
+        },
+        {
+            "Name": "Fish_And_Chips",
+            "ItemStaticData": {
+                "RowName": "Fish_And_Chips"
+            }
+        },
+        {
+            "Name": "Fish_Roll",
+            "ItemStaticData": {
+                "RowName": "Fish_Roll"
+            }
+        },
+        {
+            "Name": "Smoked_Fillet_Sandwich",
+            "ItemStaticData": {
+                "RowName": "Smoked_Fillet_Sandwich"
+            }
+        },
+        {
+            "Name": "Coconut_Fish_Curry",
+            "ItemStaticData": {
+                "RowName": "Coconut_Fish_Curry"
+            }
+        },
+        {
+            "Name": "Chilled_Fish_Platter",
+            "ItemStaticData": {
+                "RowName": "Chilled_Fish_Platter"
+            }
+        },
+        {
+            "Name": "Trophy_Fish_Feast",
+            "ItemStaticData": {
+                "RowName": "Trophy_Fish_Feast"
+            }
+        },
+        {
+            "Name": "Fish_Paste",
+            "ItemStaticData": {
+                "RowName": "Fish_Paste"
+            }
+        },
+        {
+            "Name": "Fish_Paste_Lure",
+            "ItemStaticData": {
+                "RowName": "Fish_Paste_Lure"
             }
         }
     ]

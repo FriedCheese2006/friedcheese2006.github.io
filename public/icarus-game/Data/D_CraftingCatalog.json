@@ -154,6 +154,7 @@
     "Bandage_Basic": "processor:Bandage_Basic",
     "Bandage_Cooling": "processor:Bandage_Cooling",
     "Bandage_Heat": "processor:Bandage_Heat",
+    "Bandage_Poultice": "processor:Bandage_Poultice_Fish",
     "Bark_Lure": "processor:Bark_Lure",
     "Basic_Backpack": "processor:Basic_Backpack",
     "Basic_Ceiling_Light": "processor:Basic_Ceiling_Light",
@@ -502,6 +503,7 @@
     "Dressing_Kit": "processor:Dressing_Kit",
     "Dried_Avocado": "processor:Dried_Avocado",
     "Dried_Banana": "processor:Dried_Banana",
+    "Dried_Fish_Chunks": "processor:Food_Dried_Fish_Chunks",
     "Dried_Freshwater_Fillet": "processor:Dried_Freshwater_Fillet",
     "Dried_Kiwifruit": "processor:Dried_Kiwifruit",
     "Dried_Meat_Generic": "processor:Dried_Meat_Generic",
@@ -579,9 +581,13 @@
     "Fireplace_Chimney_Cap": "processor:Fireplace_Chimney_Cap",
     "Fireplace_Chimney_Cap_Half": "processor:Fireplace_Chimney_Cap_Half",
     "Fireplace_Chimney_Ext": "processor:Fireplace_Chimney_Ext",
+    "Fish_And_Chips": "processor:Food_Fish_And_Chips",
+    "Fish_Chowder": "processor:Food_Fish_Chowder",
     "Fish_Chunk_Stew": "processor:Food_Fish_Chunk_Stew",
     "Fish_Chunks": "processor:Butcher_Fish",
     "Fish_Fillet_Pie": "processor:Food_Fish_Fillet_Pie",
+    "Fish_Paste": "processor:Fish_Paste",
+    "Fish_Paste_Lure": "processor:Fish_Paste_Lure",
     "Fish_Wall_Mount": "processor:Fish_Wall_Mount",
     "Fishing_Bench": "processor:Fishing_Bench",
     "Flame_Thrower": "processor:Flamethrower",
@@ -656,6 +662,7 @@
     "French_Onion_Soup": "processor:Food_French_Onion_Soup",
     "Freshwater_Fillet_Curry": "processor:Food_Freshwater_Fillet_Curry",
     "Freshwater_Fish_Fillet": "processor:Butcher_Fish_Freshwater",
+    "Freshwater_Tartare": "processor:Food_Freshwater_Tartare",
     "Fried_Chicken": "processor:Fried_Chicken",
     "Fried_Chunky_Vegetables": "processor:Food_Fried_Chunky_Vegetables",
     "Fried_Fish_Chunks": "processor:Food_Fried_Fish_Chunks",
@@ -1238,6 +1245,7 @@
     "Pickled_Avocado": "processor:Pickled_Avocado",
     "Pickled_Eggs": "processor:Food_Pickled_Eggs",
     "Pickled_Freshwater_Fillet": "processor:Pickled_Freshwater_Fillet",
+    "Pickled_Saltwater_Fillet": "processor:Food_Pickled_Saltwater_Fillet",
     "Pig_Trophy": "processor:Pig_Trophy",
     "Piglet_Trophy": "processor:Piglet_Trophy",
     "Piranha_Statue_Stone": "processor:Piranha_Statue_Stone",
@@ -1629,6 +1637,7 @@
     "Smoke_Grenade": "processor:Smoke_Grenade",
     "Smoked_Bacon": "processor:Smoked_Bacon",
     "Smoked_Fatty_Tbone": "processor:Smoked_Fatty_Tbone",
+    "Smoked_Fillet_Sandwich": "processor:Food_Smoked_Fillet_Sandwich",
     "Smoked_Freshwater_Fillet": "processor:Smoked_Freshwater_Fillet",
     "Smoked_Gamey_Meat": "processor:Smoked_Gamey_Meat",
     "Smoked_Garlic": "processor:Food_Smoked_Garlic",
@@ -1810,6 +1819,7 @@
     "Tree_Sap": "processor:Tree_Sap",
     "TriangulationBeacon": "processor:TriangulationBeacon",
     "Trophy_Bench": "processor:Trophy_Bench",
+    "Trophy_Fish_Feast": "processor:Food_Trophy_Fish_Feast",
     "Truffle_Focaccia": "processor:Food_Truffle_Focaccia",
     "Truffle_Fries": "processor:Food_Truffle_Fries",
     "Truffle_Pasta": "processor:Food_Truffle_Pasta",
@@ -2595,7 +2605,9 @@
         "Concrete_Mix",
         [
           "processor:Concrete_Mix",
-          "processor:Limestone_Concrete_Mix"
+          "processor:Concrete_Mix_Fish",
+          "processor:Limestone_Concrete_Mix",
+          "processor:Limestone_Concrete_Mix_Fish"
         ]
       ],
       [
@@ -2763,6 +2775,13 @@
         [
           "processor:Butcher_Fish",
           "processor:Butcher_Fish_Player"
+        ]
+      ],
+      [
+        "Fish_Paste",
+        [
+          "processor:Fish_Paste",
+          "processor:Fish_Paste_Fish"
         ]
       ],
       [
@@ -3107,6 +3126,7 @@
         "Organic_Resin",
         [
           "processor:Organic_Resin",
+          "processor:Organic_Resin_Fish",
           "processor:Resin_Flightless_Tank_Horn"
         ]
       ],
@@ -3355,6 +3375,8 @@
         [
           "processor:Seed_Oil",
           "processor:Seed_Oil_Avocado",
+          "processor:Seed_Oil_Fish",
+          "processor:Seed_Oil_Fish_Chunks",
           "processor:Seed_Oil_Soy"
         ]
       ],
@@ -3485,6 +3507,13 @@
         [
           "processor:Tree_Sap",
           "processor:Tree_Sap_Wood"
+        ]
+      ],
+      [
+        "Vitamins",
+        [
+          "processor:Vitamins",
+          "processor:Vitamins_Fish"
         ]
       ],
       [
@@ -4147,6 +4176,7 @@
     "Bandage_Basic": "Bandage_Basic",
     "Bandage_Cooling": "Bandage_Cooling",
     "Bandage_Heat": "Bandage_Heat",
+    "Bandage_Poultice": "Bandage_Poultice",
     "Bark_Lure": "Bark_Lure",
     "Basic_Backpack": "Basic_Backpack",
     "Basic_Bandolier": "Basic_Bandolier",
@@ -4407,6 +4437,7 @@
     "Chicken_Trophy": "Chicken_Trophy",
     "Chicken_Trophy_A2": "Chicken_Trophy_A2",
     "Chicken_Trophy_A3": "Chicken_Trophy_A3",
+    "Chilled_Fish_Platter": "Chilled_Fish_Platter",
     "Choc_Chip_Cookie": "Choc_Chip_Cookie",
     "Chocolate_Cake": "Chocolate_Cake",
     "Chocolate_Cake_Piece": "Chocolate_Cake_Piece",
@@ -4445,6 +4476,7 @@
     "Coconut_Cake": "Coconut_Cake",
     "Coconut_Cake_Piece": "Coconut_Cake_Piece",
     "Coconut_Cookie": "Coconut_Cookie",
+    "Coconut_Fish_Curry": "Coconut_Fish_Curry",
     "Coconut_Seed": "Seed",
     "Coconut_Seed_Pack": "Seed",
     "Coconut_mature": "Coconut_mature",
@@ -4651,6 +4683,7 @@
     "Dressing_Kit": "Dressing_Kit",
     "Dried_Avocado": "Dried_Avocado",
     "Dried_Banana": "Dried_Banana",
+    "Dried_Fish_Chunks": "Dried_Fish_Chunks",
     "Dried_Freshwater_Fillet": "Dried_Freshwater_Fillet",
     "Dried_Kiwifruit": "Dried_Kiwifruit",
     "Dried_Meat_Generic": "Dried_Meat_Generic",
@@ -4881,10 +4914,15 @@
     "Fish_19_Var3": "Fish_19_Var3",
     "Fish_19_Var4": "Fish_19_Var4",
     "Fish_20": "Fish_20",
+    "Fish_And_Chips": "Fish_And_Chips",
+    "Fish_Chowder": "Fish_Chowder",
     "Fish_Chunk_Stew": "Fish_Chunk_Stew",
     "Fish_Chunks": "Fish_Chunks",
     "Fish_Dish": "Food_Fish_Dish",
     "Fish_Fillet_Pie": "Fish_Fillet_Pie",
+    "Fish_Paste": "Fish_Paste",
+    "Fish_Paste_Lure": "Fish_Paste_Lure",
+    "Fish_Roll": "Fish_Roll",
     "Fish_Wall_Mount": "Fish_Wall_Mount",
     "Fishing_Bench": "Fishing_Bench",
     "Flame_Thrower": "Flame_Thrower",
@@ -4979,6 +5017,7 @@
     "French_Onion_Soup": "French_Onion_Soup",
     "Freshwater_Fillet_Curry": "Freshwater_Fillet_Curry",
     "Freshwater_Fish_Fillet": "Freshwater_Fish_Fillet",
+    "Freshwater_Tartare": "Freshwater_Tartare",
     "Fried_Chicken": "Fried_Chicken",
     "Fried_Chunky_Vegetables": "Fried_Chunky_Vegetables",
     "Fried_Fish_Chunks": "Fried_Fish_Chunks",
@@ -5601,6 +5640,7 @@
     "Item_Bandage_Basic": "Bandage_Basic",
     "Item_Bandage_Cooling": "Bandage_Cooling",
     "Item_Bandage_Heat": "Bandage_Heat",
+    "Item_Bandage_Poultice": "Bandage_Poultice",
     "Item_Bark_Lure": "Bark_Lure",
     "Item_Basic_Bandolier": "Basic_Bandolier",
     "Item_Basic_Ceiling_Light": "Basic_Ceiling_Light",
@@ -5971,6 +6011,7 @@
     "Item_Chicken_Trophy": "Chicken_Trophy",
     "Item_Chicken_Trophy_A2": "Chicken_Trophy_A2",
     "Item_Chicken_Trophy_A3": "Chicken_Trophy_A3",
+    "Item_Chilled_Fish_Platter": "Chilled_Fish_Platter",
     "Item_Choc_Chip_Cookie": "Choc_Chip_Cookie",
     "Item_Chocolate_Cake": "Chocolate_Cake",
     "Item_Chocolate_Cake_Piece": "Chocolate_Cake_Piece",
@@ -6007,6 +6048,7 @@
     "Item_Coconut_Cake": "Coconut_Cake",
     "Item_Coconut_Cake_Piece": "Coconut_Cake_Piece",
     "Item_Coconut_Cookie": "Coconut_Cookie",
+    "Item_Coconut_Fish_Curry": "Coconut_Fish_Curry",
     "Item_Coconut_Mature": "Coconut_mature",
     "Item_Coconut_Mid": "Coconut_mid",
     "Item_Coffee": "Coffee",
@@ -6194,6 +6236,7 @@
     "Item_Dressing_Kit": "Dressing_Kit",
     "Item_Dried_Avocado": "Dried_Avocado",
     "Item_Dried_Banana": "Dried_Banana",
+    "Item_Dried_Fish_Chunks": "Dried_Fish_Chunks",
     "Item_Dried_Freshwater_Fillet": "Dried_Freshwater_Fillet",
     "Item_Dried_Meat_Generic": "Dried_Meat_Generic",
     "Item_Dried_Rhubarb": "Dried_Rhubarb",
@@ -6390,10 +6433,15 @@
     "Item_Fish_19_v3": "Fish_19_Var3",
     "Item_Fish_19_v4": "Fish_19_Var4",
     "Item_Fish_20": "Fish_20",
+    "Item_Fish_And_Chips": "Fish_And_Chips",
+    "Item_Fish_Chowder": "Fish_Chowder",
     "Item_Fish_Chunk_Stew": "Fish_Chunk_Stew",
     "Item_Fish_Chunks": "Fish_Chunks",
     "Item_Fish_Dish": "Food_Fish_Dish",
     "Item_Fish_Fillet_Pie": "Fish_Fillet_Pie",
+    "Item_Fish_Paste": "Fish_Paste",
+    "Item_Fish_Paste_Lure": "Fish_Paste_Lure",
+    "Item_Fish_Roll": "Fish_Roll",
     "Item_Fish_Wall_Mount": "Fish_Wall_Mount",
     "Item_Fishing_Bench": "Filletting_Station",
     "Item_Flagpole": "National_Flag",
@@ -6451,6 +6499,7 @@
     "Item_French_Onion_Soup": "French_Onion_Soup",
     "Item_Freshwater_Fillet_Curry": "Freshwater_Fillet_Curry",
     "Item_Freshwater_Fish_Fillet": "Freshwater_Fish_Fillet",
+    "Item_Freshwater_Tartare": "Freshwater_Tartare",
     "Item_Fried_Chicken": "Fried_Chicken",
     "Item_Fried_Chunky_Vegetables": "Fried_Chunky_Vegetables",
     "Item_Fried_Fish_Chunks": "Fried_Fish_Chunks",
@@ -7411,6 +7460,7 @@
     "Item_Pickled_Carrot": "Food_Pickled_Carrot",
     "Item_Pickled_Eggs": "Pickled_Eggs",
     "Item_Pickled_Freshwater_Fillet": "Pickled_Freshwater_Fillet",
+    "Item_Pickled_Saltwater_Fillet": "Pickled_Saltwater_Fillet",
     "Item_Pickled_Tomato": "Food_Pickled_Tomato",
     "Item_Pig_Head": "Pig_Head",
     "Item_Pig_Trophy": "Pig_Trophy",
@@ -7909,6 +7959,7 @@
     "Item_Slug_Trophy_Vial": "Slug_Trophy_Vial",
     "Item_Smashed_Avocado": "Smashed_Avocado",
     "Item_Smoke_Grenade": "Smoke_Grenade",
+    "Item_Smoked_Fillet_Sandwich": "Smoked_Fillet_Sandwich",
     "Item_Smoked_Freshwater_Fillet": "Smoked_Freshwater_Fillet",
     "Item_Smoked_Garlic": "Smoked_Garlic",
     "Item_Smoked_Meat_Generic": "Smoked_Meat_Generic",
@@ -8135,6 +8186,7 @@
     "Item_Tree_Sap": "Tree_Sap",
     "Item_TriangulationBeacon": "TriangulationBeacon",
     "Item_Trophy_Bench": "Trophy_Bench",
+    "Item_Trophy_Fish_Feast": "Trophy_Fish_Feast",
     "Item_Truffle": "Truffle",
     "Item_Truffle_Focaccia": "Truffle_Focaccia",
     "Item_Truffle_Fries": "Truffle_Fries",
@@ -9112,6 +9164,7 @@
     "Pickled_Carrot": "Food_Pickled_Carrot",
     "Pickled_Eggs": "Pickled_Eggs",
     "Pickled_Freshwater_Fillet": "Pickled_Freshwater_Fillet",
+    "Pickled_Saltwater_Fillet": "Pickled_Saltwater_Fillet",
     "Pickled_Tomato": "Food_Pickled_Tomato",
     "Pig_Head": "Pig_Head",
     "Pig_Trophy": "Pig_Trophy",
@@ -9743,6 +9796,7 @@
     "Smoke_Grenade": "Smoke_Grenade",
     "Smoked_Bacon": "Smoked_Bacon",
     "Smoked_Fatty_Tbone": "Smoked_Fatty_Tbone",
+    "Smoked_Fillet_Sandwich": "Smoked_Fillet_Sandwich",
     "Smoked_Freshwater_Fillet": "Smoked_Freshwater_Fillet",
     "Smoked_Gamey_Meat": "Smoked_Gamey_Meat",
     "Smoked_Garlic": "Smoked_Garlic",
@@ -10012,6 +10066,7 @@
     "Tree_Sap": "Tree_Sap",
     "TriangulationBeacon": "TriangulationBeacon",
     "Trophy_Bench": "Trophy_Bench",
+    "Trophy_Fish_Feast": "Trophy_Fish_Feast",
     "Truffle": "Truffle",
     "Truffle_Focaccia": "Truffle_Focaccia",
     "Truffle_Fries": "Truffle_Fries",
@@ -14049,6 +14104,18 @@
         "Bandage_Heat"
       ]
     },
+    "Bandage_Poultice": {
+      "id": "Bandage_Poultice",
+      "imagePath": "/icarus-game/ItemIcons/UseableItems/T_ITEM_Bandage_Poultice.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Bandage_Poultice",
+      "label": "Poultice Bandage",
+      "templateIds": [
+        "Bandage_Poultice"
+      ]
+    },
     "Bark_Lure": {
       "id": "Bark_Lure",
       "imagePath": "/icarus-game/ItemIcons/Fishing/ITEM_Bark_Lure.png",
@@ -16935,6 +17002,18 @@
         "Chicken_Trophy_A3"
       ]
     },
+    "Chilled_Fish_Platter": {
+      "id": "Chilled_Fish_Platter",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_ChilledPlatter.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Chilled_Fish_Platter",
+      "label": "Chilled Fish Platter",
+      "templateIds": [
+        "Chilled_Fish_Platter"
+      ]
+    },
     "Choc_Chip_Cookie": {
       "id": "Choc_Chip_Cookie",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Choc_Chip_Cookie.png",
@@ -17343,6 +17422,18 @@
       "label": "Chewy Coconut Cookie",
       "templateIds": [
         "Coconut_Cookie"
+      ]
+    },
+    "Coconut_Fish_Curry": {
+      "id": "Coconut_Fish_Curry",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_CoconutCurry.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Coconut_Fish_Curry",
+      "label": "Coconut Fish Curry",
+      "templateIds": [
+        "Coconut_Fish_Curry"
       ]
     },
     "Coconut_mature": {
@@ -19488,7 +19579,7 @@
       "id": "Dough_Bread",
       "imagePath": "/icarus-game/ItemIcons/Resources/ITEM_Dough.png",
       "isBlacklisted": false,
-      "isFood": false,
+      "isFood": true,
       "isPlaceholder": false,
       "itemableId": "Item_Dough_Bread",
       "label": "Bread Dough",
@@ -19500,7 +19591,7 @@
       "id": "Dough_Flatbread",
       "imagePath": "/icarus-game/ItemIcons/Resources/ITEM_Dough.png",
       "isBlacklisted": false,
-      "isFood": false,
+      "isFood": true,
       "isPlaceholder": false,
       "itemableId": "Item_Dough_Flatbread",
       "label": "Flatbread Dough",
@@ -19614,6 +19705,18 @@
       "label": "Dried Banana Chips",
       "templateIds": [
         "Dried_Banana"
+      ]
+    },
+    "Dried_Fish_Chunks": {
+      "id": "Dried_Fish_Chunks",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_Dry_Chunks.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Dried_Fish_Chunks",
+      "label": "Dried Fish Chunks",
+      "templateIds": [
+        "Dried_Fish_Chunks"
       ]
     },
     "Dried_Freshwater_Fillet": {
@@ -22092,6 +22195,30 @@
         "Fish_20"
       ]
     },
+    "Fish_And_Chips": {
+      "id": "Fish_And_Chips",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_Chips.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Fish_And_Chips",
+      "label": "Fish and Chips",
+      "templateIds": [
+        "Fish_And_Chips"
+      ]
+    },
+    "Fish_Chowder": {
+      "id": "Fish_Chowder",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_Chowder.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Fish_Chowder",
+      "label": "Fish Chowder",
+      "templateIds": [
+        "Fish_Chowder"
+      ]
+    },
     "Fish_Chunk_Stew": {
       "id": "Fish_Chunk_Stew",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/ITEM_Fish_Chunk_Stew.png",
@@ -22126,6 +22253,42 @@
       "label": "Fish Pie",
       "templateIds": [
         "Fish_Fillet_Pie"
+      ]
+    },
+    "Fish_Paste": {
+      "id": "Fish_Paste",
+      "imagePath": "/icarus-game/ItemIcons/Resources/T_ITEM_Fish_Paste.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Fish_Paste",
+      "label": "Fish Paste",
+      "templateIds": [
+        "Fish_Paste"
+      ]
+    },
+    "Fish_Paste_Lure": {
+      "id": "Fish_Paste_Lure",
+      "imagePath": "/icarus-game/ItemIcons/Fishing/T_ITEM_Fish_Paste_Lure.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Fish_Paste_Lure",
+      "label": "Fish Paste Lure",
+      "templateIds": [
+        "Fish_Paste_Lure"
+      ]
+    },
+    "Fish_Roll": {
+      "id": "Fish_Roll",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_SausageRoll.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Fish_Roll",
+      "label": "Fish Roll",
+      "templateIds": [
+        "Fish_Roll"
       ]
     },
     "Fish_Wall_Mount": {
@@ -23230,6 +23393,18 @@
       "label": "Freshwater Fish Fillet",
       "templateIds": [
         "Freshwater_Fish_Fillet"
+      ]
+    },
+    "Freshwater_Tartare": {
+      "id": "Freshwater_Tartare",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_Tartare.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Freshwater_Tartare",
+      "label": "Freshwater Tartare",
+      "templateIds": [
+        "Freshwater_Tartare"
       ]
     },
     "Fried_Chicken": {
@@ -35336,6 +35511,18 @@
         "Pickled_Freshwater_Fillet"
       ]
     },
+    "Pickled_Saltwater_Fillet": {
+      "id": "Pickled_Saltwater_Fillet",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_SaltwaterFillet.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Pickled_Saltwater_Fillet",
+      "label": "Pickled Saltwater Fillet",
+      "templateIds": [
+        "Pickled_Saltwater_Fillet"
+      ]
+    },
     "Pig_Head": {
       "id": "Pig_Head",
       "imagePath": "/icarus-game/ItemIcons/Carcasses/T_ITEM_Pig_Head.png",
@@ -41425,7 +41612,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Seed_Oil",
-      "label": "Vegetable Oil",
+      "label": "Organic Oil",
       "templateIds": [
         "Seed_Oil"
       ]
@@ -42207,6 +42394,18 @@
         "Smoked_Fatty_Tbone"
       ]
     },
+    "Smoked_Fillet_Sandwich": {
+      "id": "Smoked_Fillet_Sandwich",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_SandwichSmoked.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Smoked_Fillet_Sandwich",
+      "label": "Smoked Fillet Sandwich",
+      "templateIds": [
+        "Smoked_Fillet_Sandwich"
+      ]
+    },
     "Smoked_Freshwater_Fillet": {
       "id": "Smoked_Freshwater_Fillet",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Freshwater_Fillet_Smoked.png",
@@ -42892,7 +43091,7 @@
       "id": "Spoiled_Plants",
       "imagePath": "/icarus-game/ItemIcons/Resources/ITEM_Spoiled_Plants.png",
       "isBlacklisted": false,
-      "isFood": false,
+      "isFood": true,
       "isPlaceholder": false,
       "itemableId": "Item_Spoiled_Plants",
       "label": "Spoiled Plants",
@@ -45047,6 +45246,18 @@
       "label": "Trophy Bench",
       "templateIds": [
         "Trophy_Bench"
+      ]
+    },
+    "Trophy_Fish_Feast": {
+      "id": "Trophy_Fish_Feast",
+      "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Fish_TrophyPlatter.png",
+      "isBlacklisted": false,
+      "isFood": true,
+      "isPlaceholder": false,
+      "itemableId": "Item_Trophy_Fish_Feast",
+      "label": "Trophy Fish Feast",
+      "templateIds": [
+        "Trophy_Fish_Feast"
       ]
     },
     "Truffle": {
@@ -47418,6 +47629,7 @@
       "processor:Crispy_Bacon",
       "processor:Food_Creamed_Corn",
       "processor:Food_Crumbed_Saltwater_Fillet",
+      "processor:Food_Fish_And_Chips",
       "processor:Food_Freshwater_Fillet_Curry",
       "processor:Food_Fried_Chunky_Vegetables",
       "processor:Food_Potato_Carrot_Fries",
@@ -47498,6 +47710,7 @@
     "Avocado": [
       "processor:Avocado_Seeds",
       "processor:Dried_Avocado",
+      "processor:Food_Freshwater_Tartare",
       "processor:Food_Savory_Roll",
       "processor:Food_Smashed_Avocado",
       "processor:Food_Stuffed_Avocado",
@@ -47525,6 +47738,9 @@
       "processor:Food_Banana_Bread",
       "processor:Food_Banana_Toast",
       "processor:Frozen_Banana"
+    ],
+    "Bandage_Basic": [
+      "processor:Bandage_Poultice_Fish"
     ],
     "Basic_Fertilizer": [
       "processor:Gunpowder_talent",
@@ -47761,6 +47977,8 @@
       "processor:Food_Banana_Toast",
       "processor:Food_Garlic_Butter",
       "processor:Food_PricklyPear_Muffins",
+      "processor:Food_Smoked_Fillet_Sandwich",
+      "processor:Food_Trophy_Fish_Feast",
       "processor:Pastry_Butter"
     ],
     "Calf_Head": [
@@ -47986,6 +48204,7 @@
       "processor:Synthetic_Enzymes_2",
       "processor:T3_Smoker",
       "processor:Vitamins",
+      "processor:Vitamins_Fish",
       "processor:Water_Purifier_T1_Ground",
       "processor:Water_Purifier_T1_Water"
     ],
@@ -48520,6 +48739,7 @@
       "processor:Food_Cooked_Corn",
       "processor:Food_Corn_Soup",
       "processor:Food_Creamed_Corn",
+      "processor:Food_Fish_Chowder",
       "processor:Food_Fish_Chunk_Stew",
       "processor:Food_Rhubarb_Stew",
       "processor:Vegetable_Pie"
@@ -48554,6 +48774,7 @@
     ],
     "Crushed_Limestone": [
       "processor:Limestone_Concrete_Mix",
+      "processor:Limestone_Concrete_Mix_Fish",
       "processor:Limestone_Fertilizer",
       "processor:Limestone_Glass",
       "processor:Steel_Bloom_Limestone"
@@ -49299,8 +49520,20 @@
       "processor:Wood_Window"
     ],
     "Fish_Chunks": [
+      "processor:Fish_Paste",
+      "processor:Food_Dried_Fish_Chunks",
+      "processor:Food_Fish_And_Chips",
       "processor:Food_Fish_Chunk_Stew",
-      "processor:Food_Fried_Fish_Chunks"
+      "processor:Food_Fried_Fish_Chunks",
+      "processor:Seed_Oil_Fish_Chunks"
+    ],
+    "Fish_Paste": [
+      "processor:Bandage_Poultice_Fish",
+      "processor:Concrete_Mix_Fish",
+      "processor:Fish_Paste_Lure",
+      "processor:Limestone_Concrete_Mix_Fish",
+      "processor:Organic_Resin_Fish",
+      "processor:Vitamins_Fish"
     ],
     "Flightless_Tank_Head": [
       "processor:Flightless_Tank_Trophy"
@@ -49331,12 +49564,14 @@
       "processor:Bacon_Sandwich",
       "processor:Food_Banana_Toast",
       "processor:Food_Scrambled_Eggs",
-      "processor:Food_Smashed_Avocado"
+      "processor:Food_Smashed_Avocado",
+      "processor:Food_Smoked_Fillet_Sandwich"
     ],
     "Freshwater_Fish_Fillet": [
       "processor:Dried_Freshwater_Fillet",
       "processor:Food_Fish_Fillet_Pie",
       "processor:Food_Freshwater_Fillet_Curry",
+      "processor:Food_Freshwater_Tartare",
       "processor:Food_Grilled_Feshwater_Fillet",
       "processor:Pickled_Freshwater_Fillet",
       "processor:Smoked_Freshwater_Fillet"
@@ -49632,6 +49867,7 @@
     ],
     "Glass_Jar": [
       "processor:Food_Pickled_Eggs",
+      "processor:Food_Pickled_Saltwater_Fillet",
       "processor:Food_PricklyPear_Jelly",
       "processor:Glass_Jar_Honey",
       "processor:Glass_Jar_Jam",
@@ -49864,6 +50100,7 @@
       "processor:Chicken_Coop_Red",
       "processor:Crossbow",
       "processor:Fiber_Lure",
+      "processor:Fish_Paste_Lure",
       "processor:Fish_Wall_Mount",
       "processor:Food_Trough",
       "processor:Food_Trough_Large",
@@ -50292,12 +50529,14 @@
       "processor:Blood_Thinner_Paste",
       "processor:Blood_Thinning_Tonic",
       "processor:Dressing_Kit",
+      "processor:Food_Trophy_Fish_Feast",
       "processor:Health_Enhancement_Tonic",
       "processor:Lily_Seeds",
       "processor:Paints_4",
       "processor:Strength_Enhancement_Tonic",
       "processor:Sustenence_Enhancement_Tonic",
-      "processor:Vitamins"
+      "processor:Vitamins",
+      "processor:Vitamins_Fish"
     ],
     "Limestone": [
       "processor:Crushed_Limestone",
@@ -50834,6 +51073,8 @@
       "processor:Flour_Potato",
       "processor:Food_Big_Breakfast",
       "processor:Food_Cooked_Potato",
+      "processor:Food_Fish_And_Chips",
+      "processor:Food_Fish_Chowder",
       "processor:Food_Potato_Carrot_Fries",
       "processor:Food_Truffle_Fries",
       "processor:Potato_Bread",
@@ -51486,6 +51727,7 @@
       "processor:Dressing_Kit",
       "processor:Exotic_Delivery_Interface",
       "processor:Fiber_Lure",
+      "processor:Fish_Paste_Lure",
       "processor:Fishing_Bench",
       "processor:Fortification_Wood_Gate",
       "processor:Fortification_Wood_Spikes",
@@ -51651,10 +51893,13 @@
       "processor:Cheese",
       "processor:Enzyme_Elixir",
       "processor:Enzyme_Virus",
+      "processor:Fish_Paste",
+      "processor:Fish_Paste_Fish",
       "processor:Food_Banana_Bread",
       "processor:Food_Caramelized_Onion",
       "processor:Food_Onion_Rings",
       "processor:Food_Pickled_Eggs",
+      "processor:Food_Pickled_Saltwater_Fillet",
       "processor:Food_Smoked_Garlic",
       "processor:Gunpowder_Salt",
       "processor:Health_Elixir",
@@ -51675,8 +51920,10 @@
     "Saltwater_Fish_Fillet": [
       "processor:Dried_Saltwater_Fillet",
       "processor:Food_Crumbed_Saltwater_Fillet",
+      "processor:Food_Fish_Chowder",
       "processor:Food_Fish_Fillet_Pie",
       "processor:Food_Grilled_Saltwater_Fillet",
+      "processor:Food_Pickled_Saltwater_Fillet",
       "processor:Food_Saltwater_Fillet_Sashimi",
       "processor:Smoked_Saltwater_Fillet"
     ],
@@ -51885,6 +52132,7 @@
       "processor:Composite_Paste",
       "processor:Composite_Paste_Plat",
       "processor:Concrete_Mix",
+      "processor:Concrete_Mix_Fish",
       "processor:Glass",
       "processor:Mortar_And_Pestle",
       "processor:Speed_Fertilizer",
@@ -51929,6 +52177,9 @@
       "processor:Slug_Trophy_Coil",
       "processor:Slug_Trophy_Habitat",
       "processor:Slug_Trophy_Vial"
+    ],
+    "Smoked_Saltwater_Fillet": [
+      "processor:Food_Smoked_Fillet_Sandwich"
     ],
     "SnowLeopard_Head": [
       "processor:Animal_Bed_LeopardSkin",
@@ -52617,6 +52868,7 @@
       "processor:Cement_Mixer",
       "processor:Composter_Wood",
       "processor:Concrete_Mix",
+      "processor:Concrete_Mix_Fish",
       "processor:Cooking_Station",
       "processor:Crafting_Bench",
       "processor:Deer_Statue_Stone",
@@ -53201,11 +53453,13 @@
       "processor:Food_Caramelized_Onion",
       "processor:Food_Corn_Soup",
       "processor:Food_Creamed_Corn",
+      "processor:Food_Fish_Chowder",
       "processor:Food_Fish_Chunk_Stew",
       "processor:Food_French_Onion_Soup",
       "processor:Food_Meat_Stew",
       "processor:Food_Mushroom_Soup",
       "processor:Food_Pickled_Eggs",
+      "processor:Food_Pickled_Saltwater_Fillet",
       "processor:Food_Rhubarb_Stew",
       "processor:Food_Tomato_Soup",
       "processor:Geode_Lamp_Burst_Copper",
@@ -53407,6 +53661,7 @@
       "processor:Metal_Throwing_Spear",
       "processor:Mission_Communicator_T2",
       "processor:Organic_Resin",
+      "processor:Organic_Resin_Fish",
       "processor:Oxite_Dissolver",
       "processor:Piranha_Statue_Wood",
       "processor:Rabbit_Statue_Wood",
@@ -54450,6 +54705,9 @@
       "processor:Bandage_Heat_Silk",
       "processor:Bandage_Heat_Wool"
     ],
+    "Bandage_Poultice": [
+      "processor:Bandage_Poultice_Fish"
+    ],
     "Bark_Lure": [
       "processor:Bark_Lure"
     ],
@@ -55306,7 +55564,9 @@
     ],
     "Concrete_Mix": [
       "processor:Concrete_Mix",
-      "processor:Limestone_Concrete_Mix"
+      "processor:Concrete_Mix_Fish",
+      "processor:Limestone_Concrete_Mix",
+      "processor:Limestone_Concrete_Mix_Fish"
     ],
     "Concrete_Railing": [
       "processor:Concrete_Railing",
@@ -55599,6 +55859,9 @@
     "Dried_Banana": [
       "processor:Dried_Banana"
     ],
+    "Dried_Fish_Chunks": [
+      "processor:Food_Dried_Fish_Chunks"
+    ],
     "Dried_Freshwater_Fillet": [
       "processor:Dried_Freshwater_Fillet"
     ],
@@ -55849,6 +56112,12 @@
     "Fireplace_Chimney_Ext": [
       "processor:Fireplace_Chimney_Ext"
     ],
+    "Fish_And_Chips": [
+      "processor:Food_Fish_And_Chips"
+    ],
+    "Fish_Chowder": [
+      "processor:Food_Fish_Chowder"
+    ],
     "Fish_Chunk_Stew": [
       "processor:Food_Fish_Chunk_Stew"
     ],
@@ -55858,6 +56127,13 @@
     ],
     "Fish_Fillet_Pie": [
       "processor:Food_Fish_Fillet_Pie"
+    ],
+    "Fish_Paste": [
+      "processor:Fish_Paste",
+      "processor:Fish_Paste_Fish"
+    ],
+    "Fish_Paste_Lure": [
+      "processor:Fish_Paste_Lure"
     ],
     "Fish_Wall_Mount": [
       "processor:Fish_Wall_Mount"
@@ -56083,6 +56359,9 @@
     ],
     "Freshwater_Fish_Fillet": [
       "processor:Butcher_Fish_Freshwater"
+    ],
+    "Freshwater_Tartare": [
+      "processor:Food_Freshwater_Tartare"
     ],
     "Fried_Chicken": [
       "processor:Fried_Chicken"
@@ -57906,6 +58185,7 @@
     ],
     "Organic_Resin": [
       "processor:Organic_Resin",
+      "processor:Organic_Resin_Fish",
       "processor:Resin_Flightless_Tank_Horn"
     ],
     "Orka_Arctic_Trophy": [
@@ -58005,6 +58285,9 @@
     ],
     "Pickled_Freshwater_Fillet": [
       "processor:Pickled_Freshwater_Fillet"
+    ],
+    "Pickled_Saltwater_Fillet": [
+      "processor:Food_Pickled_Saltwater_Fillet"
     ],
     "Pig_Trophy": [
       "processor:Pig_Trophy"
@@ -59162,6 +59445,8 @@
     "Seed_Oil": [
       "processor:Seed_Oil",
       "processor:Seed_Oil_Avocado",
+      "processor:Seed_Oil_Fish",
+      "processor:Seed_Oil_Fish_Chunks",
       "processor:Seed_Oil_Soy"
     ],
     "Seed_Pouch": [
@@ -59305,6 +59590,9 @@
     ],
     "Smoked_Fatty_Tbone": [
       "processor:Smoked_Fatty_Tbone"
+    ],
+    "Smoked_Fillet_Sandwich": [
+      "processor:Food_Smoked_Fillet_Sandwich"
     ],
     "Smoked_Freshwater_Fillet": [
       "processor:Smoked_Freshwater_Fillet"
@@ -59893,6 +60181,9 @@
     "Trophy_Bench": [
       "processor:Trophy_Bench"
     ],
+    "Trophy_Fish_Feast": [
+      "processor:Food_Trophy_Fish_Feast"
+    ],
     "Truffle_Focaccia": [
       "processor:Food_Truffle_Focaccia"
     ],
@@ -59954,7 +60245,8 @@
       "processor:Viscid_Trophy"
     ],
     "Vitamins": [
-      "processor:Vitamins"
+      "processor:Vitamins",
+      "processor:Vitamins_Fish"
     ],
     "Vodka": [
       "processor:Drink_Vodka"
@@ -69193,6 +69485,36 @@
       ],
       "recipeSetIds": [
         "Character"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Bandage_Poultice_Fish": {
+      "enabled": true,
+      "id": "processor:Bandage_Poultice_Fish",
+      "inputs": [
+        {
+          "itemId": "Bandage_Basic",
+          "quantity": 1
+        },
+        {
+          "itemId": "Fish_Paste",
+          "quantity": 3
+        }
+      ],
+      "name": "Bandage_Poultice_Fish",
+      "outputs": [
+        {
+          "itemId": "Bandage_Poultice",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Chemistry_Bench",
+        "Herbalism_Bench",
+        "Medicine_Bench"
       ],
       "requiredMillijoules": null,
       "resourceInputs": [],
@@ -81554,6 +81876,39 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Concrete_Mix_Fish": {
+      "enabled": true,
+      "id": "processor:Concrete_Mix_Fish",
+      "inputs": [
+        {
+          "itemId": "Fish_Paste",
+          "quantity": 1
+        },
+        {
+          "itemId": "Stone",
+          "quantity": 8
+        },
+        {
+          "itemId": "Silica",
+          "quantity": 2
+        }
+      ],
+      "name": "Concrete_Mix_Fish",
+      "outputs": [
+        {
+          "itemId": "Concrete_Mix",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Cement_Mixer",
+        "Masonry_Bench_T4"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Concrete_Railing": {
       "enabled": true,
       "id": "processor:Concrete_Railing",
@@ -87293,6 +87648,92 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Fish_Paste": {
+      "enabled": true,
+      "id": "processor:Fish_Paste",
+      "inputs": [
+        {
+          "itemId": "Fish_Chunks",
+          "quantity": 2
+        },
+        {
+          "itemId": "Salt",
+          "quantity": 1
+        }
+      ],
+      "name": "Fish_Paste",
+      "outputs": [
+        {
+          "itemId": "Fish_Paste",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Material_Processor",
+        "Mortar_And_Pestle"
+      ],
+      "requiredMillijoules": 5000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Fish_Paste_Fish": {
+      "enabled": true,
+      "id": "processor:Fish_Paste_Fish",
+      "inputs": [
+        {
+          "itemId": "Salt",
+          "quantity": 2
+        }
+      ],
+      "name": "Fish_Paste_Fish",
+      "outputs": [
+        {
+          "itemId": "Fish_Paste",
+          "quantity": 2
+        }
+      ],
+      "recipeSetIds": [
+        "Material_Processor",
+        "Mortar_And_Pestle"
+      ],
+      "requiredMillijoules": 5000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Fish_Paste_Lure": {
+      "enabled": true,
+      "id": "processor:Fish_Paste_Lure",
+      "inputs": [
+        {
+          "itemId": "Fish_Paste",
+          "quantity": 2
+        },
+        {
+          "itemId": "Iron_Nail",
+          "quantity": 2
+        },
+        {
+          "itemId": "Rope",
+          "quantity": 2
+        }
+      ],
+      "name": "Fish_Paste_Lure",
+      "outputs": [
+        {
+          "itemId": "Fish_Paste_Lure",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Fishing_Bench_Rods"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Fish_Wall_Mount": {
       "enabled": true,
       "id": "processor:Fish_Wall_Mount",
@@ -88765,6 +89206,32 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Food_Dried_Fish_Chunks": {
+      "enabled": true,
+      "id": "processor:Food_Dried_Fish_Chunks",
+      "inputs": [
+        {
+          "itemId": "Fish_Chunks",
+          "quantity": 1
+        }
+      ],
+      "name": "Food_Dried_Fish_Chunks",
+      "outputs": [
+        {
+          "itemId": "Dried_Fish_Chunks",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Drying_Rack",
+        "T3_Smoker",
+        "T4_Smoker"
+      ],
+      "requiredMillijoules": 17500,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Food_Egg_Salad": {
       "enabled": true,
       "id": "processor:Food_Egg_Salad",
@@ -88792,6 +89259,84 @@
       ],
       "requiredMillijoules": null,
       "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Food_Fish_And_Chips": {
+      "enabled": true,
+      "id": "processor:Food_Fish_And_Chips",
+      "inputs": [
+        {
+          "itemId": "Fish_Chunks",
+          "quantity": 1
+        },
+        {
+          "itemId": "Potato",
+          "quantity": 2
+        },
+        {
+          "itemId": "Animal_Fat",
+          "quantity": 1
+        }
+      ],
+      "name": "Food_Fish_And_Chips",
+      "outputs": [
+        {
+          "itemId": "Fish_And_Chips",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Electric_Stove",
+        "Kitchen_Stove"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Food_Fish_Chowder": {
+      "enabled": true,
+      "id": "processor:Food_Fish_Chowder",
+      "inputs": [
+        {
+          "itemId": "Saltwater_Fish_Fillet",
+          "quantity": 1
+        },
+        {
+          "itemId": "Potato",
+          "quantity": 1
+        },
+        {
+          "itemId": "Corn",
+          "quantity": 1
+        },
+        {
+          "itemId": "Water",
+          "quantity": 0.1,
+          "quantityUnit": "L"
+        }
+      ],
+      "name": "Food_Fish_Chowder",
+      "outputs": [
+        {
+          "itemId": "Fish_Chowder",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Electric_Stove",
+        "Kitchen_Stove",
+        "PotBellyStove"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [
+        {
+          "itemId": "Water",
+          "quantity": 0.1,
+          "quantityUnit": "L"
+        }
+      ],
       "resourceOutputs": [],
       "source": "processor"
     },
@@ -88948,6 +89493,36 @@
         "Electric_Stove",
         "Kitchen_Stove",
         "PotBellyStove"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Food_Freshwater_Tartare": {
+      "enabled": true,
+      "id": "processor:Food_Freshwater_Tartare",
+      "inputs": [
+        {
+          "itemId": "Freshwater_Fish_Fillet",
+          "quantity": 1
+        },
+        {
+          "itemId": "Avocado",
+          "quantity": 1
+        }
+      ],
+      "name": "Food_Freshwater_Tartare",
+      "outputs": [
+        {
+          "itemId": "Freshwater_Tartare",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Advanced_Kitchen_Bench",
+        "Cooking_Station",
+        "Kitchen_Bench"
       ],
       "requiredMillijoules": null,
       "resourceInputs": [],
@@ -89631,6 +90206,50 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Food_Pickled_Saltwater_Fillet": {
+      "enabled": true,
+      "id": "processor:Food_Pickled_Saltwater_Fillet",
+      "inputs": [
+        {
+          "itemId": "Saltwater_Fish_Fillet",
+          "quantity": 1
+        },
+        {
+          "itemId": "Glass_Jar",
+          "quantity": 1
+        },
+        {
+          "itemId": "Salt",
+          "quantity": 5
+        },
+        {
+          "itemId": "Water",
+          "quantity": 0.1,
+          "quantityUnit": "L"
+        }
+      ],
+      "name": "Food_Pickled_Saltwater_Fillet",
+      "outputs": [
+        {
+          "itemId": "Pickled_Saltwater_Fillet",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Advanced_Kitchen_Bench",
+        "Kitchen_Bench"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [
+        {
+          "itemId": "Water",
+          "quantity": 0.1,
+          "quantityUnit": "L"
+        }
+      ],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Food_Potato_Carrot_Fries": {
       "enabled": true,
       "id": "processor:Food_Potato_Carrot_Fries",
@@ -90041,6 +90660,39 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Food_Smoked_Fillet_Sandwich": {
+      "enabled": true,
+      "id": "processor:Food_Smoked_Fillet_Sandwich",
+      "inputs": [
+        {
+          "itemId": "Food_Bread",
+          "quantity": 1
+        },
+        {
+          "itemId": "Smoked_Saltwater_Fillet",
+          "quantity": 1
+        },
+        {
+          "itemId": "Butter",
+          "quantity": 1
+        }
+      ],
+      "name": "Food_Smoked_Fillet_Sandwich",
+      "outputs": [
+        {
+          "itemId": "Smoked_Fillet_Sandwich",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Advanced_Kitchen_Bench",
+        "Kitchen_Bench"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Food_Smoked_Garlic": {
       "enabled": true,
       "id": "processor:Food_Smoked_Garlic",
@@ -90162,6 +90814,34 @@
           "quantityUnit": "L"
         }
       ],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Food_Trophy_Fish_Feast": {
+      "enabled": true,
+      "id": "processor:Food_Trophy_Fish_Feast",
+      "inputs": [
+        {
+          "itemId": "Lily",
+          "quantity": 2
+        },
+        {
+          "itemId": "Butter",
+          "quantity": 2
+        }
+      ],
+      "name": "Food_Trophy_Fish_Feast",
+      "outputs": [
+        {
+          "itemId": "Trophy_Fish_Feast",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Electric_Stove"
+      ],
+      "requiredMillijoules": 50000,
+      "resourceInputs": [],
       "resourceOutputs": [],
       "source": "processor"
     },
@@ -103961,6 +104641,35 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Limestone_Concrete_Mix_Fish": {
+      "enabled": true,
+      "id": "processor:Limestone_Concrete_Mix_Fish",
+      "inputs": [
+        {
+          "itemId": "Fish_Paste",
+          "quantity": 1
+        },
+        {
+          "itemId": "Crushed_Limestone",
+          "quantity": 6
+        }
+      ],
+      "name": "Limestone_Concrete_Mix_Fish",
+      "outputs": [
+        {
+          "itemId": "Concrete_Mix",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Cement_Mixer",
+        "Masonry_Bench_T4"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Limestone_Curved_Set": {
       "enabled": true,
       "id": "processor:Limestone_Curved_Set",
@@ -110164,6 +110873,35 @@
         }
       ],
       "name": "Organic_Resin",
+      "outputs": [
+        {
+          "itemId": "Organic_Resin",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Material_Processor",
+        "Mortar_And_Pestle"
+      ],
+      "requiredMillijoules": 500,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Organic_Resin_Fish": {
+      "enabled": true,
+      "id": "processor:Organic_Resin_Fish",
+      "inputs": [
+        {
+          "itemId": "Fish_Paste",
+          "quantity": 2
+        },
+        {
+          "itemId": "Wood",
+          "quantity": 1
+        }
+      ],
+      "name": "Organic_Resin_Fish",
       "outputs": [
         {
           "itemId": "Organic_Resin",
@@ -122445,6 +123183,51 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Seed_Oil_Fish": {
+      "enabled": true,
+      "id": "processor:Seed_Oil_Fish",
+      "inputs": [],
+      "name": "Seed_Oil_Fish",
+      "outputs": [
+        {
+          "itemId": "Seed_Oil",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Material_Processor",
+        "Mortar_And_Pestle"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Seed_Oil_Fish_Chunks": {
+      "enabled": true,
+      "id": "processor:Seed_Oil_Fish_Chunks",
+      "inputs": [
+        {
+          "itemId": "Fish_Chunks",
+          "quantity": 2
+        }
+      ],
+      "name": "Seed_Oil_Fish_Chunks",
+      "outputs": [
+        {
+          "itemId": "Seed_Oil",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Material_Processor",
+        "Mortar_And_Pestle"
+      ],
+      "requiredMillijoules": null,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Seed_Oil_Soy": {
       "enabled": true,
       "id": "processor:Seed_Oil_Soy",
@@ -130580,6 +131363,38 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Vitamins_Fish": {
+      "enabled": true,
+      "id": "processor:Vitamins_Fish",
+      "inputs": [
+        {
+          "itemId": "Fish_Paste",
+          "quantity": 4
+        },
+        {
+          "itemId": "Lily",
+          "quantity": 2
+        },
+        {
+          "itemId": "Charcoal",
+          "quantity": 2
+        }
+      ],
+      "name": "Vitamins_Fish",
+      "outputs": [
+        {
+          "itemId": "Vitamins",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Chemistry_Bench"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Volatile_Substance": {
       "enabled": true,
       "id": "processor:Volatile_Substance",
@@ -132960,11 +133775,11 @@
   "schemaVersion": 2,
   "sourceRowCounts": {
     "D_ExtractorRecipes.json": 1,
-    "D_ItemTemplate.json": 3085,
-    "D_Itemable.json": 3469,
-    "D_ItemsStatic.json": 3077,
+    "D_ItemTemplate.json": 3098,
+    "D_Itemable.json": 3483,
+    "D_ItemsStatic.json": 3090,
     "D_Processing.json": 76,
-    "D_ProcessorRecipes.json": 2215,
+    "D_ProcessorRecipes.json": 2232,
     "D_RecipeSets.json": 68
   }
 }

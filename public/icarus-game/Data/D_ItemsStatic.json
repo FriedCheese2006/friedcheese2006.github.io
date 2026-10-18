@@ -17580,20 +17580,20 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "FieldGuide.Food.Ingredient"
                     },
                     {
-                        "TagName": "FieldGuide.Food.Ingredient"
+                        "TagName": "Item.Resource.Spoilable"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "FieldGuide.Food.Ingredient"
                     },
                     {
-                        "TagName": "FieldGuide.Food.Ingredient"
+                        "TagName": "Item.Resource.Spoilable"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -17634,20 +17634,20 @@
             "Manual_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "FieldGuide.Food.Ingredient"
                     },
                     {
-                        "TagName": "FieldGuide.Food.Ingredient"
+                        "TagName": "Item.Resource.Spoilable"
                     }
                 ]
             },
             "Generated_Tags": {
                 "GameplayTags": [
                     {
-                        "TagName": "Item.Resource"
+                        "TagName": "FieldGuide.Food.Ingredient"
                     },
                     {
-                        "TagName": "FieldGuide.Food.Ingredient"
+                        "TagName": "Item.Resource.Spoilable"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -57354,6 +57354,9 @@
                     },
                     {
                         "TagName": "FieldGuide.Resource.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Spoiled"
                     }
                 ]
             },
@@ -57364,6 +57367,9 @@
                     },
                     {
                         "TagName": "FieldGuide.Resource.Raw"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Spoiled"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -84877,7 +84883,7 @@
                 "RowName": "Default"
             },
             "AdditionalStats": {
-                "(Value=\"BaseComfortLevel_+\")": 10
+                "(Value=\"BaseComfortLevel_+\")": 9
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -84972,7 +84978,7 @@
                 "RowName": "Default"
             },
             "AdditionalStats": {
-                "(Value=\"BaseComfortLevel_+\")": 12
+                "(Value=\"BaseComfortLevel_+\")": 10
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -168863,13 +168869,16 @@
                 "RowName": "Armour_Stand"
             },
             "Durable": {
-                "RowName": "Deployable_2500"
+                "RowName": "Deployable_750"
             },
             "Inventory": {
                 "RowName": "Armour_Stand"
             },
             "Decayable": {
                 "RowName": "Decay_General"
+            },
+            "Flammable": {
+                "RowName": "Flammable_Deployable"
             },
             "Audio": {
                 "RowName": "Default"
@@ -168912,6 +168921,9 @@
                     },
                     {
                         "TagName": "Traits.Inventory"
+                    },
+                    {
+                        "TagName": "Traits.Flammable"
                     }
                 ],
                 "ParentTags": []
@@ -238491,6 +238503,81 @@
             }
         },
         {
+            "Name": "Bandage_Poultice",
+            "Meshable": {
+                "RowName": "Mesh_Bandage_Basic"
+            },
+            "Itemable": {
+                "RowName": "Item_Bandage_Poultice"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Bandage"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Bandage_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Bandage_Poultice"
+            },
+            "Usable": {
+                "RowName": "Apply_Bandage"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Bandage"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Medicine.Bandage"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Equip.Quickbar"
+                    },
+                    {
+                        "TagName": "Item.Medicine.Bandage"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "Flightless_Tank_Horn",
             "Meshable": {
                 "RowName": "Mesh_Flightless_Tank_Horn"
@@ -238548,6 +238635,897 @@
                     },
                     {
                         "TagName": "Traits.Highlightable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Dried_Fish_Chunks",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Dried_Fish_Chunks"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Dried_Fish_Chunks"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Dried_Fish"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Dried.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Dried.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Fish_Chowder",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_Chowder"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Fish_Chowder"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Vege"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Vege"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Freshwater_Tartare",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Freshwater_Tartare"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Freshwater_Tartare"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Pickled_Saltwater_Fillet",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Pickled_Saltwater_Fillet"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Pickled_Saltwater_Fillet"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Fish_And_Chips",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_And_Chips"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Fish_And_Chips"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Vege"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Vege"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Fish_Roll",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_Roll"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Fish_Roll"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Vege"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Vege"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Smoked_Fillet_Sandwich",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Smoked_Fillet_Sandwich"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Smoked_Fillet_Sandwich"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Coconut_Fish_Curry",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Coconut_Fish_Curry"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Coconut_Fish_Curry"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fruit"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fruit"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Chilled_Fish_Platter",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Chilled_Fish_Platter"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Chilled_Fish_Platter"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Trophy_Fish_Feast",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Food"
+            },
+            "Itemable": {
+                "RowName": "Item_Trophy_Fish_Feast"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Generic_Consumable"
+            },
+            "Consumable": {
+                "RowName": "Trophy_Fish_Feast"
+            },
+            "Usable": {
+                "RowName": "Consume_Stack_Food"
+            },
+            "Decayable": {
+                "RowName": "Decay_Food_Generic"
+            },
+            "Audio": {
+                "RowName": "Default_Food"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Consumable.Food.Cooked.Fish"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Consumable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Fish_Paste",
+            "Meshable": {
+                "RowName": "Mesh_Fish_Paste"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_Paste"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Transmutable": {
+                "RowName": "Fish_Paste"
+            },
+            "Audio": {
+                "RowName": "Generic_Paste"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Fuel.AnimalFat"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Resource"
+                    },
+                    {
+                        "TagName": "Item.Fuel.AnimalFat"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Fish_Paste_Lure",
+            "Meshable": {
+                "RowName": "Mesh_Fish_Paste_Lure"
+            },
+            "Itemable": {
+                "RowName": "Item_Fish_Paste_Lure"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Destroyed"
+            },
+            "Experience": {
+                "RowName": "CatchFish"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Attachments": {
+                "RowName": "Fish_Paste_Lure"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Attachment.FishingRod"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Attachment.FishingRod"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
                     }
                 ],
                 "ParentTags": []
