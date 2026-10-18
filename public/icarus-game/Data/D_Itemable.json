@@ -12882,9 +12882,9 @@
         },
         {
             "Name": "Item_Seed_Oil",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Oil-DisplayName\", \"Vegetable Oil\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Oil-DisplayName\", \"Organic Oil\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Seed_Oil.T_ITEM_Seed_Oil",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Oil-Description\", \"Thick oil, made from plant extract.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Oil-Description\", \"Thick oil, perfect for cooking.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Seed_Oil-FlavorText\", \"An oil with many uses.\")",
             "Weight": 50,
             "MaxStack": 100
@@ -19716,7 +19716,7 @@
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Armor_Stand.T_ITEM_Armor_Stand",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Armour_Stand-Description\", \"A nicely carved stand where armor can be displayed.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Armour_Stand-FlavorText\", \"Show off your armor or use it to quickly equip, up to you prospector.\")",
-            "Weight": 15000
+            "Weight": 8000
         },
         {
             "Name": "Item_Carcass_Roat_Lava",
@@ -28162,9 +28162,9 @@
         },
         {
             "Name": "Item_Armour_Stand_T4",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Armour_Stand_T4-DisplayName\", \"Armor Stand\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Armor_Stand.T_ITEM_Armor_Stand",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Armour_Stand_T4-Description\", \"A nicely carved stand where armor can be displayed.\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Armour_Stand_T4-DisplayName\", \"Advanced Armor Stand\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Armour_Stand_T4.T_ITEM_Armour_Stand_T4",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Armour_Stand_T4-Description\", \"A stylish display case for your armor, which when powered, will slowly repair stored armor pieces\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Armour_Stand_T4-FlavorText\", \"Show off your armor or use it to quickly equip, up to you prospector.\")",
             "Weight": 15000
         },
@@ -29116,13 +29116,6 @@
             "Weight": 10000
         },
         {
-            "Name": "Item_Crab_Head",
-            "DisplayName": "INVTEXT(\"[DNT] Crab Vestige\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Crab_Head-FlavorText\", \"Who knew taxidermy would be so popular on Icarus?\")",
-            "Weight": 500,
-            "MaxStack": 5
-        },
-        {
             "Name": "Item_Workshop_Lantern",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-DisplayName\", \"Inaris Lantern\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-Description\", \"An LED Lantern for illuminating dark corners. Can be recharged in a Charging Station.\")",
@@ -29147,12 +29140,141 @@
             "MaxStack": 50
         },
         {
+            "Name": "Item_Bandage_Poultice",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Poultice-DisplayName\", \"Poultice Bandage\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Bandage_Poultice.T_ITEM_Bandage_Poultice",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Poultice-Description\", \"A cloth bandage that steams bleeding, heals minor wounds, and prevents future wounds.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Bandage_Poultice-FlavorText\", \"Healing and prevention, a great combo.\")",
+            "Weight": 100,
+            "MaxStack": 10
+        },
+        {
             "Name": "Item_Flightless_Tank_Horn",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Flightless_Tank_Horn-DisplayName\", \"Sandhorn Horn\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Flightless_Tank_Horn.T_ITEM_Flightless_Tank_Horn",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flightless_Tank_Horn-Description\", \"A large tusk of the Sandhorn, can be broken down into a large armount of organic resin.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Flightless_Tank_Horn-Description\", \"A large tusk of the Sandhorn, can be broken down into a large amount of organic resin.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Flightless_Tank_Horn-FlavorText\", \"Is this poaching?\")",
             "Weight": 7500
+        },
+        {
+            "Name": "Item_Meta_Biolab_Inhaler_RadBoss",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RadBoss-DisplayName\", \"Radioactive Boost Inhaler\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_RadBoss.T_ITEM_Meta_Biolab_Inhaler_RadBoss",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RadBoss-Description\", \"An inhaler that delivers a concerntraded dose of slow release radiation which slowly mutates cells providing buffs to melee, projectile and movement speed.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RadBoss-FlavorText\", \"Worth the Risk?\")",
+            "Weight": 100
+        },
+        {
+            "Name": "Item_Workshop_Dehumidifier",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dehumidifier-DisplayName\", \"MXC Dehumidifier\")",
+            "Weight": 20000
+        },
+        {
+            "Name": "Item_Dried_Fish_Chunks",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Dried_Fish_Chunks-DisplayName\", \"Dried Fish Chunks\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_Dry_Chunks.T_ITEM_Fish_Dry_Chunks",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Dried_Fish_Chunks-Description\", \"Hard, dehydrated chunks of cured fish prepared for maximum shelf life in the field.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Dried_Fish_Chunks-FlavorText\", \"Not the most appetizing snack, but handy.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Fish_Chowder",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Chowder-DisplayName\", \"Fish Chowder\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_Chowder.T_ITEM_Fish_Chowder",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Chowder-Description\", \"A thick, steaming stew of flaky fish meat simmered in rich broth.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Chowder-FlavorText\", \"A heavy bowl of soup engineered to cut through the chill of an arctic drop.\")",
+            "Weight": 150,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Freshwater_Tartare",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Freshwater_Tartare-DisplayName\", \"Freshwater Tartare\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_Tartare.T_ITEM_Fish_Tartare",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Freshwater_Tartare-Description\", \"Finely minced raw freshwater fish tossed with gathered planetary herbs.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Freshwater_Tartare-FlavorText\", \"Eat it quickly before it spoils.\")",
+            "Weight": 150,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Pickled_Saltwater_Fillet",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Pickled_Saltwater_Fillet-DisplayName\", \"Pickled Saltwater Fillet\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_SaltwaterFillet.T_ITEM_Fish_SaltwaterFillet",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Pickled_Saltwater_Fillet-Description\", \"Ocean fish fillets preserved in a salty brine.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Pickled_Saltwater_Fillet-FlavorText\", \"A staple in Eastern European households.\")",
+            "Weight": 500,
+            "MaxStack": 20
+        },
+        {
+            "Name": "Item_Fish_And_Chips",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_And_Chips-DisplayName\", \"Fish and Chips\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_Chips.T_ITEM_Fish_Chips",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_And_Chips-Description\", \"Crispy battered fish served alongside deep-fried root slices.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_And_Chips-FlavorText\", \"One of Sol\\'s favourites.\")",
+            "Weight": 150,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Fish_Roll",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Roll-DisplayName\", \"Fish Roll\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_SausageRoll.T_ITEM_Fish_SausageRoll",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Roll-Description\", \"Tasty flaked fish packed neatly into a roll.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Roll-FlavorText\", \"Designed to be eaten with one hand while keeping a weapon ready in the other.\")",
+            "Weight": 150,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Smoked_Fillet_Sandwich",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoked_Fillet_Sandwich-DisplayName\", \"Smoked Fillet Sandwich\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_SandwichSmoked.T_ITEM_Fish_SandwichSmoked",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoked_Fillet_Sandwich-Description\", \"Flaky smoked fish layered between thick slices of baked bread.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoked_Fillet_Sandwich-FlavorText\", \"Heavy woodsmoke covers up the natural metallic tang of planetary fauna.\")",
+            "Weight": 250,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Coconut_Fish_Curry",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Fish_Curry-DisplayName\", \"Coconut Fish Curry\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_CoconutCurry.T_ITEM_Fish_CoconutCurry",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Fish_Curry-Description\", \"Fish simmered in a fragrant, spiced coconut milk broth.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Coconut_Fish_Curry-FlavorText\", \"Spiced heavily enough to make alien fish meat taste like a home-cooked meal.\")",
+            "Weight": 150,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Chilled_Fish_Platter",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Chilled_Fish_Platter-DisplayName\", \"Chilled Fish Platter\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_ChilledPlatter.T_ITEM_Fish_ChilledPlatter",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Chilled_Fish_Platter-Description\", \"Thinly sliced raw fish served over a cool plate.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Chilled_Fish_Platter-FlavorText\", \"The height of luxury.\")",
+            "Weight": 150,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Trophy_Fish_Feast",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Trophy_Fish_Feast-DisplayName\", \"Trophy Fish Feast\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Fish_TrophyPlatter.T_ITEM_Fish_TrophyPlatter",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Trophy_Fish_Feast-Description\", \"A decadent meal fit for celebrating a successful mission.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Trophy_Fish_Feast-FlavorText\", \"Quite the spread.\")",
+            "Weight": 500,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Fish_Paste",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Paste-DisplayName\", \"Fish Paste\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Fish_Paste.T_ITEM_Fish_Paste",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Paste-Description\", \"Pureed fish and salt which can be used as a binding agent for a multitude of products.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Paste-FlavorText\", \"Pungent, thick, and deeply unappetizing.\")",
+            "Weight": 15,
+            "MaxStack": 100
+        },
+        {
+            "Name": "Item_Fish_Paste_Lure",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Paste_Lure-DisplayName\", \"Fish Paste Lure\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Fishing/T_ITEM_Fish_Paste_Lure.T_ITEM_Fish_Paste_Lure",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Paste_Lure-Description\", \"A compressed ball of fish paste designed to dissolve slowly in water.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Paste_Lure-FlavorText\", \"Disperses a heavy scent trail that draws nearby fish right to your hook.\")",
+            "Weight": 250
         }
     ]
 }
