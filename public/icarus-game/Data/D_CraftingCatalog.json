@@ -3,7 +3,6 @@
     "Advanced_Alteration_Bench": "processor:Advanced_Alteration_Bench",
     "Advanced_Aquarium": "processor:Advanced_Aquarium",
     "Advanced_Armor_Bench": "processor:Advanced_Armor_Bench",
-    "Advanced_Butchery_Bench": "processor:Advanced_Butchery_Bench",
     "Advanced_Cloth_Arms": "processor:Advanced_Cloth_Arms_Armor",
     "Advanced_Cloth_Chest": "processor:Advanced_Cloth_Chest_Armor",
     "Advanced_Cloth_Feet": "processor:Advanced_Cloth_Feet_Armor",
@@ -91,7 +90,7 @@
     "Animal_Gruel_Rotten": "processor:Rotten_Gruel",
     "Animal_Gruel_Vegetable": "processor:Animal_Vegetable_Gruel",
     "Animal_Silage": "processor:Animal_Silage_Fiber",
-    "AntiRadiation_Tonic": "processor:Blood_Thinning_Tonic_0",
+    "AntiRadiation_Tonic": "processor:AntiRadiation_Tonic",
     "AntiRadiation_Transfusion": "processor:Radiation_Transfusion",
     "Antibiotic_Paste": "processor:Antibiotic_Paste",
     "Antibiotic_Pill": "processor:Antibiotic_Pill",
@@ -454,6 +453,7 @@
     "Cream": "processor:Cream",
     "CreatureBait_Boar": "processor:Creature_Bait_Boar",
     "CreatureBait_Hyena": "processor:Creature_Bait_Hyena",
+    "CreatureBait_Kiwi": "processor:Creature_Bait_Kiwi",
     "CreatureBait_Orka": "processor:Creature_Bait_Orka",
     "CreatureBait_Storca": "processor:Creature_Bait_Storca",
     "CreatureBait_Tundra_Monkey": "processor:Creature_Bait_Tundra_Monkey",
@@ -1833,7 +1833,6 @@
     "Vitamins": "processor:Vitamins",
     "Vodka": "processor:Drink_Vodka",
     "Volatile_Substance": "processor:Volatile_Substance",
-    "Volatile_Substance_Inert": "processor:Volatile_Substance_Inert",
     "Water": "processor:Ice",
     "WaterBomb": "processor:WaterBomb",
     "WaterWheel_Generator": "processor:Waterwheel",
@@ -2266,6 +2265,52 @@
       }
     ],
     "duplicateRecipeIds": [],
+    "excludedRecipes": [
+      {
+        "reason": "excludedRecipeSet",
+        "recipeId": "processor:Volatile_Substance_Inert"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Advanced_Butchery_Bench"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Assault_Rifle_Legacy"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Mission_Drone_Navigation"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Mission_Drone_Rotor"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Molotov"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Nesting_Box"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Sandwyrm_Lure"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Sandwyrm_Target"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Sandwyrm_Throne"
+      },
+      {
+        "reason": "noCraftableOutputs",
+        "recipeId": "processor:Submachine_Gun_Sandwyrm"
+      }
+    ],
     "itemsWithMultipleRecipes": [
       [
         "Advanced_Leather",
@@ -3056,6 +3101,13 @@
         [
           "processor:Frozen_Ore",
           "processor:Pyritic_Crust_Obsidian"
+        ]
+      ],
+      [
+        "Organic_Resin",
+        [
+          "processor:Organic_Resin",
+          "processor:Resin_Flightless_Tank_Horn"
         ]
       ],
       [
@@ -4387,7 +4439,6 @@
     "Cloth_Head": "Cloth_Head",
     "Cloth_Legs": "Cloth_Legs",
     "Coal_Ore": "Coal_Ore",
-    "Cobalt_Ore": "Cobalt_Ore",
     "Cocoa": "Cocoa",
     "Cocoa_Seed": "Seed",
     "Cocoa_Seed_Pack": "Seed",
@@ -4506,6 +4557,7 @@
     "Creamed_Corn": "Food_Creamed_Corn",
     "CreatureBait_Boar": "CreatureBait_Boar",
     "CreatureBait_Hyena": "CreatureBait_Hyena",
+    "CreatureBait_Kiwi": "CreatureBait_Kiwi",
     "CreatureBait_Orka": "CreatureBait_Orka",
     "CreatureBait_Storca": "CreatureBait_Storca",
     "CreatureBait_Tundra_Monkey": "CreatureBait_Tundra_Monkey",
@@ -4633,7 +4685,6 @@
     "Electric_Fireplace_Ext": "Electric_Fireplace_Ext",
     "Electric_Furnace": "Kit_Electric_Furnace",
     "Electric_Furnace_Large": "Electric_Furnace_Large",
-    "Electric_Motor": "Electric_Motor",
     "Electric_Oxite_Dissolver": "Electric_Oxite_Dissolver",
     "Electric_Seed_Extractor": "Electric_Seed_Extractor",
     "Electric_Stove": "Electric_Stove",
@@ -4858,6 +4909,7 @@
     "FlavoredDrinkIcon_Water": "FlavoredDrinkIcon_Water",
     "FlavoredDrinkIcon_XigoPuri": "FlavoredDrinkIcon_XigoPuri",
     "Flightless_Tank_Head": "Flightless_Tank_Head",
+    "Flightless_Tank_Horn": "Flightless_Tank_Horn",
     "Flightless_Tank_Trophy": "Flightless_Tank_Trophy",
     "Flint_Arrow": "Flint_Arrow",
     "Flour": "Flour",
@@ -5950,7 +6002,6 @@
     "Item_Cloth_Head": "Cloth_Head",
     "Item_Cloth_Legs": "Cloth_Legs",
     "Item_Coal_Ore": "Coal_Ore",
-    "Item_Cobalt_Ore": "Cobalt_Ore",
     "Item_Cocoa": "Cocoa",
     "Item_Coconut": "Coconut_young",
     "Item_Coconut_Cake": "Coconut_Cake",
@@ -6059,6 +6110,7 @@
     "Item_Creamed_Corn": "Food_Creamed_Corn",
     "Item_CreatureBait_Boar": "CreatureBait_Boar",
     "Item_CreatureBait_Hyena": "CreatureBait_Hyena",
+    "Item_CreatureBait_Kiwi": "CreatureBait_Kiwi",
     "Item_CreatureBait_Orka": "CreatureBait_Orka",
     "Item_CreatureBait_Storca": "CreatureBait_Storca",
     "Item_CreatureBait_Tundra_Monkey": "CreatureBait_Tundra_Monkey",
@@ -6160,7 +6212,6 @@
     "Item_Eden_NPC_Norex": "Eden_NPC_Norex",
     "Item_Egg": "Egg",
     "Item_Egg_Salad": "Egg_Salad",
-    "Item_ElectricMotor": "Electric_Motor",
     "Item_Electric_Armor_Bench": "Electric_Armor_Bench",
     "Item_Electric_Dehumidier": "Electric_Dehumidifier",
     "Item_Electric_Dehumidier_V2": "Electric_Dehumidifier_V2",
@@ -6368,6 +6419,7 @@
     "Item_FlavoredDrinkIcon_Water": "FlavoredDrinkIcon_Water",
     "Item_FlavoredDrinkIcon_XigoPuri": "FlavoredDrinkIcon_XigoPuri",
     "Item_Flightless_Tank_Head": "Flightless_Tank_Head",
+    "Item_Flightless_Tank_Horn": "Flightless_Tank_Horn",
     "Item_Flightless_Tank_Trophy": "Flightless_Tank_Trophy",
     "Item_Flint_Arrow": "Flint_Arrow",
     "Item_Flour": "Flour",
@@ -7456,6 +7508,7 @@
     "Item_Prop_Eden_Corkboard": "Prop_Eden_Corkboard",
     "Item_Prop_Eden_Whiteboard": "Prop_Eden_Whiteboard",
     "Item_Prop_Flask": "Prop_Flask",
+    "Item_Prop_Glass_Display_Cabinet": "Prop_Glass_Display_Cabinet",
     "Item_Prop_Industrial_Sign_Diamond": "Prop_Industrial_Sign_Diamond",
     "Item_Prop_Industrial_Sign_Square": "Prop_Industrial_Sign_Square",
     "Item_Prop_Industrial_Sign_Triangle": "Prop_Industrial_Sign_Triangle",
@@ -9174,6 +9227,7 @@
     "Prop_Eye_Wash_Station": "Prop_Eye_Wash_Station",
     "Prop_Filing_Cabinet": "Prop_Filing_Cabinet",
     "Prop_Flask": "Prop_Flask",
+    "Prop_Glass_Display_Cabinet": "Prop_Glass_Display_Cabinet",
     "Prop_Goggles": "Prop_Goggles",
     "Prop_Industrial_Sign_Diamond": "Prop_Industrial_Sign_Diamond",
     "Prop_Industrial_Sign_Square": "Prop_Industrial_Sign_Square",
@@ -13399,7 +13453,7 @@
     },
     "Ape_Attachment": {
       "id": "Ape_Attachment",
-      "imagePath": "/icarus-game/ItemIcons/Attachments/T_ITEM_AttArmor_SwampApe.png",
+      "imagePath": "/icarus-game/ItemIcons/Attachments/T_ITEM_AttTool_SwampApe.png",
       "isBlacklisted": false,
       "isFood": false,
       "isPlaceholder": false,
@@ -14324,7 +14378,7 @@
       "id": "Beer",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/ITEM_Beer.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Beer",
       "label": "Beer",
@@ -17243,18 +17297,6 @@
         "Meta_Coal_x100"
       ]
     },
-    "Cobalt_Ore": {
-      "id": "Cobalt_Ore",
-      "imagePath": "/icarus-game/ItemIcons/Voxels/T_ITEM_Cobalt_Ore.png",
-      "isBlacklisted": true,
-      "isFood": false,
-      "isPlaceholder": false,
-      "itemableId": "Item_Cobalt_Ore",
-      "label": "Cobalt Ore",
-      "templateIds": [
-        "Cobalt_Ore"
-      ]
-    },
     "Cocoa": {
       "id": "Cocoa",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Cocoa.png",
@@ -18578,6 +18620,18 @@
         "CreatureBait_Hyena"
       ]
     },
+    "CreatureBait_Kiwi": {
+      "id": "CreatureBait_Kiwi",
+      "imagePath": "/icarus-game/ItemIcons/Resources/T_ITEM_CreatureBait_Kiwi.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_CreatureBait_Kiwi",
+      "label": "Kiwi Bait",
+      "templateIds": [
+        "CreatureBait_Kiwi"
+      ]
+    },
     "CreatureBait_Orka": {
       "id": "CreatureBait_Orka",
       "imagePath": "/icarus-game/ItemIcons/Resources/T_ITEM_CreatureBait_Orka.png",
@@ -19434,7 +19488,7 @@
       "id": "Dough_Bread",
       "imagePath": "/icarus-game/ItemIcons/Resources/ITEM_Dough.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Dough_Bread",
       "label": "Bread Dough",
@@ -19446,7 +19500,7 @@
       "id": "Dough_Flatbread",
       "imagePath": "/icarus-game/ItemIcons/Resources/ITEM_Dough.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Dough_Flatbread",
       "label": "Flatbread Dough",
@@ -19896,18 +19950,6 @@
       "label": "Electric Furnace",
       "templateIds": [
         "Electric_Furnace_Large"
-      ]
-    },
-    "Electric_Motor": {
-      "id": "Electric_Motor",
-      "imagePath": "/icarus-game/ItemIcons/UseableItems/T_ITEM_Mission_Alternator.png",
-      "isBlacklisted": true,
-      "isFood": false,
-      "isPlaceholder": false,
-      "itemableId": "Item_ElectricMotor",
-      "label": "INVTEXT(\"[DNT] Electric Motor\")",
-      "templateIds": [
-        "Electric_Motor"
       ]
     },
     "Electric_Oxite_Dissolver": {
@@ -22348,6 +22390,18 @@
       "label": "Sandhorn Vestige",
       "templateIds": [
         "Flightless_Tank_Head"
+      ]
+    },
+    "Flightless_Tank_Horn": {
+      "id": "Flightless_Tank_Horn",
+      "imagePath": "/icarus-game/ItemIcons/Resources/T_ITEM_Flightless_Tank_Horn.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Flightless_Tank_Horn",
+      "label": "Sandhorn Horn",
+      "templateIds": [
+        "Flightless_Tank_Horn"
       ]
     },
     "Flightless_Tank_Trophy": {
@@ -26220,7 +26274,7 @@
       "id": "Honey_Mead",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Honey_Mead.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Honey_Mead",
       "label": "Honey Mead",
@@ -30773,7 +30827,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Meta_Firewhacker_Printed",
-      "label": "MXC Firewhacker",
+      "label": "MXC Fire Whacker",
       "templateIds": [
         "Meta_Firewhacker_Printed"
       ]
@@ -35109,7 +35163,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Attachment_Pickaxe_Bauxite_1",
-      "label": "Aluminum Attachment",
+      "label": "Aluminium Attachment",
       "templateIds": [
         "Pickaxe_Attachment_BauxiteYield_1"
       ]
@@ -35121,7 +35175,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Attachment_Pickaxe_Bauxite_2",
-      "label": "Specialist Aluminum Attachment",
+      "label": "Specialist Aluminium Attachment",
       "templateIds": [
         "Pickaxe_Attachment_BauxiteYield_2"
       ]
@@ -36087,7 +36141,7 @@
       "id": "PricklyPear_Margarita",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_PricklyPear_Margarita.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_PricklyPear_Margarita",
       "label": "Prickly Pear Margarita",
@@ -36429,6 +36483,18 @@
       "label": "Flasks",
       "templateIds": [
         "Prop_Flask"
+      ]
+    },
+    "Prop_Glass_Display_Cabinet": {
+      "id": "Prop_Glass_Display_Cabinet",
+      "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Prop_Glass_Display_Cabinet_Large.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Prop_Glass_Display_Cabinet",
+      "label": "Glass Display Cabinet",
+      "templateIds": [
+        "Prop_Glass_Display_Cabinet"
       ]
     },
     "Prop_Goggles": {
@@ -42826,7 +42892,7 @@
       "id": "Spoiled_Plants",
       "imagePath": "/icarus-game/ItemIcons/Resources/ITEM_Spoiled_Plants.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Spoiled_Plants",
       "label": "Spoiled Plants",
@@ -44254,7 +44320,7 @@
       "id": "Tequila",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Tequila.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Tequila",
       "label": "Bottled Tequila",
@@ -45035,7 +45101,7 @@
       "id": "Truffle_Vodka",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Truffle_Vodka.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Truffle_Vodka",
       "label": "Truffle Spiced Vodka",
@@ -45324,7 +45390,7 @@
       "id": "Vodka",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/T_ITEM_Vodka.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Vodka",
       "label": "Vodka",
@@ -45757,7 +45823,7 @@
       "id": "Wine",
       "imagePath": "/icarus-game/ItemIcons/Consumeables/ITEM_Wine.png",
       "isBlacklisted": false,
-      "isFood": true,
+      "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Wine",
       "label": "Wine",
@@ -46981,7 +47047,6 @@
       "processor:Black_Wolf_Trophy_Sit"
     ],
     "Aluminium": [
-      "processor:Advanced_Butchery_Bench",
       "processor:Advanced_Kitchen_Bench",
       "processor:Advanced_Kitchen_Corner",
       "processor:Advanced_Kitchen_Sink",
@@ -47878,6 +47943,7 @@
     "Charcoal": [
       "processor:Animal_Bed_Tusker",
       "processor:AntiPoison_Tonic",
+      "processor:AntiRadiation_Tonic",
       "processor:Antibiotic_Paste",
       "processor:Antibiotic_Pill",
       "processor:Antibiotic_Tonic",
@@ -47899,7 +47965,6 @@
       "processor:Blood_Thinner_Paste",
       "processor:Blood_Thinning_Pill",
       "processor:Blood_Thinning_Tonic",
-      "processor:Blood_Thinning_Tonic_0",
       "processor:Dressing_Kit",
       "processor:Enzyme_Elixir",
       "processor:Grilled_Chicken",
@@ -48044,7 +48109,6 @@
       "processor:Composites"
     ],
     "Composites": [
-      "processor:Advanced_Butchery_Bench",
       "processor:Advanced_Kitchen_Bench",
       "processor:Advanced_Kitchen_Corner",
       "processor:Advanced_Kitchen_Sink",
@@ -48133,7 +48197,6 @@
     ],
     "Concrete_Mix": [
       "processor:Advanced_Alteration_Bench",
-      "processor:Advanced_Butchery_Bench",
       "processor:Advanced_Kitchen_Bench",
       "processor:Advanced_Kitchen_Corner",
       "processor:Advanced_Kitchen_Sink",
@@ -49242,6 +49305,9 @@
     "Flightless_Tank_Head": [
       "processor:Flightless_Tank_Trophy"
     ],
+    "Flightless_Tank_Horn": [
+      "processor:Resin_Flightless_Tank_Horn"
+    ],
     "Flour": [
       "processor:Carrot_Cake",
       "processor:Choc_Chip_Cookie",
@@ -49932,6 +49998,7 @@
     ],
     "Kiwi_Fruit": [
       "processor:Caramel_Fruit_Tart",
+      "processor:Creature_Bait_Kiwi",
       "processor:Dried_Kiwifruit",
       "processor:Fruit_Smoothie",
       "processor:Fruit_Snack_Pack",
@@ -50384,7 +50451,7 @@
     ],
     "Mushroom": [
       "processor:Animal_Feed_Mushroom",
-      "processor:Blood_Thinning_Tonic_0",
+      "processor:AntiRadiation_Tonic",
       "processor:Food_Cooked_Mushroom",
       "processor:Food_Fish_Fillet_Pie",
       "processor:Food_Fried_Soy_Beans",
@@ -50423,10 +50490,10 @@
       "processor:Advanced_Iron_Lure",
       "processor:AlienFossil_Conch",
       "processor:AlienFossil_Pottery",
+      "processor:AntiRadiation_Tonic",
       "processor:Antiparasitic_Pill",
       "processor:Antiparasitic_Tonic",
       "processor:Ape_Tonic",
-      "processor:Blood_Thinning_Tonic_0",
       "processor:Carbon_Paste",
       "processor:Composite_Paste",
       "processor:Composite_Paste_Plat",
@@ -51603,8 +51670,7 @@
       "processor:Rock_Golem_Trophy_Lamp",
       "processor:Salted_Caramel_Pastry",
       "processor:Smoked_Meat_Generic",
-      "processor:Vitamins",
-      "processor:Volatile_Substance_Inert"
+      "processor:Vitamins"
     ],
     "Saltwater_Fish_Fillet": [
       "processor:Dried_Saltwater_Fillet",
@@ -51747,6 +51813,7 @@
       "processor:Animal_Feed_Squash",
       "processor:Banana_Porridge",
       "processor:Berry_Bar",
+      "processor:Creature_Bait_Kiwi",
       "processor:Creature_Bait_Storca",
       "processor:Energy_Bar",
       "processor:Fertility_Serum_Boar",
@@ -51918,6 +51985,7 @@
       "processor:Basic_Fertilizer",
       "processor:Biofuel7",
       "processor:Creature_Bait_Boar",
+      "processor:Creature_Bait_Kiwi",
       "processor:Gunpowder_Salt",
       "processor:Synthetic_Enzymes_2",
       "processor:Synthetic_Enzymes_3",
@@ -51940,7 +52008,6 @@
     ],
     "Steel_Ingot": [
       "processor:Advanced_Alteration_Bench",
-      "processor:Advanced_Butchery_Bench",
       "processor:Anvil_Bench_T3",
       "processor:Ape_Module",
       "processor:Attachment_ADS_Upgrade_1",
@@ -52174,7 +52241,6 @@
     "Steel_Screw": [
       "processor:Advanced_Alteration_Bench",
       "processor:Advanced_Armor_Bench",
-      "processor:Advanced_Butchery_Bench",
       "processor:Advanced_Kitchen_Bench",
       "processor:Advanced_Kitchen_Corner",
       "processor:Advanced_Kitchen_Sink",
@@ -52538,7 +52604,6 @@
       "processor:Stomper_Matriach_Trophy"
     ],
     "Stone": [
-      "processor:Advanced_Butchery_Bench",
       "processor:Advanced_Kitchen_Bench",
       "processor:Advanced_Kitchen_Corner",
       "processor:Advanced_Kitchen_Storage",
@@ -53904,9 +53969,6 @@
     "Advanced_Armor_Bench": [
       "processor:Advanced_Armor_Bench"
     ],
-    "Advanced_Butchery_Bench": [
-      "processor:Advanced_Butchery_Bench"
-    ],
     "Advanced_Cloth_Arms": [
       "processor:Advanced_Cloth_Arms_Armor"
     ],
@@ -54179,7 +54241,7 @@
       "processor:Animal_Silage_Grain"
     ],
     "AntiRadiation_Tonic": [
-      "processor:Blood_Thinning_Tonic_0"
+      "processor:AntiRadiation_Tonic"
     ],
     "AntiRadiation_Transfusion": [
       "processor:Radiation_Transfusion"
@@ -55386,6 +55448,9 @@
     ],
     "CreatureBait_Hyena": [
       "processor:Creature_Bait_Hyena"
+    ],
+    "CreatureBait_Kiwi": [
+      "processor:Creature_Bait_Kiwi"
     ],
     "CreatureBait_Orka": [
       "processor:Creature_Bait_Orka"
@@ -57840,7 +57905,8 @@
       "processor:Organic_Extractor"
     ],
     "Organic_Resin": [
-      "processor:Organic_Resin"
+      "processor:Organic_Resin",
+      "processor:Resin_Flightless_Tank_Horn"
     ],
     "Orka_Arctic_Trophy": [
       "processor:Orka_Arctic_Trophy"
@@ -59898,9 +59964,6 @@
       "processor:Volatile_Substance_2",
       "processor:Volatile_Substance_3"
     ],
-    "Volatile_Substance_Inert": [
-      "processor:Volatile_Substance_Inert"
-    ],
     "Water": [
       "processor:Ice"
     ],
@@ -61375,51 +61438,6 @@
         "Manufacturer"
       ],
       "requiredMillijoules": 10000,
-      "resourceInputs": [],
-      "resourceOutputs": [],
-      "source": "processor"
-    },
-    "processor:Advanced_Butchery_Bench": {
-      "enabled": true,
-      "id": "processor:Advanced_Butchery_Bench",
-      "inputs": [
-        {
-          "itemId": "Composites",
-          "quantity": 1
-        },
-        {
-          "itemId": "Aluminium",
-          "quantity": 5
-        },
-        {
-          "itemId": "Concrete_Mix",
-          "quantity": 5
-        },
-        {
-          "itemId": "Steel_Screw",
-          "quantity": 8
-        },
-        {
-          "itemId": "Stone",
-          "quantity": 100
-        },
-        {
-          "itemId": "Steel_Ingot",
-          "quantity": 20
-        }
-      ],
-      "name": "Advanced_Butchery_Bench",
-      "outputs": [
-        {
-          "itemId": "Advanced_Butchery_Bench",
-          "quantity": 1
-        }
-      ],
-      "recipeSetIds": [
-        "Fabricator",
-        "Manufacturer"
-      ],
-      "requiredMillijoules": 15000,
       "resourceInputs": [],
       "resourceOutputs": [],
       "source": "processor"
@@ -63209,6 +63227,40 @@
       "outputs": [
         {
           "itemId": "Antipoison_Tonic",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Chemistry_Bench",
+        "Herbalism_Bench",
+        "Medicine_Bench"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:AntiRadiation_Tonic": {
+      "enabled": true,
+      "id": "processor:AntiRadiation_Tonic",
+      "inputs": [
+        {
+          "itemId": "Mushroom",
+          "quantity": 1
+        },
+        {
+          "itemId": "Organic_Resin",
+          "quantity": 1
+        },
+        {
+          "itemId": "Charcoal",
+          "quantity": 3
+        }
+      ],
+      "name": "AntiRadiation_Tonic",
+      "outputs": [
+        {
+          "itemId": "AntiRadiation_Tonic",
           "quantity": 1
         }
       ],
@@ -71868,40 +71920,6 @@
       "outputs": [
         {
           "itemId": "Blood_Thinning_Tonic",
-          "quantity": 1
-        }
-      ],
-      "recipeSetIds": [
-        "Chemistry_Bench",
-        "Herbalism_Bench",
-        "Medicine_Bench"
-      ],
-      "requiredMillijoules": 10000,
-      "resourceInputs": [],
-      "resourceOutputs": [],
-      "source": "processor"
-    },
-    "processor:Blood_Thinning_Tonic_0": {
-      "enabled": true,
-      "id": "processor:Blood_Thinning_Tonic_0",
-      "inputs": [
-        {
-          "itemId": "Mushroom",
-          "quantity": 1
-        },
-        {
-          "itemId": "Organic_Resin",
-          "quantity": 1
-        },
-        {
-          "itemId": "Charcoal",
-          "quantity": 3
-        }
-      ],
-      "name": "Blood_Thinning_Tonic_0",
-      "outputs": [
-        {
-          "itemId": "AntiRadiation_Tonic",
           "quantity": 1
         }
       ],
@@ -82626,6 +82644,38 @@
       "outputs": [
         {
           "itemId": "CreatureBait_Hyena",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Animal_Bench"
+      ],
+      "requiredMillijoules": 25000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Creature_Bait_Kiwi": {
+      "enabled": true,
+      "id": "processor:Creature_Bait_Kiwi",
+      "inputs": [
+        {
+          "itemId": "Seed",
+          "quantity": 3
+        },
+        {
+          "itemId": "Kiwi_Fruit",
+          "quantity": 2
+        },
+        {
+          "itemId": "Spoiled_Plants",
+          "quantity": 5
+        }
+      ],
+      "name": "Creature_Bait_Kiwi",
+      "outputs": [
+        {
+          "itemId": "CreatureBait_Kiwi",
           "quantity": 1
         }
       ],
@@ -116092,6 +116142,31 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Resin_Flightless_Tank_Horn": {
+      "enabled": true,
+      "id": "processor:Resin_Flightless_Tank_Horn",
+      "inputs": [
+        {
+          "itemId": "Flightless_Tank_Horn",
+          "quantity": 1
+        }
+      ],
+      "name": "Resin_Flightless_Tank_Horn",
+      "outputs": [
+        {
+          "itemId": "Organic_Resin",
+          "quantity": 300
+        }
+      ],
+      "recipeSetIds": [
+        "Material_Processor",
+        "Mortar_And_Pestle"
+      ],
+      "requiredMillijoules": 15000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Resistance_Fertilizer": {
       "enabled": true,
       "id": "processor:Resistance_Fertilizer",
@@ -130609,30 +130684,6 @@
       "resourceOutputs": [],
       "source": "processor"
     },
-    "processor:Volatile_Substance_Inert": {
-      "enabled": true,
-      "id": "processor:Volatile_Substance_Inert",
-      "inputs": [
-        {
-          "itemId": "Salt",
-          "quantity": 2
-        }
-      ],
-      "name": "Volatile_Substance_Inert",
-      "outputs": [
-        {
-          "itemId": "Volatile_Substance_Inert",
-          "quantity": 1
-        }
-      ],
-      "recipeSetIds": [
-        "RefundOnly"
-      ],
-      "requiredMillijoules": null,
-      "resourceInputs": [],
-      "resourceOutputs": [],
-      "source": "processor"
-    },
     "processor:Wall_Torch": {
       "enabled": true,
       "id": "processor:Wall_Torch",
@@ -132909,11 +132960,11 @@
   "schemaVersion": 2,
   "sourceRowCounts": {
     "D_ExtractorRecipes.json": 1,
-    "D_ItemTemplate.json": 3083,
-    "D_Itemable.json": 3470,
-    "D_ItemsStatic.json": 3076,
-    "D_Processing.json": 75,
-    "D_ProcessorRecipes.json": 2213,
+    "D_ItemTemplate.json": 3085,
+    "D_Itemable.json": 3469,
+    "D_ItemsStatic.json": 3077,
+    "D_Processing.json": 76,
+    "D_ProcessorRecipes.json": 2215,
     "D_RecipeSets.json": 68
   }
 }

@@ -143,6 +143,41 @@ class CatalogTestCase(unittest.TestCase):
         self.assertNotIn("processor:Legacy_Iron", catalog["recipesById"])
         self.assertEqual(catalog["recipeIdsByInputItemId"]["Metal_Ore"], ["processor:Visible_Output"])
 
+    def test_explicitly_uncraftable_recipes_are_excluded(self):
+        self.write_base_tables()
+        self.write_table(
+            "D_ProcessorRecipes.json",
+            [
+                {
+                    "Name": "Disabled_Iron",
+                    "bForceDisableRecipe": True,
+                    "Outputs": [{"Element": {"RowName": "Iron_Ingot"}, "Count": 1}],
+                },
+                {
+                    "Name": "Refund_Iron",
+                    "RecipeSets": [{"RowName": "RefundOnly"}],
+                    "Outputs": [{"Element": {"RowName": "Iron_Ingot"}, "Count": 1}],
+                },
+                {
+                    "Name": "Iron_Ingot",
+                    "RecipeSets": [{"RowName": "Character"}],
+                    "Inputs": [{"Element": {"RowName": "Iron_Ore"}, "Count": 2}],
+                    "Outputs": [{"Element": {"RowName": "Iron_Ingot"}, "Count": 1}],
+                },
+            ],
+        )
+
+        catalog = build_catalog(self.data_dir, self.icons_dir)
+
+        self.assertEqual(list(catalog["recipesById"]), ["processor:Iron_Ingot"])
+        self.assertCountEqual(
+            catalog["diagnostics"]["excludedRecipes"],
+            [
+                {"recipeId": "processor:Disabled_Iron", "reason": "forceDisabled"},
+                {"recipeId": "processor:Refund_Iron", "reason": "excludedRecipeSet"},
+            ],
+        )
+
     def test_extractor_recipe_and_placeholder_are_retained(self):
         self.write_base_tables()
         self.write_table("D_ProcessorRecipes.json", [])
@@ -281,6 +316,11 @@ class CatalogTestCase(unittest.TestCase):
         self.assertEqual(item["label"], "Missing Bench")
         self.assertEqual(item["imagePath"], "/icarus-game/ItemIcons/Deployables/Missing_Bench.png")
         self.assertTrue(item["isPlaceholder"])
+        self.assertNotIn("processor:Missing_Bench", catalog["recipesById"])
+        self.assertIn(
+            {"recipeId": "processor:Missing_Bench", "reason": "noCraftableOutputs"},
+            catalog["diagnostics"]["excludedRecipes"],
+        )
 
     def test_resource_flows_become_catalog_items_and_recipe_edges(self):
         self.write_base_tables()

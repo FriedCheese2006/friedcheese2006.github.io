@@ -109447,7 +109447,7 @@
             }
         },
         {
-            "Name": "Blood_Thinning_Tonic_0",
+            "Name": "AntiRadiation_Tonic",
             "Requirement": {
                 "RowName": "AntiRadiation_Tonic"
             },
@@ -121875,6 +121875,93 @@
             ],
             "Audio": {
                 "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Creature_Bait_Kiwi",
+            "Requirement": {
+                "RowName": "Snare_Trap"
+            },
+            "RequiredMillijoules": 25000,
+            "RecipeSets": [
+                {
+                    "RowName": "Animal_Bench",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Seed",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 3
+                },
+                {
+                    "Element": {
+                        "RowName": "Kiwi_Fruit",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 2
+                },
+                {
+                    "Element": {
+                        "RowName": "Spoiled_Plants",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 5
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "CreatureBait_Kiwi",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 1,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "CookingStation"
+            }
+        },
+        {
+            "Name": "Resin_Flightless_Tank_Horn",
+            "RequiredMillijoules": 15000,
+            "RecipeSets": [
+                {
+                    "RowName": "Mortar_And_Pestle",
+                    "DataTableName": "D_RecipeSets"
+                },
+                {
+                    "RowName": "Material_Processor",
+                    "DataTableName": "D_RecipeSets"
+                }
+            ],
+            "Inputs": [
+                {
+                    "Element": {
+                        "RowName": "Flightless_Tank_Horn",
+                        "DataTableName": "D_ItemsStatic"
+                    },
+                    "Count": 1
+                }
+            ],
+            "Outputs": [
+                {
+                    "Element": {
+                        "RowName": "Organic_Resin",
+                        "DataTableName": "D_ItemTemplate"
+                    },
+                    "Count": 300,
+                    "DynamicProperties": [],
+                    "Alterations": []
+                }
+            ],
+            "Audio": {
+                "RowName": "MortarPestle"
             }
         }
     ]

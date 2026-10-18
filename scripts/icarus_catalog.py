@@ -13,6 +13,7 @@ FALLBACK_IMAGE_PATH = "/icarus-game/Images/question-mark.png"
 ITEM_ICON_PREFIX = "/Game/Assets/2DArt/UI/Items/Item_Icons/"
 FOOD_TAG_PREFIX = "Item.Consumable.Food"
 FOOD_TAGS = {"FieldGuide.Food", "Item.Resource.Spoilable"}
+EXCLUDED_RECIPE_SETS = {"RefundOnly"}
 RECIPE_TABLES = (
     ("processor", "D_ProcessorRecipes.json"),
     ("extractor", "D_ExtractorRecipes.json"),
@@ -97,6 +98,7 @@ class ItemResolver:
         self.aliases: dict[str, str] = {}
         self.diagnostics: dict[str, list[Any]] = {
             "aliasCollisions": [],
+            "excludedRecipes": [],
             "missingIconFiles": [],
             "missingItemableRows": [],
             "placeholderItems": [],
@@ -323,23 +325,36 @@ def build_catalog(
             if recipe_id in recipes_by_id:
                 duplicate_recipe_ids.append(recipe_id)
                 continue
+            recipe_set_ids = sorted(
+                value.get("RowName") for value in row.get("RecipeSets", []) if value.get("RowName") not in (None, "None")
+            )
+            if row.get("bForceDisableRecipe", False):
+                resolver.diagnostics["excludedRecipes"].append({"recipeId": recipe_id, "reason": "forceDisabled"})
+                continue
+            if recipe_set_ids and set(recipe_set_ids).issubset(EXCLUDED_RECIPE_SETS):
+                resolver.diagnostics["excludedRecipes"].append({"recipeId": recipe_id, "reason": "excludedRecipeSet"})
+                continue
             resource_inputs = normalize_resources(row.get("ResourceInputs", []), resolver)
             resource_outputs = normalize_resources(row.get("ResourceOutputs", []), resolver)
             inputs = normalize_elements(row.get("Inputs", []), resolver, recipe_id, output=False) + resource_inputs
             outputs = normalize_elements(row.get("Outputs", []), resolver, recipe_id, output=True) + resource_outputs
-            outputs = [value for value in outputs if not resolver.items[value["itemId"]].get("isBlacklisted", False)]
+            outputs = [
+                value
+                for value in outputs
+                if not resolver.items[value["itemId"]].get("isBlacklisted", False)
+                and not resolver.items[value["itemId"]].get("isPlaceholder", False)
+            ]
             if not outputs:
+                resolver.diagnostics["excludedRecipes"].append({"recipeId": recipe_id, "reason": "noCraftableOutputs"})
                 continue
             recipe = {
                 "id": recipe_id,
                 "name": local_id,
                 "source": source,
-                "enabled": not row.get("bForceDisableRecipe", False),
+                "enabled": True,
                 "inputs": inputs,
                 "outputs": outputs,
-                "recipeSetIds": sorted(
-                    value.get("RowName") for value in row.get("RecipeSets", []) if value.get("RowName") not in (None, "None")
-                ),
+                "recipeSetIds": recipe_set_ids,
                 "requiredMillijoules": row.get("RequiredMillijoules"),
                 "resourceInputs": resource_inputs,
                 "resourceOutputs": resource_outputs,

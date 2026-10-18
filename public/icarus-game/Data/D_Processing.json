@@ -773,6 +773,17 @@
             "QueueSize": 5,
             "MaxMilliwattage": 1500,
             "EffectedByPlayerStats": true
+        },
+        {
+            "Name": "Arc_Furnace",
+            "DefaultRecipeSet": {
+                "RowName": "Arc_Furnace"
+            },
+            "bRequiresShelter": true,
+            "ManualActivation": true,
+            "QueueSize": 5,
+            "MaxMilliwattage": 3000,
+            "AutoTurnOffDeviceWhileNotProcessing": false
         }
     ]
 }
