@@ -20,6 +20,7 @@ requirements-lock: requirements-tools
 ## requirements-check — verify direct dependencies and the lockfile agree
 requirements-check: requirements-tools
 	@lock_check="$$(mktemp)"; trap 'rm -f "$$lock_check"' EXIT; \
+		cp backend/requirements.txt "$$lock_check"; \
 		CUSTOM_COMPILE_COMMAND='make requirements-lock' $(PYTHON) -m piptools compile --quiet --generate-hashes --strip-extras --output-file="$$lock_check" backend/requirements.in; \
 		diff --unified backend/requirements.txt "$$lock_check"
 
