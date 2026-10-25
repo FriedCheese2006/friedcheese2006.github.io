@@ -8,3 +8,5 @@ PyJWT[crypto]>=2.10.1
 pydantic-settings>=2.0.0
 itsdangerous>=2.1.0
 aiofiles>=23.2.0
+certifi>=2026.10.19
+opentelemetry-api>=1.45.1
