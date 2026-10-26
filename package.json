@@ -34,9 +34,9 @@
         "@vicons/utils": "^0.1.4",
         "@vitejs/plugin-vue": "^6.0.10",
         "naive-ui": "^2.45.3",
-        "sass": "^1.105.2",
+        "sass": "^1.106.1",
         "vfonts": "^0.0.3",
-        "vite": "^8.3.4",
+        "vite": "^8.3.5",
         "vite-plugin-pwa": "^1.3.0",
         "vitest": "^5.0.5"
     }
