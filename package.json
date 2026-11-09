@@ -24,7 +24,7 @@
         "fuse.js": "^7.5.0",
         "pinia": "^4.1.0",
         "primeflex": "^4.0.0",
-        "vue": "^3.5.44",
+        "vue": "^3.5.45",
         "vue-router": "5.4.0",
         "vue-virtual-scroller": "next"
     },
@@ -34,10 +34,10 @@
         "@vicons/utils": "^0.1.4",
         "@vitejs/plugin-vue": "^6.0.10",
         "naive-ui": "^2.45.3",
-        "sass": "^1.105.2",
+        "sass": "^1.108.0",
         "vfonts": "^0.0.3",
-        "vite": "^8.3.4",
+        "vite": "^8.3.6",
         "vite-plugin-pwa": "^1.3.0",
-        "vitest": "^5.0.5"
+        "vitest": "^5.1.0"
     }
 }
