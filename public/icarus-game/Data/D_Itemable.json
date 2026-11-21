@@ -2924,7 +2924,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Cupboard-DisplayName\", \"Interior Wood Cupboard\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Interior_Wood_Cupboard.ITEM_Interior_Wood_Cupboard",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Cupboard-Description\", \"A place to keep items, gear and the rest.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Cupboard-FlavorText\", \"Has 40 storage slots.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Cupboard-FlavorText\", \"Has 45 storage slots.\")",
             "Weight": 8000
         },
         {
@@ -4266,7 +4266,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Platinum_Spear-DisplayName\", \"Platinum Spear\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/Spears/ITEM_Platinum_Spear.ITEM_Platinum_Spear",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Platinum_Spear-Description\", \"Priceless on Earth. An advanced survival tool on Icarus.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Platinum_Spear-FlavorText\", \"A midweight, short-shafted ahlspeiss spear that, composition aside, would not have looked out of place in 16th century Prussia.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Platinum_Spear-FlavorText\", \"A midweight, short-shafted ahlspiess spear that, composition aside, would not have looked out of place in 16th century Prussia.\")",
             "Weight": 1000
         },
         {
@@ -5735,7 +5735,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Cupboard_Small-DisplayName\", \"Small Wood Cupboard\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Wood_Cupboard_Small.ITEM_Wood_Cupboard_Small",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Cupboard_Small-Description\", \"A modest wooden cupboard for storing small items.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Cupboard_Small-FlavorText\", \"Has 10 storage slots.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Wood_Cupboard_Small-FlavorText\", \"Has 24 storage slots.\")",
             "Weight": 2000
         },
         {
@@ -5743,7 +5743,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Cupboard_Small-DisplayName\", \"Small Interior Wood Cupboard\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Interior_Wood_Cupboard_Small.ITEM_Interior_Wood_Cupboard_Small",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Cupboard_Small-Description\", \"A small storage unit for items.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Cupboard_Small-FlavorText\", \"Has 10 storage slots.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Interior_Wood_Cupboard_Small-FlavorText\", \"Has 27 storage slots.\")",
             "Weight": 2000
         },
         {
@@ -5751,7 +5751,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Metal_Cupboard_Small-DisplayName\", \"Small Iron Cupboard\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/ITEM_Metal_Cupboard_Small.ITEM_Metal_Cupboard_Small",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Metal_Cupboard_Small-Description\", \"Strong protective storage for items.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Metal_Cupboard_Small-FlavorText\", \"Has 15 storage slots.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Metal_Cupboard_Small-FlavorText\", \"Has 30 storage slots.\")",
             "Weight": 3000
         },
         {
@@ -6590,9 +6590,18 @@
             "Name": "Item_Meta_Frag_Larkwell",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Frag_Larkwell-DisplayName\", \"Larkwell Martinez Frag Grenade\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Meta_Frag_Larkwell.ITEM_Meta_Frag_Larkwell",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Frag_Larkwell-Description\", \"A well-engineered explosive.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Frag_Larkwell-Description\", \"A well-engineered explosive which will detonate on impact.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Frag_Larkwell-FlavorText\", \"Larkwell Martinez is a prominent defence contractor to the ACS and its allies.\")",
-            "Weight": 500
+            "Weight": 500,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Meta_Frag_Larkwell_Set",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Frag_Larkwell_Set-DisplayName\", \"Larkwell Martinez Frag Grenade Bundle\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Projectiles/ITEM_Meta_Frag_Larkwell.ITEM_Meta_Frag_Larkwell",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Frag_Larkwell_Set-Description\", \"A set of 10 well-engineered frag grenades which will detonate on impact. \\'CONSUME\\' to open bundle.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Frag_Larkwell_Set-FlavorText\", \"Larkwell Martinez is a prominent defence contractor to the ACS and its allies.\")",
+            "Weight": 5000
         },
         {
             "Name": "Item_Meta_Bow_Larkwell",
@@ -9015,7 +9024,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Platinum_Throwing_Spear-DisplayName\", \"Platinum Javelin\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Weapons/ThrowingWeapons/ITEM_Javelin_Platinum.ITEM_Javelin_Platinum",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Platinum_Throwing_Spear-Description\", \"Priceless on Earth. A projectile on Icarus.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Platinum_Throwing_Spear-FlavorText\", \"A midweight, short-shafted ahlspeiss spear that, composition aside, would not have looked out of place in 16th century Prussia.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Platinum_Throwing_Spear-FlavorText\", \"A midweight, short-shafted ahlspiess spear that, composition aside, would not have looked out of place in 16th century Prussia.\")",
             "Weight": 400,
             "MaxStack": 20
         },
@@ -14028,11 +14037,11 @@
             "Weight": 1750
         },
         {
-            "Name": "Item_Smoker_T4",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoker_T4-DisplayName\", \"Roaster\")",
+            "Name": "Item_Roaster",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Roaster-DisplayName\", \"Roaster\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T4.T_ITEM_Smoker_T4",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoker_T4-Description\", \"An electric roasting oven large enough to take a whole animal carcass. Also preserves food like a smoker.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Smoker_T4-FlavorText\", \"The UDA advises you to use this item in a well-ventilated area.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Roaster-Description\", \"An electric roasting oven large enough to take a whole animal carcass. Also preserves food like a smoker.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Roaster-FlavorText\", \"The UDA advises you to use this item in a well-ventilated area.\")",
             "Weight": 2500
         },
         {
@@ -15521,34 +15530,46 @@
         },
         {
             "Name": "Item_Turret_Pistol",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Pistol-DisplayName\", \"Automated Defense System: Pistol\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Pistol-DisplayName\", \"Auto-Turret: Pistol\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Pistol.T_ITEM_Turret_Pistol",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Pistol-Description\", \"A turret that uses pistol ammunition to defend its surroundings. Fires a steady shots at a medium range. Power consumption reduced when idle.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Pistol-FlavorText\", \"This design is marked as \\\"experimental\\\" by the Lagos Group - The UDA is not liable for any injuries caused by this unit.\")",
+            "FieldGuideKeywords": [
+                "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Pistol-FieldGuideKeywords-0\", \"turret\")"
+            ],
             "Weight": 20000
         },
         {
             "Name": "Item_Turret_Rifle",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle-DisplayName\", \"Automated Defense System: Burst Rifle\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle-DisplayName\", \"Auto-Turret: Burst Rifle\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Rifle.T_ITEM_Turret_Rifle",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle-Description\", \"A turret that uses rifle ammunition to defend its surroundings. Fires a short burst of rounds at medium range. Power consumption reduced when idle.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle-FlavorText\", \"This design is marked as \\\"experimental\\\" by the Lagos Group - The UDA is not liable for any injuries caused by this unit.\")",
+            "FieldGuideKeywords": [
+                "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle-FieldGuideKeywords-0\", \"turret\")"
+            ],
             "Weight": 25000
         },
         {
             "Name": "Item_Turret_Rifle_Precision",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle_Precision-DisplayName\", \"Automated Defense System: Rifle\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle_Precision-DisplayName\", \"Auto-Turret: Rifle\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Rifle.T_ITEM_Turret_Rifle",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle_Precision-Description\", \"A turret that uses rifle ammunition to defend its surroundings. Fires slowly, at long range. Power consumption reduced when idle.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle_Precision-FlavorText\", \"This design is marked as \\\"experimental\\\" by the Lagos Group - The UDA is not liable for any injuries caused by this unit.\")",
+            "FieldGuideKeywords": [
+                "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Rifle_Precision-FieldGuideKeywords-0\", \"turret\")"
+            ],
             "Weight": 25000
         },
         {
             "Name": "Item_Turret_Shotgun",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Shotgun-DisplayName\", \"Automated Defense System: Shotgun\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Shotgun-DisplayName\", \"Auto-Turret: Shotgun\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Shotgun.T_ITEM_Turret_Shotgun",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Shotgun-Description\", \"A turret that uses shotgun ammunition to defend its surroundings. Fires rapidly at short range. Power consumption reduced when idle.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Shotgun-FlavorText\", \"This design is marked as \\\"experimental\\\" by the Lagos Group - The UDA is not liable for any injuries caused by this unit.\")",
+            "FieldGuideKeywords": [
+                "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Shotgun-FieldGuideKeywords-0\", \"turret\")"
+            ],
             "Weight": 25000
         },
         {
@@ -19110,7 +19131,7 @@
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Natural_Oil_Refiner-DisplayName\", \"Natural Oil Refiner\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Natural_Oil_Refiner.T_ITEM_Natural_Oil_Refiner",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Natural_Oil_Refiner-Description\", \"A thermal refining unit engineered to distill biofuel into cleaner, high-efficiency oil.\")",
-            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Natural_Oil_Refiner-FlavorText\", \"Crude in, refined out, simple, if you ignore everything in between.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Natural_Oil_Refiner-FlavorText\", \"Biofuel in, refined oil out. Simple, if you ignore everything in between.\")",
             "Weight": 40000
         },
         {
@@ -21452,10 +21473,13 @@
         },
         {
             "Name": "Item_Enemy_Turret_Pistol",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Pistol-DisplayName\", \"Blackmarket Automative Defence Turret (Pistol)\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Pistol-DisplayName\", \"Blackmarket Auto-Turret: Pistol\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Pistol.T_ITEM_Turret_Pistol",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Pistol-Description\", \"A turret that fires on anyone not registered to the system, fires pistol ammo.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Pistol-FlavorText\", \"This design is marked as \\\"experimental\\\" by the Lagos Group - The UDA is not liable for any injuries caused by this unit.\")",
+            "FieldGuideKeywords": [
+                "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Pistol-FieldGuideKeywords-0\", \"turret\")"
+            ],
             "Weight": 20000
         },
         {
@@ -23835,7 +23859,7 @@
         {
             "Name": "Item_Cobalt_Ore",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Cobalt_Ore-DisplayName\", \"Cobalt Ore\")",
-            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Voxels/T_ITEM_Cobalt_Ore.T_ITEM_Cobalt_Ore",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Resources/T_ITEM_Cobalt_Ore.T_ITEM_Cobalt_Ore",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Cobalt_Ore-Description\", \"A Versatile vibrant blue ore found rarely on Icarus.\")",
             "Weight": 500,
             "MaxStack": 100
@@ -24324,7 +24348,7 @@
         },
         {
             "Name": "Item_Telsa_Coil",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Telsa_Coil-DisplayName\", \"Automated Defense System: Tesla Coil\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Telsa_Coil-DisplayName\", \"Tesla Coil\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Tesla_Coil.T_ITEM_Tesla_Coil",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Telsa_Coil-Description\", \"A sturdy tower which will thrust lightning at nearby enemies.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Telsa_Coil-FlavorText\", \"Tesla would be proud.\")",
@@ -24332,10 +24356,13 @@
         },
         {
             "Name": "Item_Turret_Flamethrower",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Flamethrower-DisplayName\", \"Automated Defense System: Flamethrower\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Flamethrower-DisplayName\", \"Auto-Turret: Flamethrower\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Flamethrower.T_ITEM_Turret_Flamethrower",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Flamethrower-Description\", \"A modified turret which fires a steady stream of flame at nearby enemies.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Flamethrower-FlavorText\", \"Burn baby burn. \")",
+            "FieldGuideKeywords": [
+                "NSLOCTEXT(\"D_Itemable\", \"Item_Turret_Flamethrower-FieldGuideKeywords-0\", \"turret\")"
+            ],
             "Weight": 20000
         },
         {
@@ -26748,10 +26775,13 @@
         },
         {
             "Name": "Item_Enemy_Turret_Flamethrower",
-            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Flamethrower-DisplayName\", \"Blackmarket Automative Defence Turret (Flamethrower)\")",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Flamethrower-DisplayName\", \"Blackmarket Auto-Turret: Flamethrower\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Turret_Flamethrower.T_ITEM_Turret_Flamethrower",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Flamethrower-Description\", \"A modified turret which fires a steady stream of flame at nearby enemies.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Flamethrower-FlavorText\", \"This design is marked as \\\"experimental\\\" by the Lagos Group - The UDA is not liable for any injuries caused by this unit.\")",
+            "FieldGuideKeywords": [
+                "NSLOCTEXT(\"D_Itemable\", \"Item_Enemy_Turret_Flamethrower-FieldGuideKeywords-0\", \"turret\")"
+            ],
             "Weight": 20000
         },
         {
@@ -28364,7 +28394,7 @@
             "Name": "Item_Carbon_Fishing_Rod",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carbon_Fishing_Rod-DisplayName\", \"Carbon Fishing Rod\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Tools/T_ITEM_Carbon_Fishing_Rod.T_ITEM_Carbon_Fishing_Rod",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carbon_Fishing_Rod-Description\", \"High-tensile angling rod reinforced with a lightweight carbon-composite weave. Engineered to handle extreme bending strain when hooking heavy aquatic organisms native to Icarus waters.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carbon_Fishing_Rod-Description\", \"High-tensile angling rod reinforced with a lightweight carbon-composite weave.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Carbon_Fishing_Rod-FlavorText\", \"Perfect for when you need a quiet afternoon away from corporate quotas and man-eating mutagens.\")",
             "Weight": 1250
         },
@@ -29070,11 +29100,6 @@
             "MaxStack": 5
         },
         {
-            "Name": "Item_Carcass_Jungle_Monkey",
-            "DisplayName": "INVTEXT(\"[DNT] Jungle Monkey Carcass\")",
-            "Weight": 15000
-        },
-        {
             "Name": "Item_Carcass_Tropical_Bird",
             "DisplayName": "INVTEXT(\"[DNT] Tropical Bird Carcass\")",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Tropical_Bird-Description\", \"A now flightless bird.\")",
@@ -29118,6 +29143,7 @@
         {
             "Name": "Item_Workshop_Lantern",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-DisplayName\", \"Inaris Lantern\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/UseableItems/T_ITEM_Workshop_Lantern.T_ITEM_Workshop_Lantern",
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-Description\", \"An LED Lantern for illuminating dark corners. Can be recharged in a Charging Station.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Lantern-FlavorText\", \"Activate with secondary fire.\")",
             "Weight": 250
@@ -29160,13 +29186,15 @@
             "Name": "Item_Meta_Biolab_Inhaler_RadBoss",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RadBoss-DisplayName\", \"Radioactive Boost Inhaler\")",
             "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Consumeables/T_ITEM_Meta_Biolab_Inhaler_RadBoss.T_ITEM_Meta_Biolab_Inhaler_RadBoss",
-            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RadBoss-Description\", \"An inhaler that delivers a concerntraded dose of slow release radiation which slowly mutates cells providing buffs to melee, projectile and movement speed.\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RadBoss-Description\", \"An inhaler that delivers a concentrated dose of slow release radiation which slowly mutates cells providing buffs to melee, projectile and movement speed.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Meta_Biolab_Inhaler_RadBoss-FlavorText\", \"Worth the Risk?\")",
             "Weight": 100
         },
         {
             "Name": "Item_Workshop_Dehumidifier",
             "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dehumidifier-DisplayName\", \"MXC Dehumidifier\")",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dehumidifier-Description\", \"A handy peice of equipment that runs off of a Hydrozine canister. Supports extended cave habitation by providing protection against cavern-dwelling parasites.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Workshop_Dehumidifier-FlavorText\", \"The gas used by this appliance seems to smell faintly of wet socks, but the trade off is worth it.\")",
             "Weight": 20000
         },
         {
@@ -29275,6 +29303,37 @@
             "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Paste_Lure-Description\", \"A compressed ball of fish paste designed to dissolve slowly in water.\")",
             "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fish_Paste_Lure-FlavorText\", \"Disperses a heavy scent trail that draws nearby fish right to your hook.\")",
             "Weight": 250
+        },
+        {
+            "Name": "Item_Carcass_Stomper_Juvenile",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Stomper_Juvenile-DisplayName\", \"Juvenile Stomper Carcass\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/ITEM_AnimalCarcass_Moa.ITEM_AnimalCarcass_Moa",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Carcass_Stomper_Juvenile-Description\", \"A juvenile Stomper which never quite made it to full adulthood.\")",
+            "Weight": 3500
+        },
+        {
+            "Name": "Item_NPC_Rancher",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_NPC_Rancher-DisplayName\", \"Ranching Director Mills\")",
+            "Icon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_NPC_Hunter.T_Icon_Map_NPC_Hunter",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_NPC_Rancher-Description\", \"A Rogue Prospector who will buy and trade creatures and their products.\")",
+            "Weight": 20000
+        },
+        {
+            "Name": "Item_Fertility_Serum_Mammoth_Arctic",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Mammoth_Arctic-DisplayName\", \"Woolly Mammoth Fertility Serum\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Carcasses/T_ITEM_Serum_WoolyMammoth.T_ITEM_Serum_WoolyMammoth",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Mammoth_Arctic-Description\", \"Primes a Male Woolly Mammoth for mating. Once primed, will seek out and fertilize a nearby Female Woolly Mammoth.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Fertility_Serum_Mammoth_Arctic-FlavorText\", \"Husbandry has come to Icarus\")",
+            "Weight": 50,
+            "MaxStack": 10
+        },
+        {
+            "Name": "Item_Captured_Juvenile_Bear",
+            "DisplayName": "NSLOCTEXT(\"D_Itemable\", \"Item_Captured_Juvenile_Bear-DisplayName\", \"Captured Bear Cub\")",
+            "Icon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Captured_BearCub.T_ITEM_Captured_BearCub",
+            "Description": "NSLOCTEXT(\"D_Itemable\", \"Item_Captured_Juvenile_Bear-Description\", \"A Bear Cub that was captured by a UDA Specialist.\")",
+            "FlavorText": "NSLOCTEXT(\"D_Itemable\", \"Item_Captured_Juvenile_Bear-FlavorText\", \"Can these be tamed?\")",
+            "Weight": 5000
         }
     ]
 }
