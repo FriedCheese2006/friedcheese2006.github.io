@@ -19,10 +19,10 @@ requirements-lock: requirements-tools
 
 ## requirements-check — verify direct dependencies and the lockfile agree
 requirements-check: requirements-tools
-	@lock_check="$$(mktemp)"; trap 'rm -f "$$lock_check"' EXIT; \
+	@set -e; lock_check="$$(mktemp)"; trap 'rm -f "$$lock_check"' EXIT; \
 		cp backend/requirements.txt "$$lock_check"; \
 		CUSTOM_COMPILE_COMMAND='make requirements-lock' $(PYTHON) -m piptools compile --quiet --generate-hashes --strip-extras --output-file="$$lock_check" backend/requirements.in; \
-		diff --unified backend/requirements.txt "$$lock_check"
+		$(PYTHON) scripts/check_requirements_lock.py backend/requirements.txt "$$lock_check"
 
 ## dev — start Vite dev server and FastAPI backend concurrently
 ##        Copy .env.example to .env to configure optional SSO
@@ -66,8 +66,7 @@ docker-build:
 security-scan: docker-build
 	docker run --rm \
 		-v /var/run/docker.sock:/var/run/docker.sock \
-		-v "$(CURDIR):/work:ro" \
-		anchore/grype:latest docker:prospector:local --only-fixed --vex /work/security/openvex.json
+		anchore/grype:latest docker:prospector:local --only-fixed
 	docker run --rm \
 		-v /var/run/docker.sock:/var/run/docker.sock \
 		aquasec/trivy:latest image --scanners vuln --ignore-unfixed \
