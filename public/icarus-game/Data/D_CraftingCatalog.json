@@ -134,6 +134,7 @@
     "Armor_Attachment_Comfort_2": "processor:Attachment_Armor_Comfort_2",
     "Armor_Bench": "processor:Armor_Bench",
     "Armour_Stand": "processor:Wooden_Armor_Stand",
+    "Armour_Stand_T4": "processor:Armor_Stand_T4",
     "Arms_Attachment_FistDamage_1": "processor:Attachment_Arms_FistDamage_1",
     "Arms_Attachment_FistDamage_2": "processor:Attachment_Arms_FistDamage_2",
     "Arms_Attachment_ThrowAccuracy_1": "processor:Attachment_Arms_ThrowAccuracy_1",
@@ -369,6 +370,7 @@
     "Coal_Ore": "processor:Frozen_Ore",
     "Coconut_Cake": "processor:Coconut_Cake",
     "Coconut_Cookie": "processor:Coconut_Cookie",
+    "Coconut_Fish_Curry": "processor:Food_Coconut_Fish_Curry",
     "Cold_Steel_Arrow": "processor:Cold_Steel_Arrow",
     "Cold_Steel_Axe": "processor:Cold_Steel_Axe",
     "Cold_Steel_Bolt": "processor:Cold_Steel_Bolt",
@@ -1828,6 +1830,7 @@
     "Tundra_Monkey_Trophy": "processor:Tundra_Monkey_Trophy",
     "Turret_Flamethrower": "processor:Turret_Flamethrower",
     "Turret_Pistol": "processor:Turret_Pistol",
+    "Turret_Rifle_Precision": "processor:Turret_Rifle_Precision",
     "Tusker_Trophy": "processor:Tusker_Trophy",
     "Ubis_Trophy": "processor:Ubis_Trophy",
     "Uranium_Arrow": "processor:Uranium_Arrow",
@@ -1980,6 +1983,13 @@
         ]
       },
       {
+        "alias": "Item_Carcass_Bear",
+        "itemIds": [
+          "AnimalCarcass_Bear",
+          "AnimalCarcass_Bear_Mount"
+        ]
+      },
+      {
         "alias": "Item_Carcass_BlueBack",
         "itemIds": [
           "AnimalCarcass_BlueBack",
@@ -2075,6 +2085,13 @@
         "itemIds": [
           "AnimalCarcass_Moa",
           "AnimalCarcass_Moa_Mount"
+        ]
+      },
+      {
+        "alias": "Item_Carcass_Moa_Juvenile",
+        "itemIds": [
+          "AnimalCarcass_Moa_Juvenile",
+          "AnimalCarcass_Stomper_Juvenile"
         ]
       },
       {
@@ -3649,6 +3666,14 @@
         "itemableId": null
       },
       {
+        "itemId": "PlantMinion_Ranged_Needles",
+        "itemableId": null
+      },
+      {
+        "itemId": "PlantMinion_Spore_Spores",
+        "itemableId": null
+      },
+      {
         "itemId": "RockGolem_Ceiling_Rock",
         "itemableId": null
       },
@@ -3896,9 +3921,6 @@
     "Ammo_Shell_Workshop_Bundle": "Ammo_Shell_Workshop_Bundle",
     "Ammo_Shell_Workshop_x25": "Ammo_Shell_Workshop",
     "Ammo_Sniper_Round": "Ammo_Sniper_Round",
-    "Ammo_Sniper_Round_Explosive": "Ammo_Sniper_Round_Explosive",
-    "Ammo_Sniper_Round_Explosive_Workshop_Bundle": "Ammo_Sniper_Round_Explosive_Workshop_Bundle",
-    "Ammo_Sniper_Round_Explosive_Workshop_x25": "Ammo_Sniper_Round_Explosive",
     "Ammo_Sniper_Round_Illumination": "Ammo_Sniper_Round_Illumination",
     "Ammo_Sniper_Round_Incendiary": "Ammo_Sniper_Round_Incendiary",
     "Ammo_Sniper_Round_Incendiary_Workshop_Bundle": "Ammo_Sniper_Round_Incendiary_Workshop_Bundle",
@@ -3919,6 +3941,7 @@
     "AnimalCarcass_Bear": "AnimalCarcass_Bear",
     "AnimalCarcass_BearCub": "AnimalCarcass_BearCub",
     "AnimalCarcass_Bear_Contaminated": "AnimalCarcass_Bear_Contaminated",
+    "AnimalCarcass_Bear_Mount": "AnimalCarcass_Bear_Mount",
     "AnimalCarcass_BlueBack": "AnimalCarcass_BlueBack",
     "AnimalCarcass_BlueBack_Lava": "AnimalCarcass_BlueBack_Lava",
     "AnimalCarcass_Blueback_Lava_Mount": "AnimalCarcass_Blueback_Lava_Mount",
@@ -4037,6 +4060,7 @@
     "AnimalCarcass_SpeederBike": "AnimalCarcass_SpeederBike",
     "AnimalCarcass_Spider": "AnimalCarcass_Spider",
     "AnimalCarcass_Stomper": "AnimalCarcass_Stomper",
+    "AnimalCarcass_Stomper_Juvenile": "AnimalCarcass_Stomper_Juvenile",
     "AnimalCarcass_Stomper_Matriarch": "AnimalCarcass_Stomper_Matriarch",
     "AnimalCarcass_Storca": "AnimalCarcass_Storca",
     "AnimalCarcass_SwampBird": "AnimalCarcass_SwampBird",
@@ -4147,6 +4171,7 @@
     "Armor_Attachment_Comfort_2": "Armor_Attachment_Comfort_2",
     "Armor_Bench": "Armor_Bench",
     "Armour_Stand": "Armour_Stand",
+    "Armour_Stand_T4": "Armour_Stand_T4",
     "Arms_Attachment_FistDamage_1": "Arms_Attachment_FistDamage_1",
     "Arms_Attachment_FistDamage_2": "Arms_Attachment_FistDamage_2",
     "Arms_Attachment_ThrowAccuracy_1": "Arms_Attachment_ThrowAccuracy_1",
@@ -5517,6 +5542,7 @@
     "Item_Armor_Bench": "Armor_Bench",
     "Item_Armored_Scorpion": "AnimalCarcass_Scorpion_Armored",
     "Item_Armour_Stand": "Armour_Stand",
+    "Item_Armour_Stand_T4": "Armour_Stand_T4",
     "Item_Ashen_Drake_Head": "Ashen_Drake_Head",
     "Item_Ashen_Drake_Trophy": "Ashen_Drake_Trophy",
     "Item_AssaultRifle_Round": "Ammo_AssaultRifle_Round",
@@ -7968,8 +7994,6 @@
     "Item_Smokey_Bacon": "Smoked_Bacon",
     "Item_Snare_Trap": "Snare_Trap",
     "Item_Sniper_Round": "Ammo_Sniper_Round",
-    "Item_Sniper_Round_Explosive": "Ammo_Sniper_Round_Explosive",
-    "Item_Sniper_Round_Explosive_Workshop_Bundle": "Ammo_Sniper_Round_Explosive_Workshop_Bundle",
     "Item_Sniper_Round_Illumination": "Ammo_Sniper_Round_Illumination",
     "Item_Sniper_Round_Incendiary": "Ammo_Sniper_Round_Incendiary",
     "Item_Sniper_Round_Incendiary_Workshop_Bundle": "Ammo_Sniper_Round_Incendiary_Workshop_Bundle",
@@ -8198,6 +8222,7 @@
     "Item_Tundra_Monkey_Trophy": "Tundra_Monkey_Trophy",
     "Item_Turret_Flamethrower": "Turret_Flamethrower",
     "Item_Turret_Pistol": "Turret_Pistol",
+    "Item_Turret_Rifle_Precision": "Turret_Rifle_Precision",
     "Item_Tusker_Head": "Tusker_Head",
     "Item_Tusker_Trophy": "Tusker_Trophy",
     "Item_Ubis_Head": "Ubis_Head",
@@ -8330,6 +8355,7 @@
     "Item_Workshop_Hydrazine_Container": "Workshop_Hydrazine_Container",
     "Item_Workshop_Lamb_Female": "Workshop_Lamb_Female",
     "Item_Workshop_Lamb_Male": "Workshop_Lamb_Male",
+    "Item_Workshop_Lantern": "Workshop_Lantern",
     "Item_Workshop_Piglet_Female": "Workshop_Piglet_Female",
     "Item_Workshop_Piglet_Male": "Workshop_Piglet_Male",
     "Item_Workshop_Sawblade_Bundle": "Workshop_Sawblade_Bundle",
@@ -8862,6 +8888,7 @@
     "Milk_Bottle_Glass": "Milk_Bottle_Glass",
     "Milk_Bucket": "Milk_Bucket",
     "Milk_Glass_Bottle": "Milk_Bottle_Glass",
+    "Milk_Glass_Bottle_Full": "Milk_Bottle_Glass",
     "MinerArmor_Arms": "MinerArmor_Arms",
     "MinerArmor_Chest": "MinerArmor_Chest",
     "MinerArmor_Feet": "MinerArmor_Feet",
@@ -9178,6 +9205,8 @@
     "Pistol_Handgun": "Pistol_Handgun",
     "Pistol_T3": "Pistol_T3",
     "Pistol_T4": "Pistol_T4",
+    "PlantMinion_Ranged_Needles": "PlantMinion_Ranged_Needles",
+    "PlantMinion_Spore_Spores": "PlantMinion_Spore_Spores",
     "Plant_Extract": "Plant_Extract",
     "Plastics": "Plastics",
     "Platinium_Shovel": "Platinium_Shovel",
@@ -9809,7 +9838,6 @@
     "Smoker_T3": "Smoker_T3",
     "Snare_Trap": "Snare_Trap",
     "Sniper_Round": "Ammo_Sniper_Round",
-    "Sniper_Round_Explosive": "Ammo_Sniper_Round_Explosive",
     "Sniper_Round_Illumination": "Ammo_Sniper_Round_Illumination",
     "Sniper_Round_Incendiary": "Ammo_Sniper_Round_Incendiary",
     "SnowLeopard_Head": "SnowLeopard_Head",
@@ -10080,6 +10108,7 @@
     "Tundra_Monkey_Trophy": "Tundra_Monkey_Trophy",
     "Turret_Flamethrower": "Turret_Flamethrower",
     "Turret_Pistol": "Turret_Pistol",
+    "Turret_Rifle_Precision": "Turret_Rifle_Precision",
     "Tusker_Head": "Tusker_Head",
     "Tusker_Trophy": "Tusker_Trophy",
     "Ubis_Head": "Ubis_Head",
@@ -10230,6 +10259,7 @@
     "Workshop_Hydrazine_Container": "Workshop_Hydrazine_Container",
     "Workshop_Lamb_Female": "Workshop_Lamb_Female",
     "Workshop_Lamb_Male": "Workshop_Lamb_Male",
+    "Workshop_Lantern": "Workshop_Lantern",
     "Workshop_Piglet_Female": "Workshop_Piglet_Female",
     "Workshop_Piglet_Male": "Workshop_Piglet_Male",
     "Workshop_Purification_Tablet": "Workshop_Purification_Tablet",
@@ -11248,31 +11278,6 @@
         "Sniper_Round"
       ]
     },
-    "Ammo_Sniper_Round_Explosive": {
-      "id": "Ammo_Sniper_Round_Explosive",
-      "imagePath": "/icarus-game/ItemIcons/Projectiles/T_ITEM_Ammo_Sniper_Round_Explosive.png",
-      "isBlacklisted": false,
-      "isFood": false,
-      "isPlaceholder": false,
-      "itemableId": "Item_Sniper_Round_Explosive",
-      "label": "12.7mm CHAC Explosive Round",
-      "templateIds": [
-        "Ammo_Sniper_Round_Explosive_Workshop_x25",
-        "Sniper_Round_Explosive"
-      ]
-    },
-    "Ammo_Sniper_Round_Explosive_Workshop_Bundle": {
-      "id": "Ammo_Sniper_Round_Explosive_Workshop_Bundle",
-      "imagePath": "/icarus-game/ItemIcons/Projectiles/T_ITEM_Sniper_Round_Explosive_Workshop_Bundle.png",
-      "isBlacklisted": false,
-      "isFood": false,
-      "isPlaceholder": false,
-      "itemableId": "Item_Sniper_Round_Explosive_Workshop_Bundle",
-      "label": "12.7mm CHAC Explosive Ammo Box",
-      "templateIds": [
-        "Ammo_Sniper_Round_Explosive_Workshop_Bundle"
-      ]
-    },
     "Ammo_Sniper_Round_Illumination": {
       "id": "Ammo_Sniper_Round_Illumination",
       "imagePath": "/icarus-game/ItemIcons/Projectiles/T_ITEM_Ammo_Sniper_Round.png",
@@ -11460,6 +11465,16 @@
       "isPlaceholder": false,
       "itemableId": "Item_Carcass_Bear_Contaminated",
       "label": "Contaminated Bear Carcass",
+      "templateIds": []
+    },
+    "AnimalCarcass_Bear_Mount": {
+      "id": "AnimalCarcass_Bear_Mount",
+      "imagePath": "/icarus-game/ItemIcons/Carcasses/ITEM_AnimalCarcass_Bear.png",
+      "isBlacklisted": true,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Carcass_Bear",
+      "label": "Bear Carcass",
       "templateIds": []
     },
     "AnimalCarcass_BlueBack": {
@@ -12642,6 +12657,16 @@
       "label": "Stomper Carcass",
       "templateIds": []
     },
+    "AnimalCarcass_Stomper_Juvenile": {
+      "id": "AnimalCarcass_Stomper_Juvenile",
+      "imagePath": "/icarus-game/ItemIcons/Carcasses/ITEM_AnimalCarcass_Moa.png",
+      "isBlacklisted": true,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Carcass_Moa_Juvenile",
+      "label": "Juvenile Moa Carcass",
+      "templateIds": []
+    },
     "AnimalCarcass_Stomper_Matriarch": {
       "id": "AnimalCarcass_Stomper_Matriarch",
       "imagePath": "/icarus-game/ItemIcons/Carcasses/T_ITEM_AnimalCarcass_Stomper_Matriarch.png",
@@ -13816,6 +13841,18 @@
       "label": "Wooden Armor Stand",
       "templateIds": [
         "Armour_Stand"
+      ]
+    },
+    "Armour_Stand_T4": {
+      "id": "Armour_Stand_T4",
+      "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Armour_Stand_T4.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Armour_Stand_T4",
+      "label": "Advanced Armor Stand",
+      "templateIds": [
+        "Armour_Stand_T4"
       ]
     },
     "Arms_Attachment_FistDamage_1": {
@@ -20170,7 +20207,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Enemy_Turret_Flamethrower",
-      "label": "Blackmarket Automative Defence Turret (Flamethrower)",
+      "label": "Blackmarket Auto-Turret: Flamethrower",
       "templateIds": [
         "Enemy_Turret_Flamethrower"
       ]
@@ -20182,7 +20219,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Enemy_Turret_Pistol",
-      "label": "Blackmarket Automative Defence Turret (Pistol)",
+      "label": "Blackmarket Auto-Turret: Pistol",
       "templateIds": [
         "Enemy_Turret_Pistol"
       ]
@@ -33081,7 +33118,8 @@
       "itemableId": "Item_Milk_Bottle_Glass",
       "label": "Glass Milk Bottle",
       "templateIds": [
-        "Milk_Glass_Bottle"
+        "Milk_Glass_Bottle",
+        "Milk_Glass_Bottle_Full"
       ]
     },
     "Milk_Bucket": {
@@ -35666,6 +35704,26 @@
       "templateIds": [
         "Pistol_T4"
       ]
+    },
+    "PlantMinion_Ranged_Needles": {
+      "id": "PlantMinion_Ranged_Needles",
+      "imagePath": "/icarus-game/Images/question-mark.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": null,
+      "label": "PlantMinion Ranged Needles",
+      "templateIds": []
+    },
+    "PlantMinion_Spore_Spores": {
+      "id": "PlantMinion_Spore_Spores",
+      "imagePath": "/icarus-game/Images/question-mark.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": null,
+      "label": "PlantMinion Spore Spores",
+      "templateIds": []
     },
     "Plant_Extract": {
       "id": "Plant_Extract",
@@ -44570,7 +44628,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Telsa_Coil",
-      "label": "Automated Defense System: Tesla Coil",
+      "label": "Tesla Coil",
       "templateIds": [
         "Tesla_Coil"
       ]
@@ -45375,7 +45433,7 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Turret_Flamethrower",
-      "label": "Automated Defense System: Flamethrower",
+      "label": "Auto-Turret: Flamethrower",
       "templateIds": [
         "Turret_Flamethrower"
       ]
@@ -45387,9 +45445,21 @@
       "isFood": false,
       "isPlaceholder": false,
       "itemableId": "Item_Turret_Pistol",
-      "label": "Automated Defense System: Pistol",
+      "label": "Auto-Turret: Pistol",
       "templateIds": [
         "Turret_Pistol"
+      ]
+    },
+    "Turret_Rifle_Precision": {
+      "id": "Turret_Rifle_Precision",
+      "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Turret_Rifle.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Turret_Rifle_Precision",
+      "label": "Auto-Turret: Rifle",
+      "templateIds": [
+        "Turret_Rifle_Precision"
       ]
     },
     "Tusker_Head": {
@@ -46969,6 +47039,18 @@
         "Workshop_Lamb_Male"
       ]
     },
+    "Workshop_Lantern": {
+      "id": "Workshop_Lantern",
+      "imagePath": "/icarus-game/ItemIcons/UseableItems/T_ITEM_Workshop_Lantern.png",
+      "isBlacklisted": false,
+      "isFood": false,
+      "isPlaceholder": false,
+      "itemableId": "Item_Workshop_Lantern",
+      "label": "Inaris Lantern",
+      "templateIds": [
+        "Workshop_Lantern"
+      ]
+    },
     "Workshop_Piglet_Female": {
       "id": "Workshop_Piglet_Female",
       "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Workshop_Piglet_Female.png",
@@ -47264,6 +47346,7 @@
       "processor:Advanced_Kitchen_Storage",
       "processor:Aluminium_Arrow",
       "processor:Aluminium_Screw",
+      "processor:Armor_Stand_T4",
       "processor:Attachment_Ammo_Highlight_2",
       "processor:Attachment_Ranged_Weapon_Economic_2",
       "processor:Attachment_Ranged_Weapon_Wear_2",
@@ -47340,6 +47423,7 @@
       "processor:SpawnBlocker_T3",
       "processor:T3_Weapon_Rack_Single",
       "processor:Turret_Pistol",
+      "processor:Turret_Rifle_Precision",
       "processor:Water_Purifier_T4",
       "processor:Water_Trough_Metal",
       "processor:Wind_Turbine",
@@ -48292,6 +48376,7 @@
       "processor:Coconut_Cake",
       "processor:Coconut_Cookie",
       "processor:Coconut_Seeds_Old",
+      "processor:Food_Coconut_Fish_Curry",
       "processor:Fruit_Smoothie",
       "processor:Fruit_Snack_Pack"
     ],
@@ -48333,6 +48418,7 @@
       "processor:Advanced_Kitchen_Sink",
       "processor:Advanced_Kitchen_Storage",
       "processor:Advanced_Orbital_Exchange_Interface",
+      "processor:Armor_Stand_T4",
       "processor:Attachment_Melee_Attack_Speed_2",
       "processor:Attachment_Quick_Healing",
       "processor:Attachment_Ranged_Weapon_Rapid_Fire",
@@ -48402,6 +48488,7 @@
       "processor:Thumper_Sandworm",
       "processor:Turret_Flamethrower",
       "processor:Turret_Pistol",
+      "processor:Turret_Rifle_Precision",
       "processor:Uranium_Collector",
       "processor:Uranium_Converter",
       "processor:Vapour_Condenser",
@@ -48895,6 +48982,7 @@
       "processor:Ape_Attractor",
       "processor:Ape_Grenade",
       "processor:Aquarium",
+      "processor:Armor_Stand_T4",
       "processor:Attachment_Armor_Comfort_2",
       "processor:Attachment_Arms_FistDamage_2",
       "processor:Attachment_Arms_ThrowAccuracy_2",
@@ -49029,6 +49117,7 @@
       "processor:Thumper_Sandworm",
       "processor:Turret_Flamethrower",
       "processor:Turret_Pistol",
+      "processor:Turret_Rifle_Precision",
       "processor:Uranium_Collector",
       "processor:Uranium_Converter",
       "processor:Uranium_Generator",
@@ -49936,6 +50025,7 @@
       "processor:Trail_Beacon",
       "processor:Trail_Beacon_Tool",
       "processor:TriangulationBeacon",
+      "processor:Turret_Rifle_Precision",
       "processor:Wind_Turbine"
     ],
     "GreenTea": [
@@ -50632,6 +50722,7 @@
       "processor:Chocolate_Cake",
       "processor:Coconut_Cake",
       "processor:Cream",
+      "processor:Food_Coconut_Fish_Curry",
       "processor:Food_Onion_Souffle"
     ],
     "Mini_Hippo_Head": [
@@ -51637,6 +51728,9 @@
     "Rifle_Attachment_Accuracy_1": [
       "processor:Attachment_Rifle_Accuracy_2"
     ],
+    "Rifle_BoltAction": [
+      "processor:Turret_Rifle_Precision"
+    ],
     "Roat_Head": [
       "processor:Roat_Trophy"
     ],
@@ -51919,6 +52013,7 @@
     ],
     "Saltwater_Fish_Fillet": [
       "processor:Dried_Saltwater_Fillet",
+      "processor:Food_Coconut_Fish_Curry",
       "processor:Food_Crumbed_Saltwater_Fillet",
       "processor:Food_Fish_Chowder",
       "processor:Food_Fish_Fillet_Pie",
@@ -52081,6 +52176,7 @@
       "processor:Coconut_Cake",
       "processor:Coconut_Cookie",
       "processor:Cured_Leather_3",
+      "processor:Food_Coconut_Fish_Curry",
       "processor:Food_Smoked_Garlic",
       "processor:Fried_Chicken",
       "processor:Seed_Biofuel",
@@ -52497,6 +52593,7 @@
       "processor:Advanced_Kitchen_Sink",
       "processor:Advanced_Kitchen_Storage",
       "processor:Anvil_Bench_T4",
+      "processor:Armor_Stand_T4",
       "processor:Assault_Rifle_T4",
       "processor:Attachment_Copper_Yield_1",
       "processor:Attachment_Fall_Resistance_1",
@@ -52756,6 +52853,7 @@
       "processor:Trail_Beacon",
       "processor:TriangulationBeacon",
       "processor:Turret_Pistol",
+      "processor:Turret_Rifle_Precision",
       "processor:Vapour_Condenser",
       "processor:Water_Borer",
       "processor:Water_Pump",
@@ -53233,6 +53331,7 @@
       "processor:Submachine_Gun_Scout",
       "processor:Turret_Flamethrower",
       "processor:Turret_Pistol",
+      "processor:Turret_Rifle_Precision",
       "processor:Uranium_Collector",
       "processor:Uranium_Converter",
       "processor:Uranium_Generator",
@@ -54639,6 +54738,9 @@
     "Armour_Stand": [
       "processor:Wooden_Armor_Stand"
     ],
+    "Armour_Stand_T4": [
+      "processor:Armor_Stand_T4"
+    ],
     "Arms_Attachment_FistDamage_1": [
       "processor:Attachment_Arms_FistDamage_1"
     ],
@@ -55442,6 +55544,9 @@
     ],
     "Coconut_Cookie": [
       "processor:Coconut_Cookie"
+    ],
+    "Coconut_Fish_Curry": [
+      "processor:Food_Coconut_Fish_Curry"
     ],
     "Cold_Steel_Arrow": [
       "processor:Cold_Steel_Arrow"
@@ -60208,6 +60313,9 @@
     "Turret_Pistol": [
       "processor:Turret_Pistol"
     ],
+    "Turret_Rifle_Precision": [
+      "processor:Turret_Rifle_Precision"
+    ],
     "Tusker_Trophy": [
       "processor:Tusker_Trophy"
     ],
@@ -60937,6 +61045,13 @@
         }
       ]
     },
+    "Creature_Exchange": {
+      "id": "Creature_Exchange",
+      "imagePath": "/icarus-game/Images/question-mark.png",
+      "itemId": null,
+      "label": "Creature Exchange",
+      "stations": []
+    },
     "Crops_Exchange": {
       "id": "Crops_Exchange",
       "imagePath": "/icarus-game/Images/question-mark.png",
@@ -61426,6 +61541,13 @@
         }
       ]
     },
+    "Roaster": {
+      "id": "Roaster",
+      "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Smoker_T4.png",
+      "itemId": null,
+      "label": "Roaster",
+      "stations": []
+    },
     "Rustic_Decorations_Bench": {
       "id": "Rustic_Decorations_Bench",
       "imagePath": "/icarus-game/ItemIcons/Deployables/ITEM_Rustic_Decoration_Bench.png",
@@ -61507,13 +61629,6 @@
           "label": "Smoker"
         }
       ]
-    },
-    "T4_Smoker": {
-      "id": "T4_Smoker",
-      "imagePath": "/icarus-game/ItemIcons/Deployables/T_ITEM_Smoker_T4.png",
-      "itemId": null,
-      "label": "Roaster",
-      "stations": []
     },
     "Trophy_Bench": {
       "id": "Trophy_Bench",
@@ -64920,6 +65035,43 @@
         "Manufacturer"
       ],
       "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
+    "processor:Armor_Stand_T4": {
+      "enabled": true,
+      "id": "processor:Armor_Stand_T4",
+      "inputs": [
+        {
+          "itemId": "Aluminium",
+          "quantity": 120
+        },
+        {
+          "itemId": "Electronics",
+          "quantity": 4
+        },
+        {
+          "itemId": "Steel_Screw",
+          "quantity": 60
+        },
+        {
+          "itemId": "Composites",
+          "quantity": 8
+        }
+      ],
+      "name": "Armor_Stand_T4",
+      "outputs": [
+        {
+          "itemId": "Armour_Stand_T4",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Fabricator",
+        "Manufacturer"
+      ],
+      "requiredMillijoules": 25000,
       "resourceInputs": [],
       "resourceOutputs": [],
       "source": "processor"
@@ -83487,8 +83639,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 10000,
       "resourceInputs": [],
@@ -84723,8 +84875,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84749,8 +84901,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84775,8 +84927,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84801,8 +84953,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84827,8 +84979,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84853,8 +85005,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84879,8 +85031,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84905,8 +85057,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84931,8 +85083,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84957,8 +85109,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -84983,8 +85135,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -85009,8 +85161,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -85035,8 +85187,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -85061,8 +85213,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -88647,6 +88799,49 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Food_Coconut_Fish_Curry": {
+      "enabled": true,
+      "id": "processor:Food_Coconut_Fish_Curry",
+      "inputs": [
+        {
+          "itemId": "Saltwater_Fish_Fillet",
+          "quantity": 2
+        },
+        {
+          "itemId": "Coconut_mature",
+          "quantity": 1
+        },
+        {
+          "itemId": "Seed_Oil",
+          "quantity": 1
+        },
+        {
+          "itemId": "Milk",
+          "quantity": 0.1,
+          "quantityUnit": "L"
+        }
+      ],
+      "name": "Food_Coconut_Fish_Curry",
+      "outputs": [
+        {
+          "itemId": "Coconut_Fish_Curry",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Electric_Stove"
+      ],
+      "requiredMillijoules": 25000,
+      "resourceInputs": [
+        {
+          "itemId": "Milk",
+          "quantity": 0.1,
+          "quantityUnit": "L"
+        }
+      ],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Food_Cooked_Agave": {
       "enabled": true,
       "id": "processor:Food_Cooked_Agave",
@@ -89224,8 +89419,8 @@
       ],
       "recipeSetIds": [
         "Drying_Rack",
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 17500,
       "resourceInputs": [],
@@ -90718,8 +90913,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -124775,8 +124970,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -124804,8 +124999,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -124833,8 +125028,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -124862,8 +125057,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -124891,8 +125086,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -124920,8 +125115,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -124949,8 +125144,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -124978,8 +125173,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -125007,8 +125202,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -125036,8 +125231,8 @@
         }
       ],
       "recipeSetIds": [
-        "T3_Smoker",
-        "T4_Smoker"
+        "Roaster",
+        "T3_Smoker"
       ],
       "requiredMillijoules": 25000,
       "resourceInputs": [],
@@ -130836,6 +131031,55 @@
       "resourceOutputs": [],
       "source": "processor"
     },
+    "processor:Turret_Rifle_Precision": {
+      "enabled": true,
+      "id": "processor:Turret_Rifle_Precision",
+      "inputs": [
+        {
+          "itemId": "Titanium_Plate",
+          "quantity": 16
+        },
+        {
+          "itemId": "Electronics",
+          "quantity": 12
+        },
+        {
+          "itemId": "Composites",
+          "quantity": 12
+        },
+        {
+          "itemId": "Aluminium",
+          "quantity": 12
+        },
+        {
+          "itemId": "Rifle_BoltAction",
+          "quantity": 1
+        },
+        {
+          "itemId": "Steel_Screw",
+          "quantity": 20
+        },
+        {
+          "itemId": "Gold_Wire",
+          "quantity": 12
+        }
+      ],
+      "name": "Turret_Rifle_Precision",
+      "outputs": [
+        {
+          "itemId": "Turret_Rifle_Precision",
+          "quantity": 1
+        }
+      ],
+      "recipeSetIds": [
+        "Fabricator",
+        "Manufacturer"
+      ],
+      "requiredMillijoules": 10000,
+      "resourceInputs": [],
+      "resourceOutputs": [],
+      "source": "processor"
+    },
     "processor:Tusker_Trophy": {
       "enabled": true,
       "id": "processor:Tusker_Trophy",
@@ -133775,11 +134019,11 @@
   "schemaVersion": 2,
   "sourceRowCounts": {
     "D_ExtractorRecipes.json": 1,
-    "D_ItemTemplate.json": 3098,
-    "D_Itemable.json": 3483,
-    "D_ItemsStatic.json": 3090,
-    "D_Processing.json": 76,
-    "D_ProcessorRecipes.json": 2232,
-    "D_RecipeSets.json": 68
+    "D_ItemTemplate.json": 3103,
+    "D_Itemable.json": 3487,
+    "D_ItemsStatic.json": 3095,
+    "D_Processing.json": 77,
+    "D_ProcessorRecipes.json": 2235,
+    "D_RecipeSets.json": 69
   }
 }

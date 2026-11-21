@@ -14,18 +14,12 @@ ARG VITE_BACKEND_ENABLED=true
 RUN npm run build
 
 # ── Stage 2: Python backend serving the built frontend ────────────────────────
-FROM python:3.14.8-slim AS app
+FROM python:3.15.1-slim AS app
 
 WORKDIR /app
 
-COPY security/CVE-2025-15367.patch /tmp/CVE-2025-15367.patch
 RUN apt-get update \
 	&& apt-get upgrade -y \
-	&& apt-get install -y --no-install-recommends patch \
-	&& patch --directory="$(python -c 'import sysconfig; print(sysconfig.get_path("stdlib"))')" --strip=0 < /tmp/CVE-2025-15367.patch \
-	&& python -c "import poplib, unittest; client = object.__new__(poplib.POP3); client._debugging = 0; client.encoding = 'UTF-8'; unittest.TestCase().assertRaises(ValueError, client._putcmd, 'USER attacker\\r\\nDELE 1')" \
-	&& apt-get purge -y patch \
-	&& rm -f /tmp/CVE-2025-15367.patch \
 	&& rm -rf /var/lib/apt/lists/*
 
 COPY backend/requirements.txt ./

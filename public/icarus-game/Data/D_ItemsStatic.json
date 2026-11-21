@@ -68683,7 +68683,7 @@
                 "RowName": "Alteration_Bench"
             },
             "Durable": {
-                "RowName": "Deployable_500"
+                "RowName": "Deployable_750"
             },
             "Inventory": {
                 "RowName": "Alteration_Bench"
@@ -68788,7 +68788,7 @@
                 "RowName": "Advanced_Alteration_Bench"
             },
             "Durable": {
-                "RowName": "Deployable_500"
+                "RowName": "Deployable_1500"
             },
             "Inventory": {
                 "RowName": "Alteration_Bench"
@@ -68801,9 +68801,6 @@
             },
             "Decayable": {
                 "RowName": "Decay_General"
-            },
-            "Flammable": {
-                "RowName": "Flammable_Deployable"
             },
             "Weight": {
                 "RowName": "MediumDeployable"
@@ -68861,9 +68858,6 @@
                     },
                     {
                         "TagName": "Traits.Processing"
-                    },
-                    {
-                        "TagName": "Traits.Flammable"
                     }
                 ],
                 "ParentTags": []
@@ -90414,9 +90408,6 @@
             "Itemable": {
                 "RowName": "Item_Layered_Plating"
             },
-            "Interactable": {
-                "RowName": "Deployable_NoPickup"
-            },
             "Focusable": {
                 "RowName": "Focusable_1H"
             },
@@ -90458,9 +90449,6 @@
                     },
                     {
                         "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
                     },
                     {
                         "TagName": "Traits.Highlightable"
@@ -100361,6 +100349,9 @@
                     },
                     {
                         "TagName": "Proxy.Liquid.Green"
+                    },
+                    {
+                        "TagName": "Item.Resource.Paint"
                     }
                 ]
             },
@@ -100371,6 +100362,9 @@
                     },
                     {
                         "TagName": "Proxy.Liquid.Green"
+                    },
+                    {
+                        "TagName": "Item.Resource.Paint"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -133853,6 +133847,108 @@
             },
             "TurretData": {
                 "RowName": "Basic_Pistol_Turret"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseCriticalDamage_+%\")": 200
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.Defense"
+                    },
+                    {
+                        "TagName": "FieldGuide.Defense.Turret"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.Defense"
+                    },
+                    {
+                        "TagName": "FieldGuide.Defense.Turret"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Inventory"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Turret_Rifle_Precision",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Fabricator"
+            },
+            "Itemable": {
+                "RowName": "Item_Turret_Rifle_Precision"
+            },
+            "Interactable": {
+                "RowName": "Deployable"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Basic_Turret_Rifle"
+            },
+            "Durable": {
+                "RowName": "Deployable_10000"
+            },
+            "Inventory": {
+                "RowName": "Inventory_Turret_Rifle"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Weight": {
+                "RowName": "MediumDeployable"
+            },
+            "Resource": {
+                "RowName": "Turret"
+            },
+            "Audio": {
+                "RowName": "Turret"
+            },
+            "TurretData": {
+                "RowName": "Basic_Rifle_Turret_Precision"
+            },
+            "AdditionalStats": {
+                "(Value=\"BaseCriticalDamage_+%\")": 200
             },
             "Manual_Tags": {
                 "GameplayTags": [
@@ -195286,169 +195382,6 @@
             }
         },
         {
-            "Name": "Ammo_Sniper_Round_Explosive",
-            "Meshable": {
-                "RowName": "Mesh_Ammo_Box"
-            },
-            "Itemable": {
-                "RowName": "Item_Sniper_Round_Explosive"
-            },
-            "Interactable": {
-                "RowName": "Item"
-            },
-            "Highlightable": {
-                "RowName": "Generic"
-            },
-            "Ballistic": {
-                "RowName": "Sniper_Round_Explosive"
-            },
-            "Decayable": {
-                "RowName": "Decay_General"
-            },
-            "AmmoType": {
-                "RowName": "Sniper_Round_Explosive"
-            },
-            "Audio": {
-                "RowName": "Default"
-            },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Item.Ammo.Bullet"
-                    },
-                    {
-                        "TagName": "GameStateRecorder.DontRecord"
-                    },
-                    {
-                        "TagName": "Item.Meta"
-                    },
-                    {
-                        "TagName": "Item.Ammo.Sniper"
-                    }
-                ]
-            },
-            "Generated_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Item.Ammo.Bullet"
-                    },
-                    {
-                        "TagName": "GameStateRecorder.DontRecord"
-                    },
-                    {
-                        "TagName": "Item.Meta"
-                    },
-                    {
-                        "TagName": "Item.Ammo.Sniper"
-                    },
-                    {
-                        "TagName": "Traits.Meshable"
-                    },
-                    {
-                        "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
-                    },
-                    {
-                        "TagName": "Traits.Highlightable"
-                    },
-                    {
-                        "TagName": "Traits.Ballistic"
-                    }
-                ],
-                "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "GreatHunts"
-                }
-            }
-        },
-        {
-            "Name": "Ammo_Sniper_Round_Explosive_Workshop_Bundle",
-            "Meshable": {
-                "RowName": "Mesh_Ammo_Box"
-            },
-            "Itemable": {
-                "RowName": "Item_Sniper_Round_Explosive_Workshop_Bundle"
-            },
-            "Interactable": {
-                "RowName": "Item"
-            },
-            "Focusable": {
-                "RowName": "Focusable_1H"
-            },
-            "Highlightable": {
-                "RowName": "Generic"
-            },
-            "Consumable": {
-                "RowName": "Workshop_Sniper_Explosive_Ammo_Bundle"
-            },
-            "Usable": {
-                "RowName": "Consume"
-            },
-            "Ballistic": {
-                "RowName": "Sniper_Round_Explosive"
-            },
-            "Decayable": {
-                "RowName": "Decay_General"
-            },
-            "AmmoType": {
-                "RowName": "Sniper_Round_Explosive"
-            },
-            "Audio": {
-                "RowName": "Default"
-            },
-            "Manual_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Item.Meta.Consumable"
-                    },
-                    {
-                        "TagName": "Item.Meta.Package.Ammo.Sniper"
-                    }
-                ]
-            },
-            "Generated_Tags": {
-                "GameplayTags": [
-                    {
-                        "TagName": "Item.Meta.Consumable"
-                    },
-                    {
-                        "TagName": "Item.Meta.Package.Ammo.Sniper"
-                    },
-                    {
-                        "TagName": "Traits.Meshable"
-                    },
-                    {
-                        "TagName": "Traits.Itemable"
-                    },
-                    {
-                        "TagName": "Traits.Interactable"
-                    },
-                    {
-                        "TagName": "Traits.Highlightable"
-                    },
-                    {
-                        "TagName": "Traits.Consumable"
-                    },
-                    {
-                        "TagName": "Traits.Usable"
-                    },
-                    {
-                        "TagName": "Traits.Ballistic"
-                    }
-                ],
-                "ParentTags": []
-            },
-            "Metadata": {
-                "RequiredFeatureLevel": {
-                    "RowName": "GreatHunts"
-                }
-            }
-        },
-        {
             "Name": "Ammo_Sniper_Round_Incendiary",
             "Meshable": {
                 "RowName": "Mesh_Ammo_Box"
@@ -236572,6 +236505,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "NPC.Fish.Freshwater"
+                    },
+                    {
+                        "TagName": "NPC.Fish.Unique"
                     }
                 ]
             },
@@ -236579,6 +236515,9 @@
                 "GameplayTags": [
                     {
                         "TagName": "NPC.Fish.Freshwater"
+                    },
+                    {
+                        "TagName": "NPC.Fish.Unique"
                     },
                     {
                         "TagName": "Traits.Meshable"
@@ -237261,6 +237200,90 @@
                     },
                     {
                         "TagName": "Traits.Flammable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "Armour_Stand_T4",
+            "Meshable": {
+                "RowName": "Mesh_Generic_Crafting"
+            },
+            "Itemable": {
+                "RowName": "Item_Armour_Stand_T4"
+            },
+            "Interactable": {
+                "RowName": "Deployable_ArmourStand"
+            },
+            "Focusable": {
+                "RowName": "Focusable_1H"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Deployable"
+            },
+            "Usable": {
+                "RowName": "Place"
+            },
+            "Deployable": {
+                "RowName": "Armour_Stand_T4"
+            },
+            "Durable": {
+                "RowName": "Deployable_2500"
+            },
+            "Inventory": {
+                "RowName": "Armour_Stand"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Resource": {
+                "RowName": "Advanced_Armor_Stand"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.Deployable.Storage"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "FieldGuide.Deployable.Storage"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Usable"
+                    },
+                    {
+                        "TagName": "Traits.Deployable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    },
+                    {
+                        "TagName": "Traits.Inventory"
                     }
                 ],
                 "ParentTags": []
@@ -238422,6 +238445,93 @@
             }
         },
         {
+            "Name": "Workshop_Lantern",
+            "Meshable": {
+                "RowName": "Mesh_Workshop_Latern"
+            },
+            "Itemable": {
+                "RowName": "Item_Workshop_Lantern"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Focusable": {
+                "RowName": "Focusable_Lantern"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Actionable": {
+                "RowName": "Light_NoMelee"
+            },
+            "Fillable": {
+                "RowName": "Meta_Flashlight"
+            },
+            "Decayable": {
+                "RowName": "Decay_General"
+            },
+            "Audio": {
+                "RowName": "Lantern"
+            },
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Upgrade.Vision"
+                    },
+                    {
+                        "TagName": "Item.Tool.Light"
+                    },
+                    {
+                        "TagName": "Item.Powered.Battery"
+                    },
+                    {
+                        "TagName": "Item.Meta"
+                    },
+                    {
+                        "TagName": "MetaItem.Convert.ReplenishFillable"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Item.Upgrade.Vision"
+                    },
+                    {
+                        "TagName": "Item.Tool.Light"
+                    },
+                    {
+                        "TagName": "Item.Powered.Battery"
+                    },
+                    {
+                        "TagName": "Item.Meta"
+                    },
+                    {
+                        "TagName": "MetaItem.Convert.ReplenishFillable"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Actionable"
+                    },
+                    {
+                        "TagName": "Traits.Fillable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
             "Name": "Prop_Glass_Display_Cabinet",
             "Meshable": {
                 "RowName": "Mesh_Generic_Machining"
@@ -239526,6 +239636,218 @@
                     },
                     {
                         "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Stomper_Juvenile",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Stomper_Juvenile"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Moa_Juvenile"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_NoCarry"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Medium"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Knife.T1"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "PlantMinion_Ranged_Needles",
+            "Meshable": {
+                "RowName": "Mesh_PlantMinion_Ranged_Needles"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Ballistic": {
+                "RowName": "PlantMinion_Ranged_Needles"
+            },
+            "Decayable": {
+                "RowName": "Decay_02_Minutes"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "CraftingExperience": 0,
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Ballistic"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "AnimalCarcass_Bear_Mount",
+            "Meshable": {
+                "RowName": "Mesh_Carcass_Bear_Mount"
+            },
+            "Itemable": {
+                "RowName": "Item_Carcass_Bear"
+            },
+            "Interactable": {
+                "RowName": "AnimalCorpse_Mount"
+            },
+            "Hitable": {
+                "RowName": "AnimalCarcass"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Durable": {
+                "RowName": "Carcass_Large"
+            },
+            "Decayable": {
+                "RowName": "Decay_10_Minutes"
+            },
+            "Audio": {
+                "RowName": "Carcass"
+            },
+            "CraftingExperience": 400,
+            "Manual_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Knife.T2"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
+                    }
+                ]
+            },
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Harvest.Knife.T2"
+                    },
+                    {
+                        "TagName": "FieldGuide.BlackList"
+                    },
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Itemable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Hitable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Durable"
+                    }
+                ],
+                "ParentTags": []
+            }
+        },
+        {
+            "Name": "PlantMinion_Spore_Spores",
+            "Meshable": {
+                "RowName": "Mesh_PlantMinion_Spore_Spores"
+            },
+            "Interactable": {
+                "RowName": "Item"
+            },
+            "Highlightable": {
+                "RowName": "Generic"
+            },
+            "Ballistic": {
+                "RowName": "PlantMinion_Spore_Spores"
+            },
+            "Decayable": {
+                "RowName": "Decay_02_Minutes"
+            },
+            "Audio": {
+                "RowName": "Default"
+            },
+            "CraftingExperience": 0,
+            "Generated_Tags": {
+                "GameplayTags": [
+                    {
+                        "TagName": "Traits.Meshable"
+                    },
+                    {
+                        "TagName": "Traits.Interactable"
+                    },
+                    {
+                        "TagName": "Traits.Highlightable"
+                    },
+                    {
+                        "TagName": "Traits.Ballistic"
                     }
                 ],
                 "ParentTags": []
