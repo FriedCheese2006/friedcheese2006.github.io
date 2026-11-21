@@ -360,8 +360,8 @@
             "bAllowRefundOfRecipesOnDestroy": false
         },
         {
-            "Name": "T4_Smoker",
-            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"T4_Smoker-RecipeSetName\", \"Roaster\")",
+            "Name": "Roaster",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Roaster-RecipeSetName\", \"Roaster\")",
             "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Smoker_T4.T_ITEM_Smoker_T4",
             "ExperienceMultiplier": 0.20000000298023224,
             "bAllowRefundOfRecipesOnDestroy": false
@@ -504,6 +504,13 @@
             "Name": "Food_Trough_T4",
             "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Food_Trough_T4-RecipeSetName\", \"Electronic Food Trough\")",
             "RecipeSetIcon": "/Game/Assets/2DArt/UI/Items/Item_Icons/Deployables/T_ITEM_Food_Trough_T4.T_ITEM_Food_Trough_T4",
+            "ExperienceMultiplier": 0.20000000298023224,
+            "bAllowRefundOfRecipesOnDestroy": false
+        },
+        {
+            "Name": "Creature_Exchange",
+            "RecipeSetName": "NSLOCTEXT(\"D_RecipeSets\", \"Creature_Exchange-RecipeSetName\", \"Creature Exchange\")",
+            "RecipeSetIcon": "/Game/Assets/2DArt/UI/Icons/MapIcons/T_Icon_Map_Prospector.T_Icon_Map_Prospector",
             "ExperienceMultiplier": 0.20000000298023224,
             "bAllowRefundOfRecipesOnDestroy": false
         }
