@@ -127,6 +127,20 @@ make requirements-lock
 make requirements-check
 ```
 
+Dependabot keeps routine updates separate from security updates. The
+[auto-merge workflow](.github/workflows/dependabot-automerge.yml) queues only
+verified, single-dependency, non-major npm and pip security PRs that touch
+the corresponding dependency files. Required checks still apply. Grouped
+fixes covering multiple dependencies and runtime or workflow updates are
+merged manually.
+
+Enable Dependabot alerts, Dependabot security updates, and repository
+auto-merge in GitHub. Add `DEPENDABOT_AUTOMERGE_TOKEN` as a **Dependabot
+secret**, using a repository-scoped fine-grained PAT with **Contents** and
+**Pull requests** read/write and no branch-rule bypass. A PAT ensures merges
+can trigger the normal publish workflows; the workflow leaves PRs for manual
+merge when the secret is missing.
+
 Run all automated checks:
 
 ```bash
@@ -152,7 +166,7 @@ Build a local container image:
 make docker-build
 ```
 
-Build and scan it with Grype and Trivy, including the VEX record for the backported CPython security fix:
+Build and scan it with Grype and Trivy:
 
 ```bash
 make security-scan
